@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
-
+import { TopNavOne } from "../Components/TopNavOne"
 
 export function Home() {
   return (
     <>
       <div className="main-container">
+        <TopNavOne />
         <div className="contents-container">
           <h1>Home</h1>
           <ul>
