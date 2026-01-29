@@ -1,7 +1,67 @@
 .TopNavOne {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  height: 10%;
+  max-width: 100dvw;
+  max-height: 5%;
   justify-content: space-between;
+  margin: 0;
+}
+.TopNavOne figure {
+  width: 25%;
+}
+.TopNavOne figure img {
+  height: 84px;
+  width: auto;
+  margin: auto;
+}
+.TopNavOne .navMenu {
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 117, 0.781);
+}
+.TopNavOne .navMenu .info, .TopNavOne .navMenu .contactUsNow, .TopNavOne .navMenu .question {
+  width: 32%;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+}
+.TopNavOne .navMenu .info p, .TopNavOne .navMenu .contactUsNow p, .TopNavOne .navMenu .question p {
+  margin: auto 10px;
+}
+.TopNavOne .navMenu .info .envelope, .TopNavOne .navMenu .info .phone, .TopNavOne .navMenu .info .chat, .TopNavOne .navMenu .contactUsNow .envelope, .TopNavOne .navMenu .contactUsNow .phone, .TopNavOne .navMenu .contactUsNow .chat, .TopNavOne .navMenu .question .envelope, .TopNavOne .navMenu .question .phone, .TopNavOne .navMenu .question .chat {
+  margin: auto 5px;
+  margin-left: 10px;
+  font-size: 2.2rem;
+}
+.TopNavOne .navMenu .info .phone, .TopNavOne .navMenu .contactUsNow .phone, .TopNavOne .navMenu .question .phone {
+  transform: skew(-35deg);
+}
+.TopNavOne .navMenu .info:hover {
+  color: rgba(217, 185, 3, 0.733);
+}
+.TopNavOne .navMenu .info:hover .envelope {
+  transform: rotate(-15deg);
+  margin-left: 10px;
+}
+.TopNavOne .navMenu .contactUsNow {
+  transform: skew(35deg);
+  background-color: rgba(150, 128, 8, 0.733);
+}
+.TopNavOne .navMenu .contactUsNow p {
+  transform: skew(-35deg);
+}
+.TopNavOne .navMenu .contactUsNow:hover {
+  color: rgba(0, 0, 117, 0.781);
+}
+.TopNavOne .navMenu .contactUsNow:hover .phone {
+  transform: rotate(-15deg);
+  margin-left: 10px;
+}
+.TopNavOne .navMenu .question:hover {
+  color: rgba(217, 185, 3, 0.733);
+}
+.TopNavOne .navMenu .question:hover .chat {
+  transform: rotate(-15deg);
+  margin-left: 10px;
 }/*# sourceMappingURL=TopNavOne.css.map */
