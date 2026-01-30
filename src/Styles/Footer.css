@@ -5,7 +5,7 @@ footer {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 footer .footer-top {
@@ -15,6 +15,7 @@ footer .footer-top {
   display: flex;
   gap: 40px;
   box-sizing: border-box;
+  margin-top: 200px;
 }
 footer .footer-top .about {
   max-width: 600px;
