@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { TopNavOne } from "../Components/TopNavOne"
+import { Footer } from "../Components/Footer"
 
 export function Home() {
   return (
@@ -20,6 +21,9 @@ export function Home() {
             
           </ul>
         </div>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   )

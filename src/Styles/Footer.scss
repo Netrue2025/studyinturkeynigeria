@@ -1,0 +1,123 @@
+footer {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .footer-top {
+    width: 100%;
+    background-color: rgba(0, 0, 117, 0.781);
+    padding: 60px;
+    display: flex;
+    gap: 40px;
+    box-sizing: border-box;
+
+    .about {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      text-align: start;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        color: oklch(87.2% 0.01 258.338);
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+
+    .newsletter {
+      max-width: 400px;
+      width: 100%;
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      box-sizing: border-box;
+      // border: 1px solid red;
+
+      h3 {
+        font-size: 22px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+
+        input {
+          border: 1px solid oklch(87.2% 0.01 258.338);
+          padding: 15px;
+          outline: none;
+        }
+
+        button {
+          cursor: pointer;
+          color: #fff;
+          background: rgba(217, 185, 3, 0.733);
+          border: none;
+          padding: 5px 10px;
+          border-top-right-radius: 20px;
+          transition: transform 0.3s ease;
+        }
+        button:hover {
+          background: rgba(187, 160, 4, 0.733);
+          transform: translateX(8px);
+        }
+      }
+    }
+  }
+
+  // Footer Bottom
+  .footer-bottom {
+    max-width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+
+    .footer-bottom-content {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+
+      li {
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background: rgba(217, 185, 3, 0.733);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+
+      li:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
