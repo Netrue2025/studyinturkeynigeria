@@ -1,0 +1,70 @@
+.top-nav-two{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    color: rgba(2, 2, 119, 0.747);
+    height: 80px;
+    
+    
+    .list-menu{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        margin: auto 0;
+        flex-shrink: 1;
+
+        ul{
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+        }
+        search{
+            font-size: 1.5rem;
+            margin-left: 15px;
+        }
+    }
+    .other-details{
+        width: 40%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+       
+        height: 100%;
+
+        span{
+            font-size: 16px;
+            font-weight: 500;
+            margin: auto;
+        }
+        button{
+            padding: 0 30px;
+            margin: auto;
+            height: 70%;
+            cursor: pointer;
+            display: flex;
+            box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
+            transition: box-shadow 0.25s ease-in-out;
+            .btn-arrow{
+                display: none;
+                margin: auto;
+                transition: display 0.3s ease-in-out;
+                
+            }
+            h3{
+                font-size: 1.2rem;
+                margin: auto;
+            }
+        }
+        button:hover{
+            box-shadow: none;
+            
+            
+            .btn-arrow{
+                display: flex;
+                width: 30px;
+                
+                transition: transform 5s ease-in-out;
+            }
+        }
+    }
+}

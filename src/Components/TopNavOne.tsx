@@ -24,22 +24,27 @@ export function TopNavOne (){
                     <div className="info">
                         <BsEnvelope className="envelope"/>
                         <div className="info-text">
-                            <span>INFO</span>
-                            <h3>@STUDYTURKEYNIGERIA.COM</h3>
+                            <a href="mailto:INFO@STUDYTURKEYNIGERIA.COM">
+                                <span>INFO</span>
+                                <h3>@STUDYTURKEYNIGERIA.COM</h3>
+                            </a>
                         </div>
                     </div>
                     <div className="contactUsNow">
                         <FiPhoneCall className="phone"/>
                         <div className="contact-text">
                             <span>CALL US NOW</span>
-                            <h3>+90 536 323 3366</h3>
+                            <h3><a href="tel:+905363233366">+90 536 323 3366</a></h3>
                         </div>
                     </div>
                     <div className="question">
                         <CiChat2 className="chat"/>
                         <div className="chat-text">
-                            <span>QUESTIONS?</span>
-                            <h3>CONTACT US</h3>
+                            <a href="/#/ContactUs">
+                                <span>QUESTIONS?</span>
+                                <h3>CONTACT US</h3>
+                            </a>
+
                         </div>
                        
                     </div>
