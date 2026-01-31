@@ -2,6 +2,9 @@ import { GoSearch } from "react-icons/go";
 import { Link } from "react-router-dom";
 import "../Styles/TopNavTwo.css"
 import { FaArrowRight } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+
+
 
 export function TopNavTwo(){
     return(
@@ -9,11 +12,11 @@ export function TopNavTwo(){
             <section className="top-nav-two">
                 <div className="list-menu">
                     <ul>
-                        <Link to="/"><li>Home</li></Link>
-                        <Link to="/Universities"><li>Universities</li></Link>
-                        <Link to="/ProgrameFinder"><li>Programe Finder</li></Link>
-                        <Link to="/ContactUs"><li>Contact Us</li></Link>
-                        <Link to=""><li>Join Us</li></Link>
+                        <Link to="/" className="home"><li>Home</li></Link>
+                        <Link to="/Universities" className="universities"><li>Universities</li></Link>
+                        <Link to="/ProgrameFinder" className="programe-finder"><li>Programe Finder</li></Link>
+                        <Link to="/ContactUs" className="contact-us"><li>Contact Us</li><IoIosArrowDown className="arrow-down"/></Link>
+                        <Link to="" className="join-us"><li>Join Us</li><IoIosArrowDown className="arrow-down"/></Link>
                         
                     </ul>
                     <search>
