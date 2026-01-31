@@ -1,3 +1,5 @@
+import { Footer } from "../Components/Footer"
+
 export function Universities() {
   return (
     <>
@@ -6,6 +8,7 @@ export function Universities() {
           <h1>Universities</h1>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

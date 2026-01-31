@@ -1,23 +1,29 @@
-footer {
+.footer {
   margin: 0;
   padding: 0;
-  width: 100dvw;
+  max-width: 100dvw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
   bottom: 0;
+  left: 0;
+  right: 0;
 }
-footer .footer-top {
-  width: 100dvw;
+.footer .footer-top {
+  max-width: 100dvw;
+  width: 100%;
   background-color: rgba(0, 0, 117, 0.781);
-  padding: 80px 100px 40px;
+  padding-left: 100px;
+  padding-bottom: 40px;
+  padding-top: 80px;
   display: flex;
   gap: 40px;
   box-sizing: border-box;
   margin-top: 200px;
 }
-footer .footer-top .about {
+.footer .footer-top .about {
   max-width: 600px;
   width: 100%;
   display: flex;
@@ -25,16 +31,16 @@ footer .footer-top .about {
   gap: 30px;
   text-align: start;
 }
-footer .footer-top .about h3 {
+.footer .footer-top .about h3 {
   font-size: 20px;
   color: #fff;
 }
-footer .footer-top .about p {
+.footer .footer-top .about p {
   color: oklch(87.2% 0.01 258.338deg);
   font-size: 17px;
   line-height: 1.5;
 }
-footer .footer-top .newsletter {
+.footer .footer-top .newsletter {
   max-width: 200px;
   width: 100%;
   text-align: start;
@@ -43,23 +49,23 @@ footer .footer-top .newsletter {
   gap: 30px;
   box-sizing: border-box;
 }
-footer .footer-top .newsletter h3 {
+.footer .footer-top .newsletter h3 {
   font-size: 20px;
   color: #fff;
 }
-footer .footer-top .newsletter form {
+.footer .footer-top .newsletter form {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: start;
 }
-footer .footer-top .newsletter form input {
+.footer .footer-top .newsletter form input {
   width: 100%;
   border: 1px solid oklch(87.2% 0.01 258.338deg);
   padding: 15px;
   outline: none;
 }
-footer .footer-top .newsletter form button {
+.footer .footer-top .newsletter form button {
   cursor: pointer;
   color: #fff;
   background: rgba(217, 185, 3, 0.733);
@@ -68,52 +74,62 @@ footer .footer-top .newsletter form button {
   border-top-right-radius: 20px;
   transition: transform 0.3s ease;
 }
-footer .footer-top .newsletter form button:hover {
+.footer .footer-top .newsletter form button:hover {
   background: rgba(187, 160, 4, 0.733);
   transform: translateX(8px);
 }
+@media (max-width: 900px) {
+  .footer .footer-top {
+    padding: 60px 40px 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+}
 @media (max-width: 700px) {
-  footer .footer-top {
+  .footer .footer-top {
     padding: 40px 20px;
     flex-direction: column;
   }
-  footer .footer-top .about {
+  .footer .footer-top .about {
     text-align: center;
   }
-  footer .footer-top .about p {
+  .footer .footer-top .about p {
     font-size: 15px;
   }
-  footer .footer-top .newsletter {
+  .footer .footer-top .newsletter {
     max-width: none;
     text-align: center;
     align-items: center;
   }
-  footer .footer-top .newsletter form {
+  .footer .footer-top .newsletter form {
     align-items: center;
   }
 }
-footer .footer-bottom {
-  width: 100dvw;
+.footer .footer-bottom {
+  max-width: 100dvw;
+  width: 100%;
   background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
+  box-sizing: border-box;
 }
-footer .footer-bottom .footer-bottom-content h4 {
+.footer .footer-bottom .footer-bottom-content h4 {
   font-size: 15px;
   color: #fff;
 }
-footer .footer-bottom .footer-links {
+.footer .footer-bottom .footer-links {
   display: flex;
   gap: 20px;
 }
-footer .footer-bottom .footer-links li {
+.footer .footer-bottom .footer-links li {
   position: relative;
   text-decoration: none;
   color: #fff;
 }
-footer .footer-bottom .footer-links li::after {
+.footer .footer-bottom .footer-links li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -125,27 +141,27 @@ footer .footer-bottom .footer-links li::after {
   transform-origin: right;
   transition: transform 0.3s ease;
 }
-footer .footer-bottom .footer-links li:hover::after {
+.footer .footer-bottom .footer-links li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 @media (max-width: 700px) {
-  footer .footer-bottom .footer-links {
+  .footer .footer-bottom .footer-links {
     display: none;
   }
 }
 @media (max-width: 1200px) {
-  footer .footer-bottom {
-    padding: 15px 40px;
+  .footer .footer-bottom {
+    padding: 20px 40px;
   }
 }
 @media (max-width: 700px) {
-  footer .footer-bottom {
+  .footer .footer-bottom {
     justify-content: center;
   }
 }
 @media (max-width: 700px) {
-  footer .footer-bottom-content p {
+  .footer .footer-bottom-content p {
     font-size: 14px;
   }
 }/*# sourceMappingURL=Footer.css.map */
