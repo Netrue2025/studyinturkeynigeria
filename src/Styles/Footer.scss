@@ -1,10 +1,15 @@
 footer {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  position: relative;
+  bottom: 0;
+ 
+ 
+
 
   .footer-top {
     width: 100%;
@@ -13,6 +18,7 @@ footer {
     display: flex;
     gap: 40px;
     box-sizing: border-box;
+     margin-top: 200px;
 
     .about {
       max-width: 600px;

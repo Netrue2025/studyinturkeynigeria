@@ -1,21 +1,31 @@
+.mobile-menu-container{
+    display: none;
+}
+
 .TopNavOne{
     display: flex;
     flex-direction: row;
     max-width: 100dvw;
-    max-height: 5%;
+   
+    height: 112px;
     justify-content: space-between;
     margin: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+    
 
     figure{
         width: 25%;
-        
+        max-height: 100%;
+        position: inherit;
         img{
-            height: 84px;
+            height: 90%;
             width: auto;
             margin: auto;
         }
     }
-
+    .mobile-menu{
+        display: none;
+    }
     .navMenu{
         width: 100%;
         display: flex;
@@ -24,15 +34,32 @@
 
         .info, .contactUsNow, .question{
             width: 32%;
-            color: white;
+            color: rgb(255, 255, 255);
             margin: 0;
+            font-weight: 700 !important;
             cursor: pointer;
             display: flex;
             
-            p{
-                // transform: skew(-30deg);
-                margin: auto 10px;
+            .info-text, .contact-text, .chat-text{
+                text-align: left;
+                margin: auto 15px;
+
+                span{
+                    font-size: 10px;
+                    letter-spacing: 2.5px;
+                    color: rgba(224, 224, 224, 0.671);
+                  
+                    font-family: clash-display-medium;
+                }
+                h3{
+                    // letter-spacing: 2px;
+                    color: rgba(255, 255, 255, 0.877);
+                }
             }
+            .contact-text{
+                transform: skew(-35deg);
+            }
+
             .envelope, .phone, .chat{
                 margin: auto 5px;   
                 margin-left: 10px;
@@ -44,16 +71,28 @@
             }
 
 
+
+
         }
 
         .info:hover{
-        color: rgba(217, 185, 3, 0.733);
-        
-        
-        .envelope{
-            transform: rotate(-15deg);
-            margin-left: 10px;
-        }
+            color: rgba(217, 185, 3, 0.733);
+  
+            .info-text{
+                span{
+                    color: rgba(217, 185, 3, 0.733);
+                }
+                h3{
+                     color: rgba(217, 185, 3, 0.733);
+                }
+               
+            }
+            
+            .envelope{
+                transform: rotate(15deg);
+                margin-left: 10px;
+                transition: transform 0.5s ease-in-out;
+            }
     
 
         }
@@ -62,25 +101,46 @@
             transform: skew(35deg);
             background-color: rgba(150, 128, 8, 0.733);
           
-            p{
-                transform: skew(-35deg);
-            }
+         
         }
         .contactUsNow:hover{
-            color: rgba(0, 0, 117, 0.781);
+            color: rgba(2, 2, 167, 0.562);
+            
+            .contact-text{
+                span{
+                    color: rgba(2, 2, 167, 0.562);
+                }
+                h3{
+                     color: rgba(2, 2, 167, 0.562);
+                }
+               
+            }
+
             .phone{
-                transform: rotate(-15deg);
+                transform: rotate(55deg);
                 margin-left: 10px;
+                transition: transform 0.5s ease-in-out;
             }
            
         }
+
         .question:hover{
             color: rgba(217, 185, 3, 0.733);
             //   transform: skew(-30deg);  
               
+            .chat-text{
+                span{
+                    color: rgba(217, 185, 3, 0.733);
+                }
+                h3{
+                     color: rgba(217, 185, 3, 0.733);
+                }
+               
+            }
             .chat{
-                transform: rotate(-15deg);
+                transform: rotate(15deg);
                 margin-left: 10px;
+                transition: transform 0.5s ease-in-out;
             }
   
             
@@ -91,4 +151,111 @@
     
        
   
+}
+
+// Mobile View
+
+@media screen and (max-width: 991px) {
+    .mobile-menu-container{
+        display: flex;
+        width: 100dvw;
+       height: 60px;
+       background-color: rgba(0, 0, 117, 0.781);
+       justify-content: space-around;
+
+        .email, .phone, .message { 
+            width: 32%;
+           padding: 0;
+            
+            
+        }
+        .email{
+            .envelope{
+                color: rgba(185, 158, 5, 0.664);
+                font-size: 2rem;
+                
+                cursor: pointer;
+                margin: 15px auto;
+            }
+        }
+        .phone{
+            transform: skew(35deg);
+            background-color: rgba(245, 209, 4, 0.521);
+            .phone-icon{
+                transform: skew(-35deg);
+                color: rgba(7, 7, 150, 0.5);
+                font-size: 2rem;
+                
+                cursor: pointer;
+                
+                margin: 15px auto;
+            }
+
+        }
+        .message{
+            .chat{
+                color: rgba(185, 158, 5, 0.664);
+                font-size: 2rem;
+                margin: auto;
+                cursor: pointer;
+                
+               margin: 15px auto;
+            }
+
+        }
+    }
+    
+    .TopNavOne{
+        width: 100dvw;
+
+
+       
+        figure{
+            width: 40%;
+            padding: 10px 0;
+
+            img{
+                height: 4.5rem;
+                margin: auto 10px;
+            }
+        }
+        .mobile-menu{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            min-height: 100%;
+           
+            
+            .menu-icon{
+                font-size: 1.5rem;
+                margin: auto 40px;
+                font-weight: 400;
+                align-self: self-end;
+                color: rgba(1, 8, 73, 0.493);
+            }
+        }
+        .navMenu{
+            display: none;
+
+        }
+    }
+    
+}
+@media screen and (max-width: 512px){
+    .mobile-menu-container{
+        .email, .phone, .message{
+            .envelope{
+                font-size: 1.6rem;
+                margin: 18px auto;
+            }
+            .phone-icon{
+                font-size: 1.6rem;
+                margin: 18px auto;
+            }
+            .chat{
+                font-size: 1.6rem;
+                margin: 18px auto;
+            }
+        }
+    }
 }

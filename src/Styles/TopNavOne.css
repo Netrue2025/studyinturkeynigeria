@@ -1,18 +1,28 @@
+.mobile-menu-container {
+  display: none;
+}
+
 .TopNavOne {
   display: flex;
   flex-direction: row;
   max-width: 100dvw;
-  max-height: 5%;
+  height: 112px;
   justify-content: space-between;
   margin: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.288);
 }
 .TopNavOne figure {
   width: 25%;
+  max-height: 100%;
+  position: inherit;
 }
 .TopNavOne figure img {
-  height: 84px;
+  height: 90%;
   width: auto;
   margin: auto;
+}
+.TopNavOne .mobile-menu {
+  display: none;
 }
 .TopNavOne .navMenu {
   width: 100%;
@@ -21,13 +31,27 @@
 }
 .TopNavOne .navMenu .info, .TopNavOne .navMenu .contactUsNow, .TopNavOne .navMenu .question {
   width: 32%;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 0;
+  font-weight: 700 !important;
   cursor: pointer;
   display: flex;
 }
-.TopNavOne .navMenu .info p, .TopNavOne .navMenu .contactUsNow p, .TopNavOne .navMenu .question p {
-  margin: auto 10px;
+.TopNavOne .navMenu .info .info-text, .TopNavOne .navMenu .info .contact-text, .TopNavOne .navMenu .info .chat-text, .TopNavOne .navMenu .contactUsNow .info-text, .TopNavOne .navMenu .contactUsNow .contact-text, .TopNavOne .navMenu .contactUsNow .chat-text, .TopNavOne .navMenu .question .info-text, .TopNavOne .navMenu .question .contact-text, .TopNavOne .navMenu .question .chat-text {
+  text-align: left;
+  margin: auto 15px;
+}
+.TopNavOne .navMenu .info .info-text span, .TopNavOne .navMenu .info .contact-text span, .TopNavOne .navMenu .info .chat-text span, .TopNavOne .navMenu .contactUsNow .info-text span, .TopNavOne .navMenu .contactUsNow .contact-text span, .TopNavOne .navMenu .contactUsNow .chat-text span, .TopNavOne .navMenu .question .info-text span, .TopNavOne .navMenu .question .contact-text span, .TopNavOne .navMenu .question .chat-text span {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: rgba(224, 224, 224, 0.671);
+  font-family: clash-display-medium;
+}
+.TopNavOne .navMenu .info .info-text h3, .TopNavOne .navMenu .info .contact-text h3, .TopNavOne .navMenu .info .chat-text h3, .TopNavOne .navMenu .contactUsNow .info-text h3, .TopNavOne .navMenu .contactUsNow .contact-text h3, .TopNavOne .navMenu .contactUsNow .chat-text h3, .TopNavOne .navMenu .question .info-text h3, .TopNavOne .navMenu .question .contact-text h3, .TopNavOne .navMenu .question .chat-text h3 {
+  color: rgba(255, 255, 255, 0.877);
+}
+.TopNavOne .navMenu .info .contact-text, .TopNavOne .navMenu .contactUsNow .contact-text, .TopNavOne .navMenu .question .contact-text {
+  transform: skew(-35deg);
 }
 .TopNavOne .navMenu .info .envelope, .TopNavOne .navMenu .info .phone, .TopNavOne .navMenu .info .chat, .TopNavOne .navMenu .contactUsNow .envelope, .TopNavOne .navMenu .contactUsNow .phone, .TopNavOne .navMenu .contactUsNow .chat, .TopNavOne .navMenu .question .envelope, .TopNavOne .navMenu .question .phone, .TopNavOne .navMenu .question .chat {
   margin: auto 5px;
@@ -40,28 +64,125 @@
 .TopNavOne .navMenu .info:hover {
   color: rgba(217, 185, 3, 0.733);
 }
+.TopNavOne .navMenu .info:hover .info-text span {
+  color: rgba(217, 185, 3, 0.733);
+}
+.TopNavOne .navMenu .info:hover .info-text h3 {
+  color: rgba(217, 185, 3, 0.733);
+}
 .TopNavOne .navMenu .info:hover .envelope {
-  transform: rotate(-15deg);
+  transform: rotate(15deg);
   margin-left: 10px;
+  transition: transform 0.5s ease-in-out;
 }
 .TopNavOne .navMenu .contactUsNow {
   transform: skew(35deg);
   background-color: rgba(150, 128, 8, 0.733);
 }
-.TopNavOne .navMenu .contactUsNow p {
-  transform: skew(-35deg);
-}
 .TopNavOne .navMenu .contactUsNow:hover {
-  color: rgba(0, 0, 117, 0.781);
+  color: rgba(2, 2, 167, 0.562);
+}
+.TopNavOne .navMenu .contactUsNow:hover .contact-text span {
+  color: rgba(2, 2, 167, 0.562);
+}
+.TopNavOne .navMenu .contactUsNow:hover .contact-text h3 {
+  color: rgba(2, 2, 167, 0.562);
 }
 .TopNavOne .navMenu .contactUsNow:hover .phone {
-  transform: rotate(-15deg);
+  transform: rotate(55deg);
   margin-left: 10px;
+  transition: transform 0.5s ease-in-out;
 }
 .TopNavOne .navMenu .question:hover {
   color: rgba(217, 185, 3, 0.733);
 }
+.TopNavOne .navMenu .question:hover .chat-text span {
+  color: rgba(217, 185, 3, 0.733);
+}
+.TopNavOne .navMenu .question:hover .chat-text h3 {
+  color: rgba(217, 185, 3, 0.733);
+}
 .TopNavOne .navMenu .question:hover .chat {
-  transform: rotate(-15deg);
+  transform: rotate(15deg);
   margin-left: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  .mobile-menu-container {
+    display: flex;
+    width: 100dvw;
+    height: 60px;
+    background-color: rgba(0, 0, 117, 0.781);
+    justify-content: space-around;
+  }
+  .mobile-menu-container .email, .mobile-menu-container .phone, .mobile-menu-container .message {
+    width: 32%;
+    padding: 0;
+  }
+  .mobile-menu-container .email .envelope {
+    color: rgba(185, 158, 5, 0.664);
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 15px auto;
+  }
+  .mobile-menu-container .phone {
+    transform: skew(35deg);
+    background-color: rgba(245, 209, 4, 0.521);
+  }
+  .mobile-menu-container .phone .phone-icon {
+    transform: skew(-35deg);
+    color: rgba(7, 7, 150, 0.5);
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 15px auto;
+  }
+  .mobile-menu-container .message .chat {
+    color: rgba(185, 158, 5, 0.664);
+    font-size: 2rem;
+    margin: auto;
+    cursor: pointer;
+    margin: 15px auto;
+  }
+  .TopNavOne {
+    width: 100dvw;
+  }
+  .TopNavOne figure {
+    width: 40%;
+    padding: 10px 0;
+  }
+  .TopNavOne figure img {
+    height: 4.5rem;
+    margin: auto 10px;
+  }
+  .TopNavOne .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 100%;
+  }
+  .TopNavOne .mobile-menu .menu-icon {
+    font-size: 1.5rem;
+    margin: auto 40px;
+    font-weight: 400;
+    align-self: self-end;
+    color: rgba(1, 8, 73, 0.493);
+  }
+  .TopNavOne .navMenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 512px) {
+  .mobile-menu-container .email .envelope, .mobile-menu-container .phone .envelope, .mobile-menu-container .message .envelope {
+    font-size: 1.6rem;
+    margin: 18px auto;
+  }
+  .mobile-menu-container .email .phone-icon, .mobile-menu-container .phone .phone-icon, .mobile-menu-container .message .phone-icon {
+    font-size: 1.6rem;
+    margin: 18px auto;
+  }
+  .mobile-menu-container .email .chat, .mobile-menu-container .phone .chat, .mobile-menu-container .message .chat {
+    font-size: 1.6rem;
+    margin: 18px auto;
+  }
 }/*# sourceMappingURL=TopNavOne.css.map */

@@ -93,12 +93,12 @@ h2{
   font-weight: 500;
 }
 h3{
-  font-size: 1.8rem;
-  font-family: clash-display-semibold;
-  font-weight: 500;
+  font-size: 1rem;
+  font-family: clash-display-medium;
+  
 }
 p{
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: montserrat-light;
 }
 
