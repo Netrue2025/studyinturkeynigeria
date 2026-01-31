@@ -23,11 +23,10 @@ footer .footer-top .about {
   text-align: start;
 }
 footer .footer-top .about h3 {
-  font-size: 18px;
+  color: #fff;
 }
 footer .footer-top .about p {
   color: oklch(87.2% 0.01 258.338deg);
-  font-size: 18px;
   line-height: 2;
 }
 footer .footer-top .newsletter {
@@ -40,7 +39,7 @@ footer .footer-top .newsletter {
   box-sizing: border-box;
 }
 footer .footer-top .newsletter h3 {
-  font-size: 22px;
+  color: #fff;
 }
 footer .footer-top .newsletter form {
   display: flex;
@@ -75,7 +74,7 @@ footer .footer-bottom {
   padding: 15px 80px;
 }
 footer .footer-bottom .footer-bottom-content p {
-  font-size: 16px;
+  color: #fff;
 }
 footer .footer-bottom .footer-links {
   display: flex;
