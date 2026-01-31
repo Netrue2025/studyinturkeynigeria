@@ -8,9 +8,7 @@ export function Footer() {
         <div className="about">
           <h3>Welcome to StudyInTurkeyNigeria</h3>
           <p>
-            StudyInTurkeyNigeria was founded by Educatek Ltd. company which has
-            been in the education business since 2007. Educatek is dealing with
-            education consultancy, corporate trainings and student services.
+            StudyInTurkeyNigeria was founded by Educatek Ltd. company which has been in the education business since 2007. Educatek is dealing with education consultancy, corporate trainings and student services. This portal was founded to provide world class service to universities and higher education institutes in marketing and provide service to individual students and parents
           </p>
         </div>
         <div className="newsletter">
@@ -25,7 +23,7 @@ export function Footer() {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <div className="footer-bottom-content">
-          <p>© 2026 StudyInTurkeyNigeria - All rights reserved.</p>
+          <h4>© 2026 StudyInTurkeyNigeria - All rights reserved.</h4>
         </div>
         <ul className="footer-links">
           <li>

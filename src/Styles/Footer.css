@@ -9,9 +9,9 @@ footer {
   bottom: 0;
 }
 footer .footer-top {
-  width: 100%;
+  width: 100dvw;
   background-color: rgba(0, 0, 117, 0.781);
-  padding: 60px;
+  padding: 80px 100px 40px;
   display: flex;
   gap: 40px;
   box-sizing: border-box;
@@ -22,35 +22,39 @@ footer .footer-top .about {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   text-align: start;
 }
 footer .footer-top .about h3 {
+  font-size: 20px;
   color: #fff;
 }
 footer .footer-top .about p {
   color: oklch(87.2% 0.01 258.338deg);
-  line-height: 2;
+  font-size: 17px;
+  line-height: 1.5;
 }
 footer .footer-top .newsletter {
-  max-width: 400px;
+  max-width: 200px;
   width: 100%;
   text-align: start;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   box-sizing: border-box;
 }
 footer .footer-top .newsletter h3 {
+  font-size: 20px;
   color: #fff;
 }
 footer .footer-top .newsletter form {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   align-items: start;
 }
 footer .footer-top .newsletter form input {
+  width: 100%;
   border: 1px solid oklch(87.2% 0.01 258.338deg);
   padding: 15px;
   outline: none;
@@ -68,15 +72,36 @@ footer .footer-top .newsletter form button:hover {
   background: rgba(187, 160, 4, 0.733);
   transform: translateX(8px);
 }
+@media (max-width: 700px) {
+  footer .footer-top {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  footer .footer-top .about {
+    text-align: center;
+  }
+  footer .footer-top .about p {
+    font-size: 15px;
+  }
+  footer .footer-top .newsletter {
+    max-width: none;
+    text-align: center;
+    align-items: center;
+  }
+  footer .footer-top .newsletter form {
+    align-items: center;
+  }
+}
 footer .footer-bottom {
-  max-width: 100%;
+  width: 100dvw;
   background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 80px;
+  padding: 20px 80px;
 }
-footer .footer-bottom .footer-bottom-content p {
+footer .footer-bottom .footer-bottom-content h4 {
+  font-size: 15px;
   color: #fff;
 }
 footer .footer-bottom .footer-links {
@@ -103,4 +128,24 @@ footer .footer-bottom .footer-links li::after {
 footer .footer-bottom .footer-links li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+@media (max-width: 700px) {
+  footer .footer-bottom .footer-links {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  footer .footer-bottom {
+    padding: 15px 40px;
+  }
+}
+@media (max-width: 700px) {
+  footer .footer-bottom {
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  footer .footer-bottom-content p {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Footer.css.map */
