@@ -18,6 +18,11 @@ export function Hero(){
                     <button>
                         <Link to={"/"} className="btn-link">Find Your Dream University <FaArrowRightLong className="arrow-right"/></Link>
                     </button>
+
+                    {/* Mobile Button */}
+                    <button className="mobile-btn">
+                        <Link to={"/"} className="btn-link">Browse Universities</Link>
+                    </button>
                 </div>
             
             </section>
