@@ -1,12 +1,13 @@
 .top-nav-two {
-  width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
-  color: rgba(2, 2, 119, 0.747);
+  color: rgba(1, 1, 114, 0.644);
   height: 80px;
+  justify-content: space-between;
 }
 .top-nav-two .list-menu {
-  width: 60%;
+  width: 712px;
   display: flex;
   flex-direction: row;
   margin: auto 0;
@@ -29,6 +30,8 @@
   margin: auto;
   padding-bottom: 25px;
   margin-top: 25px;
+  font-weight: 500;
+  height: 64.5%;
 }
 .top-nav-two .list-menu ul .universities li::after, .top-nav-two .list-menu ul .programe-finder li::after, .top-nav-two .list-menu ul .contact-us li::after, .top-nav-two .list-menu ul .join-us li::after {
   content: "";
@@ -36,8 +39,8 @@
   left: 0;
   bottom: -3px;
   width: 100%;
-  height: 2px;
-  background: rgba(217, 185, 3, 0.733);
+  height: 2.2px;
+  background: rgba(175, 149, 2, 0.808);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
@@ -46,6 +49,9 @@
   transform: scaleX(1);
   transform-origin: left;
 }
+.top-nav-two .list-menu ul .universities li:hover, .top-nav-two .list-menu ul .programe-finder li:hover, .top-nav-two .list-menu ul .contact-us li:hover, .top-nav-two .list-menu ul .join-us li:hover {
+  color: rgba(175, 149, 2, 0.808);
+}
 .top-nav-two .list-menu ul .contact-us, .top-nav-two .list-menu ul .join-us {
   display: flex;
   gap: 2;
@@ -53,19 +59,20 @@
 .top-nav-two .list-menu ul .home {
   margin: auto 0;
   margin-top: 25px;
-  padding-bottom: 25px;
+  font-weight: 500;
+  padding-bottom: 28px;
   color: rgba(175, 149, 2, 0.733);
-  border-bottom: 2px solid rgba(217, 185, 3, 0.733);
+  border-bottom: 3px solid rgba(217, 185, 3, 0.733);
 }
 .top-nav-two .list-menu search {
   font-size: 1.5rem;
   margin: auto 10px;
 }
 .top-nav-two .other-details {
-  width: auto;
+  width: 30%;
   display: flex;
-  margin: auto;
-  justify-content: space-between;
+  margin: auto 0;
+  justify-content: space-around;
   height: 100%;
 }
 .top-nav-two .other-details span {
@@ -75,7 +82,7 @@
 }
 .top-nav-two .other-details button {
   padding: 0 30px;
-  margin: auto 15px;
+  margin: auto 0;
   height: 70%;
   cursor: pointer;
   display: flex;
@@ -99,4 +106,21 @@
   display: flex;
   width: 30px;
   transform: translateX(10px);
+}
+
+@media screen and (max-width: 1400px) {
+  .top-nav-two {
+    margin: 0 auto;
+  }
+  .top-nav-two .list-menu {
+    margin: auto;
+  }
+  .top-nav-two .other-details span {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top-nav-two {
+    display: none;
+  }
 }/*# sourceMappingURL=TopNavTwo.css.map */

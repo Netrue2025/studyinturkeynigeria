@@ -2,12 +2,16 @@ import { Link } from "react-router-dom"
 import { TopNavOne } from "../Components/TopNavOne"
 import { Footer } from "../Components/Footer"
 import { TopNavTwo } from "../Components/TopNavTwo"
+import { Hero } from "../Components/hero"
+
 export function Home() {
   return (
     <>
       <div className="main-container">
         <TopNavOne />
         <TopNavTwo />
+        <Hero />
+        
         <div className="contents-container">
           <h1>Home</h1>
           <ul>
