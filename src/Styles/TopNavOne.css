@@ -115,6 +115,8 @@
     height: 60px;
     background-color: rgba(0, 0, 117, 0.781);
     justify-content: space-around;
+    box-shadow: 0 2px 2px rgba(173, 173, 173, 0.466), 0 8px 16px rgba(141, 139, 139, 0.2);
+    border-radius: 2px;
   }
   .mobile-menu-container .email, .mobile-menu-container .phone, .mobile-menu-container .message {
     width: 32%;
