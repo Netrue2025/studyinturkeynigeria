@@ -1,136 +1,146 @@
-.top-nav-two{
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    color: rgba(1, 1, 114, 0.644);
-    height: 80px;
+.tntwo{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
    
-    justify-content: space-between;
-    
-    
-    .list-menu{
-        width: 712px;
+
+    .top-nav-two{
+        max-width: 1440px;
+        margin: 0 auto;
         display: flex;
-        flex-direction: row;
-        margin: auto 0;
-        flex-shrink: 1;
-        height: 100%;
-
-        ul{
+        color: rgba(1, 1, 114, 0.644);
+        height: 80px;
+      
+        justify-content: space-between;
+          
+        
+        
+        .list-menu{
+            width: 712px;
             display: flex;
-            width: 80%;
-            height: 100%;
+            flex-direction: row;
             margin: auto 0;
-            justify-content: space-around;
+            flex-shrink: 1;
+            height: 100%;
 
-            .arrow-down{
-                
-                margin-left: 5px;
-                height: auto;
-                
-            }
-           
-            .universities, .programe-finder, .contact-us, .join-us{
-                li{
-                    position: relative;
-                    margin: auto;
-                    padding-bottom: 25px;
-                    margin-top: 25px;
-                    font-weight: 500;
-                    height: 64.5%;
-                }
-                li::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: -3px;
-                    width: 100%;
-                    height: 2.2px;
-                    background: rgba(175, 149, 2, 0.808);
-                    transform: scaleX(0);
-                    transform-origin: right;
-                    transition: transform 0.3s ease;
-                }
-                li:hover::after {
-                    transform: scaleX(1);
-                    transform-origin: left;
+            ul{
+                display: flex;
+                width: 80%;
+                height: 100%;
+                margin: auto 0;
+                justify-content: space-around;
+
+                .arrow-down{
+                    
+                    margin-left: 5px;
+                    height: auto;
                     
                 }
-                li:hover{
-                    color: rgba(175, 149, 2, 0.808);
+            
+                .universities, .programe-finder, .contact-us, .join-us{
+                    li{
+                        position: relative;
+                        margin: auto;
+                        padding-bottom: 25px;
+                        margin-top: 25px;
+                        font-weight: 500;
+                        height: 64.5%;
+                    }
+                    li::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -3px;
+                        width: 100%;
+                        height: 2.2px;
+                        background: rgba(175, 149, 2, 0.808);
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        transition: transform 0.3s ease;
+                    }
+                    li:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                        
+                    }
+                    li:hover{
+                        color: rgba(175, 149, 2, 0.808);
+                    }
+                }
+        
+
+                .contact-us, .join-us{
+                    display: flex;
+                    gap: 2;
+                
+                }
+                .home{
+            
+                    margin: auto 0;
+                    margin-top: 25px;
+                    font-weight: 500;
+                    padding-bottom: 28px;
+                    color: rgba(175, 149, 2, 0.733);
+                    border-bottom: 3px solid rgba(217, 185, 3, 0.733);
+                }
+        
+            }
+        
+        
+            search{
+                font-size: 1.5rem;
+                
+                margin: auto 10px;
+            }
+        }
+
+        .other-details{
+            width: 30%;
+            display: flex;
+            margin: auto 0;
+            justify-content: space-around;
+        
+            height: 100%;
+
+            span{
+                font-size: 16px;
+                font-weight: 500;
+                margin: auto;
+            }
+            button{
+                padding: 0 30px;
+                margin: auto 0;
+                height: 70%;
+                cursor: pointer;
+                display: flex;
+                box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
+                transition: transform 0.3s ease;
+                .btn-arrow{
+                    display: none;
+                    margin: auto;
+                    transform: display 0.3s ease-in-out;
+                    
+                }
+                h3{
+                    font-size: 1.2rem;
+                    margin: auto;
                 }
             }
-    
-
-            .contact-us, .join-us{
-                display: flex;
-                gap: 2;
-               
-            }
-            .home{
-           
-                margin: auto 0;
-                margin-top: 25px;
-                font-weight: 500;
-                padding-bottom: 28px;
-                color: rgba(175, 149, 2, 0.733);
-                border-bottom: 3px solid rgba(217, 185, 3, 0.733);
-            }
-       
-        }
-      
-       
-        search{
-            font-size: 1.5rem;
-            
-            margin: auto 10px;
-        }
-    }
-
-    .other-details{
-        width: 30%;
-        display: flex;
-        margin: auto 0;
-        justify-content: space-around;
-       
-        height: 100%;
-
-        span{
-            font-size: 16px;
-            font-weight: 500;
-            margin: auto;
-        }
-        button{
-            padding: 0 30px;
-            margin: auto 0;
-            height: 70%;
-            cursor: pointer;
-            display: flex;
-            box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
-            transition: transform 0.3s ease;
-            .btn-arrow{
-                display: none;
-                margin: auto;
-                transform: display 0.3s ease-in-out;
+            button:hover{
+                box-shadow: none;
+                transform: translateX(-10px);
                 
-            }
-            h3{
-                font-size: 1.2rem;
-                margin: auto;
-            }
-        }
-        button:hover{
-            box-shadow: none;
-            transform: translateX(-10px);
-            
-            .btn-arrow{
-                display: flex;
-                width: 30px;
-                transform: translateX(10px);
+                .btn-arrow{
+                    display: flex;
+                    width: 30px;
+                    transform: translateX(10px);
+                }
             }
         }
     }
 }
+
 
 // media query
 @media screen and (max-width: 1400px) {

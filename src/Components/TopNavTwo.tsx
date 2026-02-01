@@ -8,7 +8,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export function TopNavTwo(){
     return(
-        <div>
+        <div className="tntwo">
             <section className="top-nav-two">
                 <div className="list-menu">
                     <ul>

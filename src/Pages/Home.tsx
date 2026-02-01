@@ -3,6 +3,8 @@ import { TopNavOne } from "../Components/TopNavOne"
 import { Footer } from "../Components/Footer"
 import { TopNavTwo } from "../Components/TopNavTwo"
 import { Hero } from "../Components/hero"
+import "../Styles/home.css"
+import { HomeSectionOne } from "../Components/HomeSectionOne"
 
 export function Home() {
   return (
@@ -11,6 +13,7 @@ export function Home() {
         <TopNavOne />
         <TopNavTwo />
         <Hero />
+        <HomeSectionOne />
         
         <div className="contents-container">
           <h1>Home</h1>
@@ -23,7 +26,7 @@ export function Home() {
             <Link to="/BecomeAnAgent"><li>Become an Agent</li></Link>
             <Link to="/SetUpMeetingAgent"><li>Setup a Meeting - Agent</li></Link>
             <Link to="/BecomeAPartnerUniversity"><li>Become a Partner University</li></Link>
-            
+            <p>Ttggsdkhfgdaufag dsgfksdygygfva yyghvcadsyvgdgygsdv</p>
           </ul>
         </div>
 

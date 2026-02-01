@@ -1,4 +1,10 @@
-.top-nav-two {
+.tntwo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+.tntwo .top-nav-two {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -6,7 +12,7 @@
   height: 80px;
   justify-content: space-between;
 }
-.top-nav-two .list-menu {
+.tntwo .top-nav-two .list-menu {
   width: 712px;
   display: flex;
   flex-direction: row;
@@ -14,18 +20,18 @@
   flex-shrink: 1;
   height: 100%;
 }
-.top-nav-two .list-menu ul {
+.tntwo .top-nav-two .list-menu ul {
   display: flex;
   width: 80%;
   height: 100%;
   margin: auto 0;
   justify-content: space-around;
 }
-.top-nav-two .list-menu ul .arrow-down {
+.tntwo .top-nav-two .list-menu ul .arrow-down {
   margin-left: 5px;
   height: auto;
 }
-.top-nav-two .list-menu ul .universities li, .top-nav-two .list-menu ul .programe-finder li, .top-nav-two .list-menu ul .contact-us li, .top-nav-two .list-menu ul .join-us li {
+.tntwo .top-nav-two .list-menu ul .universities li, .tntwo .top-nav-two .list-menu ul .programe-finder li, .tntwo .top-nav-two .list-menu ul .contact-us li, .tntwo .top-nav-two .list-menu ul .join-us li {
   position: relative;
   margin: auto;
   padding-bottom: 25px;
@@ -33,7 +39,7 @@
   font-weight: 500;
   height: 64.5%;
 }
-.top-nav-two .list-menu ul .universities li::after, .top-nav-two .list-menu ul .programe-finder li::after, .top-nav-two .list-menu ul .contact-us li::after, .top-nav-two .list-menu ul .join-us li::after {
+.tntwo .top-nav-two .list-menu ul .universities li::after, .tntwo .top-nav-two .list-menu ul .programe-finder li::after, .tntwo .top-nav-two .list-menu ul .contact-us li::after, .tntwo .top-nav-two .list-menu ul .join-us li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -45,18 +51,18 @@
   transform-origin: right;
   transition: transform 0.3s ease;
 }
-.top-nav-two .list-menu ul .universities li:hover::after, .top-nav-two .list-menu ul .programe-finder li:hover::after, .top-nav-two .list-menu ul .contact-us li:hover::after, .top-nav-two .list-menu ul .join-us li:hover::after {
+.tntwo .top-nav-two .list-menu ul .universities li:hover::after, .tntwo .top-nav-two .list-menu ul .programe-finder li:hover::after, .tntwo .top-nav-two .list-menu ul .contact-us li:hover::after, .tntwo .top-nav-two .list-menu ul .join-us li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-.top-nav-two .list-menu ul .universities li:hover, .top-nav-two .list-menu ul .programe-finder li:hover, .top-nav-two .list-menu ul .contact-us li:hover, .top-nav-two .list-menu ul .join-us li:hover {
+.tntwo .top-nav-two .list-menu ul .universities li:hover, .tntwo .top-nav-two .list-menu ul .programe-finder li:hover, .tntwo .top-nav-two .list-menu ul .contact-us li:hover, .tntwo .top-nav-two .list-menu ul .join-us li:hover {
   color: rgba(175, 149, 2, 0.808);
 }
-.top-nav-two .list-menu ul .contact-us, .top-nav-two .list-menu ul .join-us {
+.tntwo .top-nav-two .list-menu ul .contact-us, .tntwo .top-nav-two .list-menu ul .join-us {
   display: flex;
   gap: 2;
 }
-.top-nav-two .list-menu ul .home {
+.tntwo .top-nav-two .list-menu ul .home {
   margin: auto 0;
   margin-top: 25px;
   font-weight: 500;
@@ -64,23 +70,23 @@
   color: rgba(175, 149, 2, 0.733);
   border-bottom: 3px solid rgba(217, 185, 3, 0.733);
 }
-.top-nav-two .list-menu search {
+.tntwo .top-nav-two .list-menu search {
   font-size: 1.5rem;
   margin: auto 10px;
 }
-.top-nav-two .other-details {
+.tntwo .top-nav-two .other-details {
   width: 30%;
   display: flex;
   margin: auto 0;
   justify-content: space-around;
   height: 100%;
 }
-.top-nav-two .other-details span {
+.tntwo .top-nav-two .other-details span {
   font-size: 16px;
   font-weight: 500;
   margin: auto;
 }
-.top-nav-two .other-details button {
+.tntwo .top-nav-two .other-details button {
   padding: 0 30px;
   margin: auto 0;
   height: 70%;
@@ -89,20 +95,20 @@
   box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
   transition: transform 0.3s ease;
 }
-.top-nav-two .other-details button .btn-arrow {
+.tntwo .top-nav-two .other-details button .btn-arrow {
   display: none;
   margin: auto;
   transform: display 0.3s ease-in-out;
 }
-.top-nav-two .other-details button h3 {
+.tntwo .top-nav-two .other-details button h3 {
   font-size: 1.2rem;
   margin: auto;
 }
-.top-nav-two .other-details button:hover {
+.tntwo .top-nav-two .other-details button:hover {
   box-shadow: none;
   transform: translateX(-10px);
 }
-.top-nav-two .other-details button:hover .btn-arrow {
+.tntwo .top-nav-two .other-details button:hover .btn-arrow {
   display: flex;
   width: 30px;
   transform: translateX(10px);
