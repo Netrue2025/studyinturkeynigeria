@@ -1,7 +1,42 @@
 import "../Styles/HomeSectionOne.css"
+import { useEffect } from "react";
 
 
 export function HomeSectionOne(){
+    // Aminamtion for the image background
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+        }
+        },
+        { threshold: 0.2 }
+    );
+
+    const el = document.querySelector(".background-container");
+    if (el) observer.observe(el);
+
+    return () => observer.disconnect();
+    }, []);
+    // Amination for the image itself
+        useEffect(() => {
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("image-in-view");
+                }
+                },
+                { threshold: 0.2 }
+            );
+
+            const el = document.querySelector(".front-image");
+            if (el) observer.observe(el);
+
+            return () => observer.disconnect();
+        }, []);
+
+
     return(
         <div>
             <section className="HomeSectionOne">

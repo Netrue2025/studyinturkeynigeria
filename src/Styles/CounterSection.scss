@@ -1,0 +1,86 @@
+.CounterSection{
+    display: flex;
+    max-width: 1440px;
+    margin: 80px auto;
+    justify-content: space-between;
+    height: 80dvh;
+    // background-color: red;
+
+    .stats-section{
+        position: relative;
+        height: 500px;
+        width: 45%;
+        margin: 2%;
+
+        .stat-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+            span{
+                font-size: 42px;
+                font-weight: 700;
+                color: #1f2c6cec;
+            }
+            p{
+                margin-top: 8px;
+                font-weight: 500;
+                color: #1f2c6cd8;
+                font-family: montserrat-medium;
+            }
+        }
+        .big {
+            width: 330px;
+            height: 330px;
+            // border: 10px solid #3f4b8f;
+            top: 0;
+            left: 0;
+            box-shadow: -8px -5px 0 8px #3f4b8fde;
+             flex-shrink: 2;
+        
+        }
+        .medium {
+            width: 290px;
+            height: 290px;
+            // border: 8px solid #4f6bdc;
+            top: 160px;
+            left: 240px;
+            box-shadow: -8px -5px 0 8px #4f6bdcea;
+            flex-shrink: inherit;
+        }
+        .small {
+            width: 270px;
+            height: 270px;
+            // border: 8px solid #6b4ea2;
+            top: 400px;
+            left: 120px;
+            box-shadow: -8px -5px 0 8px #6b4ea2ee;
+        }
+    }
+
+    .counter-other-contents{
+        width: 45%;
+        margin: 52px 0;
+
+        h1{
+            text-align: left;
+            color: rgba(165, 119, 3, 0.719);
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 44px;
+            font-family:clash-display-semibold ;
+        }
+        p{
+            font-size: 1rem;
+            text-align: left;
+            font-family: montserrat-Medium;
+            color: gray;
+            line-height: 1.8;
+        }
+    }
+}

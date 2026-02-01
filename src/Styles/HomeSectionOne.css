@@ -18,6 +18,7 @@
 .HomeSectionOne .section-one h2, .HomeSectionOne .section-three h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
+  color: rgba(46, 46, 46, 0.952);
 }
 .HomeSectionOne .section-one p, .HomeSectionOne .section-three p {
   font-size: 1rem;
@@ -41,6 +42,13 @@
   border-radius: 25px;
   z-index: -100;
   position: absolute;
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: transform 0.6s ease-in, opacity 0.6s ease-out;
+}
+.HomeSectionOne .section-two .background-container.in-view {
+  transform: translateX(0) skew(-8deg, 10deg);
+  opacity: 1;
 }
 .HomeSectionOne .section-two .front-image {
   background-image: url("/images/university.jpg");
@@ -53,6 +61,13 @@
   z-index: 100;
   border-radius: 25px;
   position: absolute;
+  transform: translateX(60px);
+  opacity: 0;
+  transition: transform 0.6s ease-in, opacity 0.6s ease-out;
+}
+.HomeSectionOne .section-two .front-image.image-in-view {
+  transform: translateX(0) skew(5deg, -5deg);
+  opacity: 1;
 }
 .HomeSectionOne .section-three {
   text-align: right;

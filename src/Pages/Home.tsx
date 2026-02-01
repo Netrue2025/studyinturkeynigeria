@@ -3,6 +3,7 @@ import { TopNavOne } from "../Components/TopNavOne"
 import { Footer } from "../Components/Footer"
 import { TopNavTwo } from "../Components/TopNavTwo"
 import { Hero } from "../Components/hero"
+import { CounterSection } from "../Components/CounterSection"
 import "../Styles/home.css"
 import { HomeSectionOne } from "../Components/HomeSectionOne"
 
@@ -14,6 +15,7 @@ export function Home() {
         <TopNavTwo />
         <Hero />
         <HomeSectionOne />
+        <CounterSection />
         
         <div className="contents-container">
           <h1>Home</h1>

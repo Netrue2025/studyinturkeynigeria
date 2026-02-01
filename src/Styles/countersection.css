@@ -1,0 +1,76 @@
+.CounterSection {
+  display: flex;
+  max-width: 1440px;
+  margin: 80px auto;
+  justify-content: space-between;
+  height: 80dvh;
+}
+.CounterSection .stats-section {
+  position: relative;
+  height: 500px;
+  width: 45%;
+  margin: 2%;
+}
+.CounterSection .stats-section .stat-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.CounterSection .stats-section .stat-circle span {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(31, 44, 108, 0.9254901961);
+}
+.CounterSection .stats-section .stat-circle p {
+  margin-top: 8px;
+  font-weight: 500;
+  color: rgba(31, 44, 108, 0.8470588235);
+  font-family: montserrat-medium;
+}
+.CounterSection .stats-section .big {
+  width: 330px;
+  height: 330px;
+  top: 0;
+  left: 0;
+  box-shadow: -8px -5px 0 8px rgba(63, 75, 143, 0.8705882353);
+  flex-shrink: 2;
+}
+.CounterSection .stats-section .medium {
+  width: 290px;
+  height: 290px;
+  top: 160px;
+  left: 240px;
+  box-shadow: -8px -5px 0 8px rgba(79, 107, 220, 0.9176470588);
+  flex-shrink: inherit;
+}
+.CounterSection .stats-section .small {
+  width: 270px;
+  height: 270px;
+  top: 400px;
+  left: 120px;
+  box-shadow: -8px -5px 0 8px rgba(107, 78, 162, 0.9333333333);
+}
+.CounterSection .counter-other-contents {
+  width: 45%;
+  margin: 52px 0;
+}
+.CounterSection .counter-other-contents h1 {
+  text-align: left;
+  color: rgba(165, 119, 3, 0.719);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 44px;
+  font-family: clash-display-semibold;
+}
+.CounterSection .counter-other-contents p {
+  font-size: 1rem;
+  text-align: left;
+  font-family: montserrat-Medium;
+  color: gray;
+  line-height: 1.8;
+}/*# sourceMappingURL=countersection.css.map */
