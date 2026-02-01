@@ -30,7 +30,7 @@ export function Footer() {
             <a href="#">About Us</a>
           </li>
           <li>
-            <a href="#">Privacy Policy</a>
+            <a href="https://policies.google.com/privacy?hl=en">Privacy Policy</a>
           </li>
           <li>
             <a href="#">Contact</a>
