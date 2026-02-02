@@ -142,6 +142,9 @@
   transform: scaleX(1);
   transform-origin: left;
 }
+.footer .footer-bottom .footer-links li:hover {
+  color: rgba(175, 149, 2, 0.808);
+}
 @media (max-width: 700px) {
   .footer .footer-bottom .footer-links {
     display: none;

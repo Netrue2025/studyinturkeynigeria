@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.container label {
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: rgba(0, 0, 117, 0.781);
+}
+.container label span {
+  color: rgba(175, 149, 2, 0.808);
+}
+.container select {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 117, 0.781);
+  outline: none;
+}/*# sourceMappingURL=nationalities.css.map */

@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    // border: 1px solid red;
+
+    label {
+        font-weight: 700;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: rgba(0, 0, 117, 0.781);
+
+        span {
+            color: rgba(175, 149, 2, 0.808);
+        }
+    }
+
+    select {
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 117, 0.781);
+        outline: none;
+    }
+}

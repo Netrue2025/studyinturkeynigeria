@@ -168,6 +168,10 @@
         transform: scaleX(1);
         transform-origin: left;
       }
+
+      li:hover {
+        color: rgba(175, 149, 2, 0.808);
+      }
     }
 
     @media (max-width: 700px) {

@@ -1,0 +1,186 @@
+.main-container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100dvw;
+  width: 100%;
+}
+.main-container .contents-container {
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-container .contents-container .contact-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .contents-container .contact-heading img {
+  max-width: auto;
+  height: 6.5rem;
+}
+.main-container .contents-container .contact-heading h2 {
+  color: rgba(0, 0, 117, 0.781);
+  font-size: 24px;
+}
+.main-container .contents-container .contact-form {
+  max-width: 90%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-container .contents-container .contact-form .form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .contents-container .contact-form .form-row .form-input {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+}
+.main-container .contents-container .contact-form .form-row .form-input label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 700;
+  color: rgba(0, 0, 117, 0.781);
+}
+.main-container .contents-container .contact-form .form-row .form-input label span {
+  color: rgba(175, 149, 2, 0.808);
+}
+.main-container .contents-container .contact-form .form-row .form-input input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 117, 0.781);
+  width: 100%;
+  padding: 10px;
+  color: #777;
+}
+.main-container .contents-container .contact-form .form-row .phone-number > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.main-container .contents-container .contact-form .programme-selection-container {
+  width: 100%;
+  text-align: start;
+  color: rgba(0, 0, 117, 0.781);
+}
+.main-container .contents-container .contact-form .programme-selection-container h2 {
+  font-size: 15px;
+}
+.main-container .contents-container .contact-form .programme-selection-container h3 {
+  font-size: 15px;
+  font-weight: 300;
+  color: oklch(67.2% 0.01 258.338deg);
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: oklch(98.5% 0.002 247.839deg);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border-left: 5px solid rgba(1, 1, 114, 0.644);
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper {
+  display: flex;
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper .selector {
+  width: 48%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper .selector label {
+  font-size: 15px;
+  font-weight: 700;
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper .selector label .label-span {
+  color: rgba(175, 149, 2, 0.808);
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper .selector .radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper .selector .radio-wrapper .radio-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: oklch(70.8% 0 0deg);
+  font-weight: 400;
+  cursor: pointer;
+}
+.main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper .selector .radio-wrapper .radio-list input {
+  transform: scale(1.4);
+}
+.main-container .contents-container .contact-form .programme-selection-container .university-with-programme-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+.main-container .contents-container .contact-form .programme-selection-container .university-with-programme-wrapper .university-with-programme {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-container .contents-container .contact-form .programme-selection-container .university-with-programme-wrapper .university-with-programme label {
+  font-weight: 700;
+  color: rgba(0, 0, 117, 0.781);
+}
+.main-container .contents-container .contact-form .programme-selection-container .university-with-programme-wrapper .university-with-programme label span {
+  color: rgba(175, 149, 2, 0.808);
+}
+.main-container .contents-container .contact-form .programme-selection-container .university-with-programme-wrapper .university-with-programme input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 117, 0.781);
+  width: 90%;
+  padding: 10px;
+  color: #777;
+}
+.main-container .contents-container .contact-form .programme-selection-container .add-another-choice-btn > button {
+  margin: 20px 0;
+  border: 2px solid #000;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: rgba(0, 0, 117, 0.781);
+  font-weight: 400;
+  cursor: pointer;
+}
+.main-container .contents-container .contact-form .message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 10px;
+  margin-top: 20px;
+}
+.main-container .contents-container .contact-form .message label {
+  color: rgba(0, 0, 117, 0.781);
+  font-weight: 700;
+}
+.main-container .contents-container .contact-form .message textarea {
+  border: 1px solid rgba(0, 0, 117, 0.781);
+  padding: 10px;
+  color: #777;
+  resize: none;
+  outline: none;
+  height: 150px;
+}
+.main-container .contents-container .contact-form .submit-btn {
+  text-align: start;
+}
+.main-container .contents-container .contact-form .submit-btn button {
+  border: none;
+  background-color: rgba(0, 0, 117, 0.781);
+  padding: 10px 20px;
+  color: #fff;
+}/*# sourceMappingURL=contactUs.css.map */
