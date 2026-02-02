@@ -1,0 +1,103 @@
+.video-container{
+    width: 100dvw;
+    max-width: 1400px;
+    padding: 1%;
+    display: flex;
+    height: 365px;
+    margin:0 auto;
+    // background-color: red;
+    position: relative;
+    justify-content: space-between;
+
+    .video-wrapper {
+        width: 40em;
+        
+        height: 100%;
+        max-width: 900px;
+        margin: auto;
+        // aspect-ratio: 16 / 9;
+        border: 1px solid goldenrod;
+        border-radius: 55px;
+
+
+        iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: 55px;
+        }
+    }
+    
+    .video-others-details{
+        width: 45%;
+        margin: auto;
+        height: 60%;
+
+        span{
+          
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background: #ffffff;
+            transition: color 0.3s ease;
+        }
+        span::before{
+            content: "";
+            position: absolute;
+            left: -1;
+            
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            background: #1c4ea3; /* your hover color */
+            transform: translateY(100%);
+            transition: transform 0.5s ease-in-out;
+            z-index: 0;
+        }
+        span:hover::before{
+            transform: translateY(0);
+            height: 90%;
+             background: #1c4da3e0;
+             
+           
+           
+
+        }
+      
+        button{
+            padding: 0 30px;
+            margin: 55px auto;
+            height: 30%;
+            padding: 1% 25%;
+            justify-content: center;
+            cursor: pointer;
+            display: flex;
+            box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
+            transition: transform 0.35s ease;
+            
+            .btn-arrow{
+                display: none;
+                margin: auto;
+                transform: display 0.35s ease-in-out;
+                color: rgba(15, 15, 138, 0.774);
+                
+            }
+            h3{
+                font-size: 1.2rem;
+                margin: auto;
+                color: rgba(15, 15, 138, 0.774);
+                font-weight: 700;
+            }
+        }
+        button:hover{
+            box-shadow: none;
+            transform: translateX(-10px);
+
+            
+            .btn-arrow{
+                display: flex;
+                width: 30px;
+                transform: translateX(10px);
+            }
+        }
+    }
+}

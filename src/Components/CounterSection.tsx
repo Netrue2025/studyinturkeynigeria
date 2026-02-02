@@ -39,6 +39,28 @@ export function CounterSection(){
             if (section) observer.observe(section);
         }, []);
 
+    // Progress Bar
+    useEffect(() => {
+        const section = document.querySelector(".progress-section");
+        const bars = document.querySelectorAll(".fill");
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+            if (entry.isIntersecting) {
+                bars.forEach(bar => {
+                const value = bar.dataset.progress;
+                bar.style.width = `${value}%`;
+                });
+                observer.disconnect(); // run once
+            }
+            },
+            { threshold: 0.4 }
+        );
+
+        if (section) observer.observe(section);
+    }, []);
+
+
 
     return(
         <div className="CounterSection">
@@ -68,6 +90,39 @@ export function CounterSection(){
                     partner universities. In addition, 90% of our students receive scholarships from partnered universities.
                     Our success is measured by your achievements. Join us and let’s make your academic dreams a reality.​
                 </p>
+                {/* Progress bar */}
+                <section className="progress-section">
+                    <div className="progress-item">
+                        <div className="label">
+                            <span>Acceptance Rate</span>
+                            <span className="percent">95%</span>
+                        </div>
+                        <div className="bar">
+                            <div className="fill" data-progress="95"></div>
+                        </div>
+                    </div>
+
+                    <div className="progress-item">
+                        <div className="label">
+                        <span>Scholarship Opportunity</span>
+                        <span className="percent">90%</span>
+                        </div>
+                        <div className="bar">
+                        <div className="fill" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div className="progress-item">
+                        <div className="label">
+                        <span>Student Satisfaction</span>
+                        <span className="percent">97%</span>
+                        </div>
+                        <div className="bar">
+                        <div className="fill" data-progress="97"></div>
+                        </div>
+                    </div>
+                </section>
+
             </section>
 
         </div>

@@ -6,6 +6,7 @@ import { Hero } from "../Components/hero"
 import { CounterSection } from "../Components/CounterSection"
 import "../Styles/home.css"
 import { HomeSectionOne } from "../Components/HomeSectionOne"
+import { VideoSection } from "../Components/VideoSection"
 
 export function Home() {
   return (
@@ -16,6 +17,7 @@ export function Home() {
         <Hero />
         <HomeSectionOne />
         <CounterSection />
+        <VideoSection />
         
         <div className="contents-container">
           <h1>Home</h1>
