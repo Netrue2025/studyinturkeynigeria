@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.last-section-cointainer {
+  max-width: 100dvw;
+  height: 48dvw;
+  bottom: 0;
+  position: relative;
+  background-color: rgba(164, 195, 236, 0.151);
+  display: flex;
+  flex-direction: column;
+}
+.last-section-cointainer .last-section {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  height: auto;
+}
+.last-section-cointainer .last-section .part-one {
+  width: 45%;
+  position: relative;
+  height: 412px;
+  margin: auto;
+}
+.last-section-cointainer .last-section .part-one h1 {
+  font-family: clash-display-semibold;
+  max-width: 312px;
+  text-align: left;
+}
+.last-section-cointainer .last-section .part-one h1 span {
+  font-family: clash-display-medium;
+}
+.last-section-cointainer .last-section .part-one p {
+  text-align: left;
+  max-width: 80%;
+  font-family: montserrat-medium;
+  color: gray;
+  margin: 55px 0;
+}
+.last-section-cointainer .last-section .part-one button {
+  margin: 0;
+  width: 80%;
+  margin-left: -20%;
+  height: 55px;
+  color: goldenrod;
+  font-family: montserrat-extrabold;
+  font-size: 1.5rem;
+  position: relative;
+  border-top: 2px solid rgba(3, 3, 128, 0.459);
+  border-bottom: 2px solid rgba(3, 3, 128, 0.459);
+  transition: transform 0.25s ease-in-out;
+}
+.last-section-cointainer .last-section .part-one button:before,
+.last-section-cointainer .last-section .part-one button:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50%; /* 👈 half length */
+  background: rgba(3, 3, 128, 0.459);
+  top: 25%; /* centers the half border */
+}
+.last-section-cointainer .last-section .part-one button:before {
+  left: 0;
+  top: 50%;
+}
+.last-section-cointainer .last-section .part-one button:after {
+  right: 0;
+  top: 0;
+}
+.last-section-cointainer .last-section .part-one button:hover {
+  color: rgba(3, 3, 128, 0.623);
+}
+.last-section-cointainer .last-section .part-two {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  height: 625px;
+  margin: auto;
+}
+.last-section-cointainer .last-section .part-two .card-one, .last-section-cointainer .last-section .part-two .card-two {
+  height: 100%;
+  width: 48%;
+  background-color: white;
+  border: 3px solid rgba(150, 114, 25, 0.897);
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+.last-section-cointainer .last-section .part-two .card-one figure .user, .last-section-cointainer .last-section .part-two .card-two figure .user {
+  font-size: 14rem;
+  margin: auto;
+  color: rgba(54, 54, 145, 0.897);
+  margin-top: 10%;
+}
+.last-section-cointainer .last-section .part-two .card-one h2, .last-section-cointainer .last-section .part-two .card-two h2 {
+  font-size: 1.5rem;
+  font-family: clash-display-medium;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+.last-section-cointainer .last-section .part-two .card-one p, .last-section-cointainer .last-section .part-two .card-two p {
+  width: 100%;
+  margin-bottom: 25px;
+  font-family: montserrat-medium;
+  color: gray;
+}
+.last-section-cointainer .last-section .part-two .card-one button, .last-section-cointainer .last-section .part-two .card-two button {
+  font-weight: 500;
+  display: flex;
+}
+.last-section-cointainer .last-section .part-two .card-one button .link, .last-section-cointainer .last-section .part-two .card-two button .link {
+  display: flex;
+  margin: auto;
+}
+.last-section-cointainer .last-section .part-two .card-one button .link .arrow-right, .last-section-cointainer .last-section .part-two .card-two button .link .arrow-right {
+  margin: auto;
+  margin-left: 25px;
+}
+.last-section-cointainer .last-section .part-two .card-one button:hover, .last-section-cointainer .last-section .part-two .card-two button:hover {
+  color: rgb(158, 135, 3);
+}
+.last-section-cointainer .last-section .part-two .card-two {
+  border: 3px solid rgba(3, 3, 102, 0.541);
+}/*# sourceMappingURL=HomeLastSection.css.map */

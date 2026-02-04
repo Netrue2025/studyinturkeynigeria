@@ -1,0 +1,141 @@
+.last-section-cointainer{
+    max-width: 100dvw;
+    height: 48dvw;
+    bottom: 0;
+    position: relative;
+    background-color: rgba(164, 195, 236, 0.151);
+    display: flex;
+    flex-direction: column;
+ 
+    .last-section{
+        max-width: 1400px;
+        margin: auto;
+        display: flex;
+        height: auto;
+        
+        .part-one{ 
+            width: 45%;
+            position: relative;
+            height: 412px;
+            margin: auto;
+            // background-color: red;
+            h1{ 
+                font-family: clash-display-semibold;
+                max-width: 312px;
+                text-align: left;
+               
+                span{
+                    font-family: clash-display-medium;
+                }
+            }
+            p{
+                text-align: left;
+                max-width: 80%;
+                font-family:  montserrat-medium;
+                color: gray;
+                margin: 55px 0;
+            }
+            button{
+                margin: 0;
+                width: 80%;
+                // background-color: red;
+                margin-left: -20%;
+                height: 55px;
+                color: goldenrod;
+                font-family:  montserrat-extrabold;
+                font-size: 1.5rem;
+                // border: 2px solid rgb(4, 4, 143);
+                position: relative;
+                border-top: 2px solid rgba(3, 3, 128, 0.459);
+                border-bottom:2px solid rgba(3, 3, 128, 0.459);
+                transition: transform 0.25s ease-in-out;
+
+            }
+            button:before,
+            button:after{
+                
+                content: "";
+                position: absolute;
+                width: 2px;
+                height: 50%;       /* 👈 half length */
+                background: rgba(3, 3, 128, 0.459);
+                top: 25%;          /* centers the half border */
+
+            }
+             button:before{
+                left: 0;
+                top: 50%;
+             }
+             button:after{
+                right: 0;
+                top: 0;
+                
+             }
+   
+             button:hover{
+                color: rgba(3, 3, 128, 0.623);
+             }
+
+        }
+        .part-two{
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            height: 625px;
+            margin: auto;
+            .card-one, .card-two{
+                height: 100%;
+                width: 48%;
+                background-color: white;
+                border: 3px solid rgba(150, 114, 25, 0.897);
+                border-radius: 5%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 50px;
+
+                figure{
+                    .user{
+                        font-size: 14rem;
+                        margin: auto;
+                        color: rgba(54, 54, 145, 0.897);
+                        margin-top: 10%;
+                    }
+                }
+                h2{
+                    font-size: 1.5rem;
+                    font-family: clash-display-medium;
+                    margin-top: 55px;
+                    margin-bottom: 25px;
+                    
+                  
+                }
+                p{
+                    width: 100%;
+                    margin-bottom: 25px;
+                    font-family:  montserrat-medium;
+                    color: gray;
+                }
+                button{
+                    font-weight: 500;
+                    display: flex;
+                    .link{
+                        display: flex;
+                        margin: auto;
+                    .arrow-right{
+                        
+                        margin: auto;
+                        margin-left: 25px;
+                    }
+                    }
+                  
+                }
+                button:hover{
+                    color: rgb(158, 135, 3);
+                }
+            }
+            .card-two{
+                border: 3px solid rgba(3, 3, 102, 0.541);
+            }
+        }
+    }
+}
