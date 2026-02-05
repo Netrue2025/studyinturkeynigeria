@@ -11,13 +11,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0 auto;
 
     .contact-heading {
-      max-width: 100%;
-      width: 100%;
+      // max-width: 100%;
+      width: 90%;
       display: flex;
       justify-content: space-between;
-      margin-left: -50px;
+      margin: 0 auto;
       align-items: center;
       transform-origin: center;
       animation: popPulse 0.5s ease-out forwards;
@@ -41,6 +42,7 @@
       img {
         max-width: auto;
         height: 6.5rem;
+        margin-left: 15px;
       }
 
       h2 {
@@ -51,9 +53,10 @@
 
     // Contact Form
     .contact-form {
-      max-width: 90%;
+      max-width: 80%;
       width: 100%;
       display: flex;
+      margin: 0 auto;
       flex-direction: column;
       gap: 20px;
       // border: 1px solid red;
@@ -121,7 +124,8 @@
           background-color: oklch(98.5% 0.002 247.839);
           padding: 20px;
           border-radius: 8px;
-          margin-top: 10px;
+          // margin-top: 10px;
+          margin: 0;
           border-left: 5px solid rgba(1, 1, 114, 0.644);
           //   border: 1px solid green;
 
@@ -234,6 +238,7 @@
 
       .submit-btn {
         text-align: start;
+        margin: 20px 0;
 
         button {
           border: none;
@@ -249,20 +254,27 @@
 @media (max-width: 900px){
   .contents-container {
     max-width: 100%;
+    width: 100%;
     padding: 0 10px;
-    border: 1px solid red;
 
     .contact-heading {
+      width: 100%;
+      max-width: 100%;
       margin: 0 auto;
-      border: 1px solid green;
+
+      img {
+        max-width: auto;
+        height: 3.5rem;
+      }
+      h2 {
+        font-size: 16px;
+      }
     }
 
     .contact-form {
       max-width: 100%;
       margin: 0 auto;
-      // margin-left: 10px;
       justify-content: center;
-      border: 1px solid red;
     }
   }
 }

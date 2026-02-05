@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { TopNavOne } from "../Components/TopNavOne";
 import { TopNavTwo } from "../Components/TopNavTwo";
 import { Footer } from "../Components/Footer";
@@ -5,6 +6,38 @@ import { Nationalities } from "../Components/nationalities";
 import "../Styles/contactUs.css";
 
 export function ContactUs() {
+  interface ProgrammeChoice {
+    id: number;
+    programLevel: string;
+    language: string;
+    university: string;
+    programName: string;
+  }
+
+  const [programmes, setProgrammes] = useState([
+    { id: 1, programLevel: "", language: "", university: "", programName: "" },
+  ]);
+
+  const addChoice = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (programmes.length < 3) {
+      setProgrammes([
+        ...programmes,
+        {
+          id: Date.now(),
+          programLevel: "",
+          language: "",
+          university: "",
+          programName: "",
+        },
+      ]);
+    }
+  };
+
+  const removeChoice = (id: number) => {
+    setProgrammes(programmes.filter((p) => p.id !== id));
+  };
+
   return (
     <>
       <div className="main-container">
@@ -74,70 +107,85 @@ export function ContactUs() {
               <h3>You can add up to 3 choices you wish to study.</h3>
 
               {/* Programme Level */}
-              <div className="programme-level">
-                <div className="programme-level-wrapper">
-                  <div className="selector programme-level-radio">
-                    <label htmlFor="">
-                      Program Level <span className="label-span">*</span>
-                    </label>
-                    <div className="radio-wrapper">
-                      {[
-                        "TÖMER",
-                        "Associate",
-                        "Bachelor",
-                        "Master",
-                        "PhD/Doctoral",
-                      ].map((level) => (
-                        <label key={level} className="radio-list">
-                          <input type="radio" name="programLevel" required />
-                          <span>{level}</span>
-                        </label>
-                      ))}
+              {programmes.map((choice: ProgrammeChoice, index: number) => (
+                <div className="programme-level" key={choice.id}>
+                  <div className="programme-level-wrapper">
+                    <div className="selector programme-level-radio">
+                      <label htmlFor="">
+                        Program Level <span className="label-span">*</span>
+                      </label>
+                      <div className="radio-wrapper">
+                        {[
+                          "TÖMER",
+                          "Associate",
+                          "Bachelor",
+                          "Master",
+                          "PhD/Doctoral",
+                        ].map((level) => (
+                          <label key={level} className="radio-list">
+                            <input
+                              type="radio"
+                              name={`programLevel-${choice.id}`}
+                              value={level}
+                              required
+                            />
+                            <span>{level}</span>
+                          </label>
+                        ))}
+                      </div>
                     </div>
-                  </div>
 
-                  {/* Language of Instruction */}
-                  <div className="selector select-language">
-                    <label htmlFor="">
-                      Language of Instruction{" "}
-                      <span className="label-span">*</span>
-                    </label>
-                    <div className="radio-wrapper">
-                      {["English", "Turkish"].map((lang) => (
-                        <label key={lang} className="radio-list">
-                          <input type="radio" name="language" required />
-                          <span>{lang}</span>
-                        </label>
-                      ))}
+                    {/* Language of Instruction */}
+                    <div className="selector select-language">
+                      <label htmlFor="">
+                        Language of Instruction{" "}
+                        <span className="label-span">*</span>
+                      </label>
+                      <div className="radio-wrapper">
+                        {["English", "Turkish"].map((lang) => (
+                          <label key={lang} className="radio-list">
+                            <input type="radio" name="language" required />
+                            <span>{lang}</span>
+                          </label>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="university-with-programme-wrapper">
-                  <div className="university-with-programme">
-                    <label htmlFor="">
-                      University Name <span>*</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="E.g. Medipol University"
-                      required
-                    />
+                  <div className="university-with-programme-wrapper">
+                    <div className="university-with-programme">
+                      <label htmlFor="">
+                        University Name <span>*</span>
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="E.g. Medipol University"
+                        required
+                      />
+                    </div>
+                    <div className="university-with-programme">
+                      <label htmlFor="">
+                        Program Name <span>*</span>
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="E.g. Computer Engineering"
+                        required
+                      />
+                    </div>
                   </div>
-                  <div className="university-with-programme">
-                    <label htmlFor="">
-                      Program Name <span>*</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="E.g. Computer Engineering"
-                      required
-                    />
+                  <div className="add-another-choice-btn">
+                    {index === programmes.length - 1 &&
+                      programmes.length < 3 && (
+                        <button onClick={addChoice}>Add another choice</button>
+                      )}
+                    {programmes.length === 3 && (
+                      <button onClick={() => removeChoice(choice.id)}>
+                        Remove choice
+                      </button>
+                    )}
                   </div>
                 </div>
-                <div className="add-another-choice-btn">
-                  <button>Add another choice</button>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="message">
               <label htmlFor="">Anything else you would like to ask/add?</label>

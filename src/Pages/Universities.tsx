@@ -4,11 +4,12 @@ import { TopNavTwo } from "../Components/TopNavTwo";
 import { Footer } from "../Components/Footer";
 import "../Styles/universities.css";
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export function Universities() {
   const [searchTerm, setSearchTerm] = useState("");
   const [showResults, setShowResults] = useState(false);
-  
+
   const privateUniversities = [
     {
       id: 1,
@@ -377,9 +378,27 @@ export function Universities() {
   ];
 
   const allUniversities = [...privateUniversities, ...publicUniversities];
-  const filteredUniversities = allUniversities.filter((uni) =>
-    uni.name.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+  const normalize = (str) =>
+    str
+      .normalize("NFD") // decompose accents
+      .replace(/[\u0300-\u036f]/g, "") // remove accents
+      .toLowerCase()
+      .trim();
+
+  const filteredUniversities = allUniversities
+    .filter((uni) => normalize(uni.name).includes(normalize(searchTerm)))
+    .sort((a, b) => {
+      const term = normalize(searchTerm);
+      const nameA = normalize(a.name);
+      const nameB = normalize(b.name);
+
+      // Highest priority if starts with the search term
+      if (nameA.startsWith(term) && !nameB.startsWith(term)) return -1;
+      if (!nameA.startsWith(term) && nameB.startsWith(term)) return 1;
+
+      // Secondary: alphabetically
+      return nameA.localeCompare(nameB);
+    });
 
   return (
     <>
@@ -398,8 +417,7 @@ export function Universities() {
                   setSearchTerm(e.target.value);
                   setShowResults(true);
                 }}
-                onBlur={() => setTimeout(() => setShowResults(false), 200)}
-                onFocus={() => searchTerm && setShowResults(true)}
+                onFocus={() => setShowResults(true)}
               />
               <FaSearch className="icon" />
             </div>
@@ -408,7 +426,8 @@ export function Universities() {
               <div className="search-results">
                 {filteredUniversities.length > 0 ? (
                   filteredUniversities.map((uni) => (
-                    <div
+                    <Link
+                      to="/"
                       key={uni.id}
                       className="search-result-item"
                       onClick={() => {
@@ -418,7 +437,7 @@ export function Universities() {
                     >
                       <img src={uni.logo} alt={uni.name} />
                       <span>{uni.name}</span>
-                    </div>
+                    </Link>
                   ))
                 ) : (
                   <div className="no-results">No universities found</div>
@@ -428,27 +447,27 @@ export function Universities() {
           </div>
 
           {/* Private Universities */}
-          <h1>Private Universities</h1>
+          <h1>Public Universities</h1>
           <div className="card-container">
             <div className="card-wrapper">
               {privateUniversities.map((uni) => (
-                <div className="card" key={uni.id}>
+                <Link to="/" className="card" key={uni.id}>
                   <img src={uni.logo} alt={uni.name} />
                   <h3>{uni.name}</h3>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
 
           {/* Public Universities */}
-          <h1>Private Universities</h1>
+          <h1>Public Universities</h1>
           <div className="card-container">
             <div className="card-wrapper">
               {publicUniversities.map((uni) => (
-                <div className="card" key={uni.id}>
+                <Link to="/" className="card" key={uni.id}>
                   <img src={uni.logo} alt={uni.name} />
                   <h3>{uni.name}</h3>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
