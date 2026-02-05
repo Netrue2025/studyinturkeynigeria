@@ -1,0 +1,77 @@
+.main-container {
+  max-width: 100dvw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-container .contents-container {
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 20px auto;
+}
+.main-container .contents-container .search-bar {
+  width: 100%;
+  border: 5px solid rgba(175, 149, 2, 0.808);
+  border-radius: 50px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: rgba(175, 149, 2, 0.808);
+}
+.main-container .contents-container .search-bar input {
+  width: 98%;
+  outline: none;
+  padding: 10px 15px;
+}
+.main-container .contents-container h1 {
+  font-size: 35px;
+  background: linear-gradient(to bottom, rgba(0, 0, 117, 0.781) 0%, rgba(0, 0, 117, 0.781) 50%, #333 50%, #333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-container .contents-container .card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-container .contents-container .card-container .card-wrapper {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+}
+.main-container .contents-container .card-container .card-wrapper .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 190px;
+  padding: 10px;
+  border-radius: 7px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.main-container .contents-container .card-container .card-wrapper .card img {
+  width: 185px;
+  height: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-container .contents-container .card-container .card-wrapper .card h3 {
+  font-weight: 900;
+  color: rgba(0, 0, 117, 0.781);
+  font-size: 18px;
+  line-height: 1;
+}
+.main-container .contents-container .card-container .card-wrapper .card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 117, 0.5);
+}/*# sourceMappingURL=universities.css.map */
