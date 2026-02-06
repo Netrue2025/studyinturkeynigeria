@@ -31,7 +31,7 @@
   margin-left: 5px;
   height: auto;
 }
-.tntwo .top-nav-two .list-menu ul .universities li, .tntwo .top-nav-two .list-menu ul .programe-finder li, .tntwo .top-nav-two .list-menu ul .contact-us li, .tntwo .top-nav-two .list-menu ul .join-us li {
+.tntwo .top-nav-two .list-menu ul li {
   position: relative;
   margin: auto;
   padding-bottom: 25px;
@@ -39,7 +39,24 @@
   font-weight: 500;
   height: 64.5%;
 }
-.tntwo .top-nav-two .list-menu ul .universities li::after, .tntwo .top-nav-two .list-menu ul .programe-finder li::after, .tntwo .top-nav-two .list-menu ul .contact-us li::after, .tntwo .top-nav-two .list-menu ul .join-us li::after {
+.tntwo .top-nav-two .list-menu ul li ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  height: auto;
+  background-color: #ffffff;
+  width: 255px;
+  padding-top: 22px;
+  border: 2px solid white;
+}
+.tntwo .top-nav-two .list-menu ul li ul li {
+  cursor: pointer;
+  color: rgba(1, 1, 114, 0.644);
+  border-bottom: 1px solid rgba(202, 202, 202, 0.445);
+  width: 100%;
+}
+.tntwo .top-nav-two .list-menu ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -51,18 +68,18 @@
   transform-origin: right;
   transition: transform 0.3s ease;
 }
-.tntwo .top-nav-two .list-menu ul .universities li:hover::after, .tntwo .top-nav-two .list-menu ul .programe-finder li:hover::after, .tntwo .top-nav-two .list-menu ul .contact-us li:hover::after, .tntwo .top-nav-two .list-menu ul .join-us li:hover::after {
+.tntwo .top-nav-two .list-menu ul li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-.tntwo .top-nav-two .list-menu ul .universities li:hover, .tntwo .top-nav-two .list-menu ul .programe-finder li:hover, .tntwo .top-nav-two .list-menu ul .contact-us li:hover, .tntwo .top-nav-two .list-menu ul .join-us li:hover {
+.tntwo .top-nav-two .list-menu ul li:hover {
   color: rgba(175, 149, 2, 0.808);
 }
-.tntwo .top-nav-two .list-menu ul .contact-us, .tntwo .top-nav-two .list-menu ul .join-us {
+.tntwo .top-nav-two .list-menu .contact-us, .tntwo .top-nav-two .list-menu .join-us {
   display: flex;
   gap: 2;
 }
-.tntwo .top-nav-two .list-menu ul .home {
+.tntwo .top-nav-two .list-menu .home {
   margin: auto 0;
   margin-top: 25px;
   font-weight: 500;

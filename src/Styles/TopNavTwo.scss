@@ -37,7 +37,7 @@
                     
                 }
             
-                .universities, .programe-finder, .contact-us, .join-us{
+        
                     li{
                         position: relative;
                         margin: auto;
@@ -45,6 +45,26 @@
                         margin-top: 25px;
                         font-weight: 500;
                         height: 64.5%;
+
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            z-index: 1000;
+                            height: auto;
+                            background-color: #ffffff;
+                            width: 255px;
+                            padding-top: 22px;
+                            border: 2px solid white;
+                           
+
+                            li{
+                                cursor: pointer;
+                                color: rgba(1, 1, 114, 0.644);
+                                border-bottom: 1px solid rgba(202, 202, 202, 0.445);
+                                width: 100%;
+                            }
+                        }
                     }
                     li::after {
                         content: "";
@@ -75,7 +95,6 @@
                 
                 }
                 .home{
-            
                     margin: auto 0;
                     margin-top: 25px;
                     font-weight: 500;
@@ -84,7 +103,7 @@
                     border-bottom: 3px solid rgba(217, 185, 3, 0.733);
                 }
         
-            }
+            
         
         
             search{
@@ -162,7 +181,6 @@
 @media screen and (max-width: 991px) {
     .tntwo{
         display: none;
-       
     }
     
 }

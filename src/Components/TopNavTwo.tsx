@@ -3,21 +3,54 @@ import { Link } from "react-router-dom";
 import "../Styles/TopNavTwo.css"
 import { FaArrowRight } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { useState } from "react";
 
 
 export function TopNavTwo(){
+     const [open, setOpen] = useState(false);
+     const [joinus, setJoinus] = useState(false);
+
     return(
-        <div className="tntwo">
+        <div className="tntwo"
+
+
+        >
             <section className="top-nav-two">
                 <div className="list-menu">
-                    <ul>
-                        <Link to="/" className="home"><li>Home</li></Link>
-                        <Link to="/Universities" className="universities"><li>Universities</li></Link>
-                        <Link to="/ProgrameFinder" className="programe-finder"><li>Programe Finder</li></Link>
-                        <Link to="/ContactUs" className="contact-us"><li>Contact Us</li><IoIosArrowDown className="arrow-down"/></Link>
-                        <Link to="" className="join-us"><li>Join Us</li><IoIosArrowDown className="arrow-down"/></Link>
-                        
+                    <ul
+                        className="relative inline-block"
+                      
+                    >
+                        <li><Link to="/" className="home">Home</Link></li>
+                        <li><Link to="/Universities" className="universities">Universities</Link></li>
+                        <li><Link to="/ProgrameFinder" className="programe-finder">Programe Finder</Link></li>
+                        <li 
+                            onFocus={() => setOpen(true)}
+                            onBlur={() => setOpen(false)}
+                            onMouseEnter={() => setOpen(true)}
+                            onMouseLeave={() => setOpen(false)}
+                        ><Link to={"#"} className="contact-us">Contact Us<IoIosArrowDown className="arrow-down"/></Link>
+                        {open && (
+                            <ul className="dropdown">
+                                <li><Link to={"/ContactUs"}>Contact Us</Link></li>
+                                <li><Link to={"/SetUpMeetingStudent"}>Setup a Meeting - Students</Link></li>
+                            </ul>
+                        )}
+                        </li>
+                        <li
+                            onFocus={() => setOpen(true)}
+                            onBlur={() => setJoinus(false)}
+                            onMouseEnter={() => setJoinus(true)}
+                            onMouseLeave={() => setJoinus(false)}
+                        ><Link to="" className="join-us">Join Us<IoIosArrowDown className="arrow-down"/></Link>
+                            {joinus && (
+                                <ul className="dropdown">
+                                    <li><Link to={"/BecomeAnAgent"}>Become and Agent</Link></li>
+                                    <li><Link to={"/SetUpAMeetingAgent"}>Setup a Meeting - Agents</Link></li>
+                                    <li><Link to={"/BecomeAPartnerUniversity"}>Become a Partner University</Link></li>
+                                </ul>
+                            )}
+                        </li> 
                     </ul>
                     <search>
                         <GoSearch />
@@ -31,6 +64,8 @@ export function TopNavTwo(){
                     </button>
                 </div>
             </section>
+     
+
         </div>
     )
 }
