@@ -1,4 +1,5 @@
 .main-container {
   display: block;
-  overflow: visible;
+  overflow-x: hidden;
+  max-width: 100dvw;
 }/*# sourceMappingURL=home.css.map */

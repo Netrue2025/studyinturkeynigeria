@@ -71,4 +71,50 @@
 }
 .HomeSectionOne .section-three {
   text-align: right;
+}
+
+@media screen and (max-width: 940px) {
+  .HomeSectionOne {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: auto;
+  }
+  .HomeSectionOne .section-one, .HomeSectionOne .section-two, .HomeSectionOne .section-three {
+    max-width: 90dvw;
+    width: 90vw;
+    justify-content: space-between;
+    margin: auto;
+    gap: 1;
+  }
+  .HomeSectionOne .section-one, .HomeSectionOne .section-three {
+    margin-bottom: 25px;
+  }
+  .HomeSectionOne .section-one article h2, .HomeSectionOne .section-three article h2 {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .HomeSectionOne .section-one article p, .HomeSectionOne .section-three article p {
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  .HomeSectionOne .section-two {
+    justify-self: flex-end;
+    width: 65vw;
+    height: 60dvh;
+    margin: 45px auto;
+    order: 3;
+  }
+  .HomeSectionOne .section-two .background-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .HomeSectionOne {
+    margin: auto;
+  }
+  .HomeSectionOne .section-two {
+    width: 80vw;
+    margin: 20px auto;
+  }
 }/*# sourceMappingURL=HomeSectionOne.css.map */

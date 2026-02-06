@@ -84,6 +84,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 50px;
+  padding-bottom: 22px;
 }
 .last-section-cointainer .last-section .part-two .card-one figure .user, .last-section-cointainer .last-section .part-two .card-two figure .user {
   font-size: 14rem;
@@ -120,4 +121,57 @@
 }
 .last-section-cointainer .last-section .part-two .card-two {
   border: 3px solid rgba(3, 3, 102, 0.541);
+}
+
+@media screen and (max-width: 940px) {
+  .last-section-cointainer {
+    height: auto;
+    padding: 55px;
+    max-width: 100dvw;
+  }
+  .last-section-cointainer .last-section {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .last-section-cointainer .last-section .part-one {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+  .last-section-cointainer .last-section .part-two {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .last-section-cointainer {
+    width: 100vw;
+    padding: 0;
+  }
+  .last-section-cointainer .last-section {
+    width: 90%;
+  }
+  .last-section-cointainer .last-section .part-one {
+    width: 100%;
+  }
+  .last-section-cointainer .last-section .part-one p {
+    min-width: 100%;
+  }
+  .last-section-cointainer .last-section .part-one button {
+    width: 90vw;
+    margin: auto;
+  }
+  .last-section-cointainer .last-section .part-two {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 2;
+  }
+  .last-section-cointainer .last-section .part-two .card-one, .last-section-cointainer .last-section .part-two .card-two {
+    width: 90vw;
+    margin: 22px auto;
+  }
 }/*# sourceMappingURL=HomeLastSection.css.map */

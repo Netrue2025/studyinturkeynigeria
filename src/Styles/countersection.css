@@ -102,4 +102,56 @@
   background: #1c4ea3;
   border-radius: 10px;
   transition: width 1.2s ease-in-out;
-}/*# sourceMappingURL=CounterSection.css.map */
+}
+
+@media screen and (max-width: 940px) {
+  .CounterSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 100dvw;
+    width: 100dvw;
+    height: auto;
+  }
+  .CounterSection .stats-section {
+    width: 90dvw;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20%;
+  }
+  .CounterSection .stats-section .stat-circle big {
+    margin: auto;
+    background-color: red;
+  }
+  .CounterSection .counter-other-contents {
+    width: 90vw;
+    margin: auto;
+    margin-top: 55px;
+  }
+  .CounterSection .counter-other-contents h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .CounterSection .stats-section {
+    max-width: 90dvw;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+  }
+  .CounterSection .stats-section .big {
+    width: 220px;
+    height: 220px;
+  }
+  .CounterSection .stats-section .medium {
+    height: 190px;
+    width: 190px;
+    margin: auto;
+    left: 40%;
+  }
+  .CounterSection .stats-section .small {
+    height: 170px;
+    width: 170px;
+    top: 70%;
+    left: 20%;
+  }
+}/*# sourceMappingURL=countersection.css.map */
