@@ -46,7 +46,7 @@ export function TopNavTwo(){
                             {joinus && (
                                 <ul className="dropdown">
                                     <li><Link to={"/BecomeAnAgent"}>Become and Agent</Link></li>
-                                    <li><Link to={"/SetUpAMeetingAgent"}>Setup a Meeting - Agents</Link></li>
+                                    <li><Link to={"/SetUpMeetingAgent"}>Setup a Meeting - Agents</Link></li>
                                     <li><Link to={"/BecomeAPartnerUniversity"}>Become a Partner University</Link></li>
                                 </ul>
                             )}

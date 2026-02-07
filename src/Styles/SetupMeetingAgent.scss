@@ -1,0 +1,57 @@
+.main-container{
+    .contents-container{
+        max-width: 1400px;
+        margin: 0 auto;
+
+        .header-section{
+            width: auto;
+            margin: auto;
+            padding: 25px 0;
+            
+
+            .part-one{
+                display: flex;
+                width: 100%;
+                margin: auto;
+                // background-color: red;
+              
+
+                figure{
+                    max-width: 40%;
+                    max-height: 90%;
+                    width: auto;
+                    margin: auto 0;
+
+
+                    img{
+                        width: auto;
+                        max-height:285px;
+                        margin: 0;
+                        margin: auto;
+                        // margin-left: 15%;
+                    }
+                }
+                h2{
+                    color: rgba(1, 1, 114, 0.644);
+                    margin: auto;
+                    width: 60%;
+                    text-align: center;
+                    font-size: 2.1rem;
+                }
+            }
+            .part-two{
+                width: 100%;
+                p{
+                    margin: auto;
+                    width: 100%;
+                    color: rgba(1, 1, 114, 0.644);
+                    text-align: center;
+                    font-weight: 500;
+                    font-family: montserrat-medium;
+
+                }
+            }
+
+        }
+    }
+}
