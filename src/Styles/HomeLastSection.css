@@ -75,6 +75,11 @@
   height: 625px;
   margin: auto;
 }
+.last-section-cointainer .last-section .part-two .motion {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .last-section-cointainer .last-section .part-two .card-one, .last-section-cointainer .last-section .part-two .card-two {
   height: 100%;
   width: 48%;
@@ -144,6 +149,9 @@
     margin: auto;
     height: auto;
     margin-bottom: 55px;
+  }
+  .last-section-cointainer .last-section .part-two .motion {
+    display: block;
   }
 }
 @media screen and (max-width: 412px) {

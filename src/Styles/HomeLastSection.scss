@@ -83,6 +83,11 @@
             justify-content: space-between;
             height: 625px;
             margin: auto;
+            .motion{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
             .card-one, .card-two{
                 height: 100%;
                 width: 48%;
@@ -164,6 +169,10 @@
                 height: auto;
                 
                 margin-bottom: 55px;
+
+                .motion{
+                    display: block;
+                }
             }
         }
     }

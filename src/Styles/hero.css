@@ -7,7 +7,7 @@
 .outer-con .hero-container {
   position: relative;
   height: 90vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.377), rgba(150, 150, 150, 0.288)), url("/images/hero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.377), rgba(150, 150, 150, 0.288)), url("/images/hero.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
