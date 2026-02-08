@@ -1,5 +1,6 @@
 import { TopNavOne } from "../Components/TopNavOne";
 import { TopNavTwo } from "../Components/TopNavTwo";
+import { Footer } from "../Components/Footer";
 import "../Styles/BecomeAPartner.css";
 
 export function BecomeAPartnerUniversity() {
@@ -95,6 +96,7 @@ export function BecomeAPartnerUniversity() {
             </div>
           </form>
         </div>
+        <Footer />
       </div>
     </>
   );
