@@ -78,6 +78,7 @@
 .main-container .contents-container h1 {
   font-size: 35px;
   background: linear-gradient(to bottom, rgba(0, 0, 117, 0.781) 0%, rgba(0, 0, 117, 0.781) 50%, #333 50%, #333 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

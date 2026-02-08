@@ -106,7 +106,7 @@
   background-color: oklch(98.5% 0.002 247.839deg);
   padding: 20px;
   border-radius: 8px;
-  margin-top: 10px;
+  margin: 0;
   border-left: 5px solid rgba(1, 1, 114, 0.644);
 }
 .main-container .contents-container .contact-form .programme-selection-container .programme-level .programme-level-wrapper {
