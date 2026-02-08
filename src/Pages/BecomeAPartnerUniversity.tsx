@@ -11,8 +11,8 @@ export function BecomeAPartnerUniversity() {
         <TopNavTwo />
         <div className="contents-container">
           <div className="contact-heading">
-            <img src="/images/logo.jpeg" alt="logo image" />
-            <h2>Contact Us Today!</h2>
+            <img src="/images/logo.png" alt="logo image" />
+            <h2>Become a Partner University!</h2>
           </div>
           <form action="" className="form">
             <div className="form-row">

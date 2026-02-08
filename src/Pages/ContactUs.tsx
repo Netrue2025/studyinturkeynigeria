@@ -45,7 +45,7 @@ export function ContactUs() {
         <TopNavTwo />
         <div className="contents-container">
           <div className="contact-heading">
-            <img src="/images/logo.jpeg" alt="logo image" />
+            <img src="/images/logo.png" alt="logo image" />
             <h2>Contact Us Today!</h2>
           </div>
 
