@@ -137,7 +137,7 @@ export function Nationalities() {
         <option value="new zealander">New Zealander</option>
         <option value="ni-vanuatu">Ni-Vanuatu</option>
         <option value="nicaraguan">Nicaraguan</option>
-        <option value="nigerien">Nigerien</option>
+        <option value="nigerian">Nigerian</option>
         <option value="north korean">North Korean</option>
         <option value="northern irish">Northern Irish</option>
         <option value="norwegian">Norwegian</option>

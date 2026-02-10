@@ -1,1 +1,85 @@
-/*# sourceMappingURL=BecomeAnAgent.css.map */
+.main-container {
+  max-width: 100dvw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container .partner-application-container {
+  max-width: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+  background: url("/public/images/partnershipbg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  padding: 40px 0;
+  position: relative;
+}
+.main-container .partner-application-container .logo {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.main-container .partner-application-container .logo img {
+  height: 120px;
+}
+.main-container .partner-application-container h2 {
+  margin: 0;
+  font-size: 27px;
+  color: rgba(0, 0, 117, 0.781);
+}
+.main-container .partner-application-container form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .partner-application-container form .form-name {
+  width: 100%;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.main-container .partner-application-container form .form-name label {
+  color: rgba(0, 0, 117, 0.781);
+  font-weight: 400;
+}
+.main-container .partner-application-container form .form-name label span {
+  color: red;
+}
+.main-container .partner-application-container form .form-name .form-row-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-container .partner-application-container form .form-name .form-row-items .form-input {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  gap: 5px;
+  color: rgba(0, 0, 117, 0.781);
+}
+.main-container .partner-application-container form .form-name .form-row-items .form-input label {
+  font-weight: 400;
+}
+.main-container .partner-application-container form .form-name .form-row-items .form-input input {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid rgb(128, 148, 201);
+  outline: none;
+}
+.main-container .partner-application-container form .next-btn {
+  margin: 40px auto;
+}
+.main-container .partner-application-container form .next-btn button {
+  color: #fff;
+  background-color: #222;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}/*# sourceMappingURL=BecomeAnAgent.css.map */

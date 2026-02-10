@@ -1,0 +1,22 @@
+.countries-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.countries-container label {
+  font-weight: 400;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: rgba(0, 0, 117, 0.781);
+}
+.countries-container label span {
+  color: red;
+}
+.countries-container select {
+  padding: 10px;
+  border: 1px solid rgb(128, 148, 201);
+  outline: none;
+  background-color: #fff;
+}/*# sourceMappingURL=Country.css.map */
