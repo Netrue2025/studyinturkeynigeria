@@ -31,7 +31,7 @@ export function HomeLastSection(){
                                 Planning to study in Türkiye? Discuss your options by scheduling a meeting with a representative today.
                             </p>
                             <button>
-                                <Link to={"/"} className="link">Setup A Meeting <FaArrowRightLong className="arrow-right"/></Link>
+                                <Link to={"/SetUpMeetingStudent"} className="link">Setup A Meeting <FaArrowRightLong className="arrow-right"/></Link>
                             </button>
                         </div>                    
                         <div className="card-two">
@@ -43,7 +43,7 @@ export function HomeLastSection(){
                                 Partner with confidence. Schedule a meeting to discuss opportunities, collaboration, and support.
                             </p>
                             <button>
-                                <Link to={"/"} className="link">Setup A Meeting <FaArrowRightLong className="arrow-right"/></Link>
+                                <Link to={"/SetupMeetingAgent"} className="link">Setup A Meeting <FaArrowRightLong className="arrow-right"/></Link>
                             </button>
                         </div>
                     </motion.div>

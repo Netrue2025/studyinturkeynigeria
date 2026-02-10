@@ -37,9 +37,14 @@
   src: url('/Montserrat-Medium.ttf');
 }
 @font-face {
+  font-family: montserrat-bold;
+  src: url('/Montserrat-Bold.ttf');
+}
+@font-face {
   font-family: montserrat-extrabold;
   src: url('/Montserrat-ExtraBold.ttf');
 }
+
 @font-face {
   font-family: bricolage-grotesgue-semibold;
   src: url('/BricolageGrotesque-SemiBold.ttf');

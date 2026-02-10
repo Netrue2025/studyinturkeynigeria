@@ -1,0 +1,120 @@
+.programfinder-container {
+  margin-top: 4%;
+  height: auto;
+}
+.programfinder-container .contents-container {
+  max-width: 1200px;
+  height: auto;
+}
+.programfinder-container .contents-container h1 {
+  font-family: montserrat-bold;
+  font-size: 2.6rem;
+  color: rgba(0, 21, 117, 0.719);
+}
+.programfinder-container .contents-container .change-word {
+  color: rgba(182, 131, 4, 0.87);
+  display: inline-block;
+  animation: fade 0.6s ease-in-out;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.programfinder-container .contents-container .programes-container {
+  max-width: 914px;
+  border: 3px solid rgba(9, 31, 131, 0.644);
+  margin: 55px auto;
+  min-height: 960px;
+  border-radius: 3% 0;
+  padding: 55px;
+}
+.programfinder-container .contents-container .programes-container .search-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  height: auto;
+  text-align: start;
+  position: relative;
+  margin-bottom: 2%;
+}
+.programfinder-container .contents-container .programes-container .search-container h3 {
+  font-size: 1.25rem;
+  font-family: montserrat-bold;
+  color: rgba(0, 0, 0, 0.753);
+  margin-bottom: 10px;
+}
+.programfinder-container .contents-container .programes-container .search-container .search-container {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  border: 1px solid rgba(153, 153, 153, 0.356);
+  padding: 0;
+}
+.programfinder-container .contents-container .programes-container .search-container .search-container .icon {
+  margin: auto;
+  font-size: 1.5rem;
+  width: auto;
+}
+.programfinder-container .contents-container .programes-container .search-container .search-container .input-box {
+  width: 85%;
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 0 10px;
+}
+.programfinder-container .contents-container .programes-container .programes {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.programfinder-container .contents-container .programes-container .programes .program-inset {
+  max-width: 345px;
+  display: inline-block;
+  text-align: start;
+  line-height: 1.1;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+.programfinder-container .contents-container .programes-container .programes .program-inset h3 {
+  font-size: 1.2rem;
+  color: rgba(7, 31, 138, 0.685);
+  font-family: montserrat-bold;
+}
+.programfinder-container .contents-container .programes-container .programes .program-inset h4 {
+  color: rgba(182, 132, 4, 0.733);
+  font-weight: 500;
+}
+.programfinder-container .contents-container .programes-container .programes .program-inset h4 span {
+  text-decoration: line-through;
+}
+.programfinder-container .contents-container .programes-container .pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin: 40px auto;
+}
+.programfinder-container .contents-container .programes-container .pagination .page-item {
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.programfinder-container .contents-container .programes-container .pagination .page-item:hover {
+  background: #f2f2f2;
+}
+.programfinder-container .contents-container .programes-container .pagination .active {
+  background: rgba(2, 25, 158, 0.6509803922);
+  color: white;
+  border-color: rgba(9, 31, 131, 0.644);
+}/*# sourceMappingURL=ProgramFinder.css.map */
