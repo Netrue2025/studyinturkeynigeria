@@ -9,47 +9,65 @@ import data from "../data/programes.json";
 
 
 export function ProgrameFinder() {
-  
-  
-  const words = ["Discorver", "Exploy", "Pursue"]
+    // Filtered Data from API
+    const cleanData = data.filter(items =>
+    items &&
+    items.id &&
+    !isNaN(items.id) &&
+    String(items.id).trim() !== "");
 
-  const [word, setWord] = useState(words[0]);
+    // Search Function
+    const [searchResults, setSearchResults] = useState([]);
+    const [query, setQuery] = useState("");
 
-  useEffect(() => {
-    let index = 0;
-
-    const interval = setInterval(() => {
-      index = (index + 1) % words.length;
-      setWord(words[index]);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
+    const handleSearch = () => {
+      if (!query.trim()) {
+        setSearchResults([]);
+        return;
+      }
+      const filtered = cleanData.filter(item =>
+        item.program?.toLowerCase().includes(query.toLowerCase())
+      );
+      setSearchResults(filtered);
+    };
+    // switch what to display
+    const dataToDisplay = searchResults.length > 0
+    ? searchResults
+    :cleanData ;
 
   // Pagenation
-
   const ITEMS_PER_PAGE = 10;
   const [currentPage, setCurrentPage] = useState(0);
 
-  const cleanData = data.filter(item =>
-    item &&
-    item.id &&
-    !isNaN(item.id) &&
-    String(item.id).trim() !== "");
-
   // 🔹 Pagination logic
-
   const startIndex = currentPage * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-  const currentItems = cleanData.slice(startIndex, endIndex);
-  const pageCount = Math.ceil(cleanData.length / ITEMS_PER_PAGE);
+  const currentItems = dataToDisplay.slice(startIndex, endIndex); //Final usable data
+  const pageCount = Math.ceil(dataToDisplay.length / ITEMS_PER_PAGE);
 
-  // 🔹 Smooth scroll on page change
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [currentPage]);
 
-  
+
+    // 🔹 Smooth scroll on page change
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [currentPage]);
+
+    // Text Animation
+    const words = ["Discorver", "Exploy", "Pursue"]
+    const [word, setWord] = useState(words[0]);
+
+    useEffect(() => {
+      let index = 0;
+
+      const interval = setInterval(() => {
+        index = (index + 1) % words.length;
+        setWord(words[index]);
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }, []);
+
+
 
 
     return (
@@ -65,19 +83,25 @@ export function ProgrameFinder() {
               <div className="search-container">
                 <h3>Search Programes</h3>
                 <div className="search-container">
-                  <CiSearch className="icon"/>
-                  <input className="input-box" type="search" placeholder="Enter Keywords"/>
+                 
+                  <CiSearch className="icon" onClick={handleSearch}/>
+                  <input className="input-box" type="text" placeholder="Enter Keywords"
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
+                  />
                 </div>
               </div>
               <div className="programes">
+                
 
-                {currentItems.map( result => (
+                {currentItems.map(result => (
                   <div className="program-inset" key={result.id} >
                     <h3>{result.PROGRAMES}</h3>
                     <h4><span>${Math.round(result.CODE * 0.000050)}</span>  ${Math.round(result.CODE * 0.000020)}</h4>
                   </div>
 
                 ))}
+
               </div>
 
               {/* PAGINATION */}
@@ -85,6 +109,7 @@ export function ProgrameFinder() {
                 breakLabel="..."
                 nextLabel="Next ›"
                 previousLabel="‹ Prev"
+                
                 pageCount={pageCount}
                 onPageChange={(e) => setCurrentPage(e.selected)}
                 pageRangeDisplayed={5}
@@ -92,8 +117,11 @@ export function ProgrameFinder() {
                 containerClassName="pagination"
                 pageClassName="page-item"
                 activeClassName="active"
-                nextLinkClassName="page-link"
+                pageLinkClassName="page"
                 previousLinkClassName="page-link"
+                nextLinkClassName="page-link"
+
+
               />
 
 

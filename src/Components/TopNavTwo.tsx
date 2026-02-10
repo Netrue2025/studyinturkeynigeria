@@ -58,10 +58,14 @@ export function TopNavTwo(){
                 </div>
                 <div className="other-details">
                     <span>Mon - Fri 10:00am - 6:00pm</span>
-                    <button>
-                        <h3>Apply Today</h3>
-                        <FaArrowRight className="btn-arrow"/>
-                    </button>
+                    <Link to={"/ProgrameFinder"} className="btn_link">
+                        <button>
+                            
+                            <h3>Apply Today</h3>
+                            <FaArrowRight className="btn-arrow"/>
+        
+                        </button>
+                     </Link>
                 </div>
             </section>
      
