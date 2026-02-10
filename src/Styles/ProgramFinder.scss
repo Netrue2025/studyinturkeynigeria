@@ -50,13 +50,14 @@
                 height: auto;
                 text-align: start;
                 position: relative;
-                margin-bottom:2%;
+                margin-bottom:2.5%;
                 
                 h3{
                     font-size: 1.25rem;
                     font-family: montserrat-bold;
                     color: rgba(0, 0, 0, 0.753);
                     margin-bottom: 10px;
+                  
                 }
                 .search-container{
                     display: flex;
@@ -99,14 +100,15 @@
                     display: inline-block;
                     text-align: start;
                     line-height: 1.1;
-                    margin-bottom: 60px;
+                    margin-bottom: 55px;
                     cursor: pointer;
+                     line-height: 1.2;
 
                     h3{
-                        font-size: 1.2rem;
+                        font-size: 1.15rem;
                         color: rgba(7, 31, 138, 0.685);
                         font-family: montserrat-bold;
-                        
+                        line-height: 1.2;
                        
                     }
                     h4{
@@ -136,6 +138,7 @@
                     cursor: pointer;
                     border-radius: 5px;
                     border: 1px solid #ddd;
+                    
                 }
                 .page-item:hover {
                     background: #f2f2f2;
@@ -145,6 +148,19 @@
                     background: #02199ea6;
                     color: white;
                     border-color: rgba(9, 31, 131, 0.644);
+                }
+               .page-link {
+                    padding: 8px 14px;
+                    border-radius: 6px;
+                    border: 1px solid #ddd;
+                    color: #333;
+                    font-weight: 500;
+                    margin-top: 55px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+                .page-link:hover {
+                    background-color: #f0f0f0;
                 }
             }
 
