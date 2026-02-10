@@ -92,6 +92,8 @@ export function ProgrameFinder() {
                 containerClassName="pagination"
                 pageClassName="page-item"
                 activeClassName="active"
+                nextLinkClassName="page-link"
+                previousLinkClassName="page-link"
               />
 
 

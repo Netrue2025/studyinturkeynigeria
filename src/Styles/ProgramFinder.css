@@ -119,4 +119,17 @@
   background: rgba(2, 25, 158, 0.6509803922);
   color: white;
   border-color: rgba(9, 31, 131, 0.644);
+}
+.programfinder-container .contents-container .programes-container .pagination .page-link {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  color: #333;
+  font-weight: 500;
+  margin-top: 55px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.programfinder-container .contents-container .programes-container .pagination .page-link:hover {
+  background-color: #f0f0f0;
 }/*# sourceMappingURL=ProgramFinder.css.map */
