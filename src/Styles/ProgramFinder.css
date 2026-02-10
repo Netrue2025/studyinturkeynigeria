@@ -41,7 +41,7 @@
   height: auto;
   text-align: start;
   position: relative;
-  margin-bottom: 2%;
+  margin-bottom: 2.5%;
 }
 .programfinder-container .contents-container .programes-container .search-container h3 {
   font-size: 1.25rem;
@@ -82,13 +82,15 @@
   display: inline-block;
   text-align: start;
   line-height: 1.1;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   cursor: pointer;
+  line-height: 1.2;
 }
 .programfinder-container .contents-container .programes-container .programes .program-inset h3 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: rgba(7, 31, 138, 0.685);
   font-family: montserrat-bold;
+  line-height: 1.2;
 }
 .programfinder-container .contents-container .programes-container .programes .program-inset h4 {
   color: rgba(182, 132, 4, 0.733);

@@ -5,10 +5,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import ReactPaginate from "react-paginate";
-import items from "../data/programes.json";
+import data from "../data/programes.json";
 
 
 export function ProgrameFinder() {
+  
+  
   const words = ["Discorver", "Exploy", "Pursue"]
 
   const [word, setWord] = useState(words[0]);
@@ -27,23 +29,27 @@ export function ProgrameFinder() {
   // Pagenation
 
   const ITEMS_PER_PAGE = 10;
- 
-
-
   const [currentPage, setCurrentPage] = useState(0);
 
+  const cleanData = data.filter(item =>
+    item &&
+    item.id &&
+    !isNaN(item.id) &&
+    String(item.id).trim() !== "");
+
   // 🔹 Pagination logic
+
   const startIndex = currentPage * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-  const currentItems = items.slice(startIndex, endIndex);
-  const pageCount = Math.ceil(items.length / ITEMS_PER_PAGE);
+  const currentItems = cleanData.slice(startIndex, endIndex);
+  const pageCount = Math.ceil(cleanData.length / ITEMS_PER_PAGE);
 
   // 🔹 Smooth scroll on page change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
 
-
+  
 
 
     return (
@@ -65,10 +71,10 @@ export function ProgrameFinder() {
               </div>
               <div className="programes">
 
-                {currentItems.map( data => (
-                  <div className="program-inset" key={data.id} >
-                    <h3>{data.PROGRAMES}</h3>
-                    <h4><span>{data.id/100 }</span> {data.id/50 }</h4>
+                {currentItems.map( result => (
+                  <div className="program-inset" key={result.id} >
+                    <h3>{result.PROGRAMES}</h3>
+                    <h4><span>${Math.round(result.CODE * 0.000050)}</span>  ${Math.round(result.CODE * 0.000020)}</h4>
                   </div>
 
                 ))}
