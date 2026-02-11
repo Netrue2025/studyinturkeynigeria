@@ -1,6 +1,6 @@
-import "../Styles/Country.css"
+import "../Styles/Country.css";
 
-export function Countries() {
+export function Countries({ value, onChange }) {
   return (
     <div className="countries-container">
       <label htmlFor="" className="span">
@@ -8,12 +8,13 @@ export function Countries() {
       </label>
       <select
         className="form-select"
-        autoComplete="country"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
         id="country"
         name="country"
         required
       >
-        <option></option>
+        <option value="" disabled></option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Åland Islands</option>
         <option value="AL">Albania</option>
