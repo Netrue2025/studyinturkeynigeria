@@ -126,9 +126,14 @@
                 font-weight: 500;
                 margin: auto;
             }
+            .btn_link{
+                margin: auto 0;
+                height: 100%;
+                margin-top: 2.5%;
+            }
             button{
                 padding: 0 30px;
-                margin: auto 0;
+                // margin: auto 0;
                 height: 70%;
                 cursor: pointer;
                 display: flex;
