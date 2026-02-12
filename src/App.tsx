@@ -9,6 +9,9 @@ import { SetUpMeetingAgent } from "./Pages/SetUpAMeetingAgent"
 import { SetUpMeetingStudent } from "./Pages/SetUpaMeetingStudent"
 import { Universities } from "./Pages/Universities"
 import { Programes } from "./Pages/programes"
+import { University } from "./Pages/University"
+
+import {ScrollToTop} from "./Components/ScrollToTop"
 
 
 function App() {
@@ -17,17 +20,24 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/BecomeAnAgent" element={<BecomeAnAgent />}></Route>
-          <Route path="/BecomeAPartnerUniversity" element={<BecomeAPartnerUniversity />}></Route>
-          <Route path="/ContactUs" element={<ContactUs />}></Route>
-          <Route path="/ProgrameFinder" element={<ProgrameFinder />}></Route>
-          <Route path="/SetUpMeetingAgent" element={<SetUpMeetingAgent />}></Route>
-          <Route path="/SetUpMeetingStudent" element={<SetUpMeetingStudent />}></Route>
-          <Route path="/Universities" element={<Universities />}></Route>
-          <Route path="/Programs/:id/" element={<Programes />}></Route>
-        </Routes>
+        
+          <ScrollToTop /> 
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/BecomeAnAgent" element={<BecomeAnAgent />}></Route>
+            <Route path="/BecomeAPartnerUniversity" element={<BecomeAPartnerUniversity />}></Route>
+            <Route path="/ContactUs" element={<ContactUs />}></Route>
+            <Route path="/ProgrameFinder" element={<ProgrameFinder />}></Route>
+            <Route path="/SetUpMeetingAgent" element={<SetUpMeetingAgent />}></Route>
+            <Route path="/SetUpMeetingStudent" element={<SetUpMeetingStudent />}></Route>
+            <Route path="/Universities" element={<Universities />}></Route>
+            <Route path="/University/:name/" element={<University />}></Route>
+            <Route path="/Programs/:id/" element={<Programes />}></Route>
+            
+
+          </Routes>
+        
+  
       </Router>
     </>
   )

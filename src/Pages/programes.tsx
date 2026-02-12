@@ -7,10 +7,7 @@ import data from "../data/programes.json";
 
 export function Programes(){
         const { id } = useParams();
-
-        console.log(id)
     
-
         // Filtered Data from API
         const cleanData = data.filter(items =>
         items &&
@@ -22,17 +19,6 @@ export function Programes(){
         // const singleProgram = cleanData.find((x) => x.id === result)
         const result = cleanData.find(item => item.id === Number(id));
         console.log(result)
-
-        
-       
-        
-       
-
-
-   
- 
-   
-
 
 
     return(
