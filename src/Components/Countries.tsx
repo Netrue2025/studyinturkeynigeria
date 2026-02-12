@@ -1,6 +1,12 @@
 import "../Styles/Country.css";
 
-export function Countries({ value, onChange }) {
+
+interface CountriesProps {
+  value: string;
+  onChange: (value: string) => void;
+}
+
+export const Countries = ({ value, onChange }: CountriesProps) => {
   return (
     <div className="countries-container">
       <label htmlFor="" className="span">
@@ -14,7 +20,7 @@ export function Countries({ value, onChange }) {
         name="country"
         required
       >
-        <option value="" disabled></option>
+        <option value="SL" >Select</option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Åland Islands</option>
         <option value="AL">Albania</option>

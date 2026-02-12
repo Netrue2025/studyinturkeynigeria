@@ -14,7 +14,7 @@
     align-items: center;
     margin: 0 auto;
     gap: 10px;
-    background: url("/public/images/partnershipbg.webp");
+    background: url("/public/images/agentbg.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -91,14 +91,16 @@
       .form-step {
         box-sizing: border-box;
         width: 100%;
+        // border: 1px solid red;
 
+        // Step 1
         .form-name {
           width: 100%;
           text-align: start;
           margin-bottom: 40px;
 
           label {
-            color: rgba(0, 0, 117, 0.781);
+            color: rgba(0, 0, 117, 2.781);
             font-weight: 400;
 
             span {
@@ -116,7 +118,7 @@
               flex-direction: column;
               width: 49%;
               gap: 5px;
-              color: rgba(0, 0, 117, 0.781);
+              color: rgba(0, 0, 117, 2.781);
 
               label {
                 font-weight: 400;
@@ -132,6 +134,7 @@
           }
         }
 
+        // Step 2
         .form-input-comm-container {
           width: 100%;
           display: flex;
@@ -146,7 +149,7 @@
             gap: 5px;
 
             label {
-              color: rgba(0, 0, 117, 0.781);
+              color: rgba(0, 0, 117, 2.781);
               font-weight: 400;
 
               span {
@@ -158,7 +161,7 @@
               border: 1px solid rgb(128, 148, 201);
               outline: none;
               background-color: #fff;
-              color: #000075;
+              color: rgb(0, 0, 117, 2.781);
             }
 
             input::-webkit-inner-spin-button {
@@ -182,6 +185,7 @@
           }
         }
 
+        // Step 3
         .form-input-op {
           width: 100%;
           position: relative;
@@ -192,7 +196,7 @@
           // border: 1px solid red;
 
           label {
-            color: rgba(0, 0, 117, 0.781);
+            color: rgba(0, 0, 117, 2.781);
             font-weight: 400;
 
             span {
@@ -206,7 +210,7 @@
             align-items: center;
             gap: 5px;
             margin-bottom: 20px;
-            font-weight: 500;
+            font-weight: 400;
             padding: 10px;
             border: 1px solid rgb(128, 148, 201);
             transition:
@@ -217,7 +221,7 @@
 
             label {
               font-weight: 400;
-              color: rgba(0, 0, 117, 0.781);
+              color: rgba(0, 0, 117, 2.781);
 
               span {
                 color: red;
@@ -236,14 +240,140 @@
             // border: 1px solid red;
 
             label {
-              color: rgba(0, 0, 117, 0.781);
+              color: rgba(0, 0, 117, 2.781);
               font-weight: 400;
             }
             input {
               background-color: #fff;
               padding: 10px;
+              border: 1px solid rgb(128, 148, 201);
+              outline: none;
+            }
+            input[type="number"]::-webkit-inner-spin-button {
+              appearance: none;
+              -webkit-appearance: none;
             }
           }
+        }
+        // Step 4
+        .form-input-experience {
+          width: 100%;
+          text-align: start;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          // border: 1px solid red;
+
+          .input-experience {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+              color: rgba(0, 0, 117, 2.781);
+              font-weight: 400;
+            }
+            select {
+              color: rgba(0, 0, 117, 2.781);
+              background-color: #fff;
+              padding: 10px;
+              outline: none;
+              font-weight: 400;
+              border: 1px solid rgb(128, 148, 201);
+              cursor: pointer;
+            }
+            select:hover {
+              background-color: #f8f8f8;
+              box-shadow: 0 2px 4px rgb(128, 148, 201);
+            }
+          }
+
+          .method {
+            width: 100%;
+            color: rgba(0, 0, 117, 2.781);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+              font-weight: 400;
+
+              span {
+                color: red;
+              }
+            }
+
+            select {
+              background-color: #fff;
+              outline: none;
+              padding: 10px;
+              border: 1px solid rgb(128, 148, 201);
+              transition:
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+              cursor: pointer;
+            }
+            select:hover {
+              background-color: #f8f8f8;
+              box-shadow: 0 2px 4px rgb(128, 148, 201);
+            }
+          }
+
+          .year-of-experience {
+            display: flex;
+            flex-direction: column;
+            color: rgba(0, 0, 117, 2.781);
+            gap: 5px;
+            padding: 10px;
+            font-weight: 400;
+
+            label {
+              font-weight: 400;
+
+              span {
+                color: red;
+              }
+            }
+
+            .experience-row-container {
+              width: 100;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+
+              .year-of-experience-row {
+                display: flex;
+                background-color: #fff;
+                align-items: center;
+                gap: 5px;
+                // margin-bottom: 20px;
+                font-weight: 400;
+                padding: 10px;
+                border: 1px solid rgb(128, 148, 201);
+                transition:
+                  box-shadow 0.3s ease,
+                  transform 0.3s ease;
+                cursor: pointer;
+              }
+              .year-of-experience-row:hover {
+                background-color: #f8f8f8;
+                box-shadow: 0 2px 4px rgb(128, 148, 201);
+              }
+            }
+          }
+        }
+
+        #submit-btn {
+          background-color: rgba(0, 0, 117, 2.781);
+          transition: 1s ease;
+        }
+        #submit-btn:hover {
+          background-color: rgba(58, 58, 209, 0.781);
+        }
+
+        #error {
+          font-weight: 500;
+          color: rgb(163, 23, 23);
         }
       }
     }

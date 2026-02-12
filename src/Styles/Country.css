@@ -9,12 +9,13 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  color: rgba(0, 0, 117, 0.781);
+  color: rgb(0, 0, 117);
 }
 .countries-container label span {
   color: red;
 }
 .countries-container select {
+  color: rgb(0, 0, 117);
   padding: 10px;
   border: 1px solid rgb(128, 148, 201);
   outline: none;
