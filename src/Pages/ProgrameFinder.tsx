@@ -1,11 +1,12 @@
 import { TopNavOne } from "../Components/TopNavOne"
 import { TopNavTwo } from "../Components/TopNavTwo"
 import "../Styles/ProgramFinder.css"
-import { useEffect } from "react";
 import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import ReactPaginate from "react-paginate";
 import data from "../data/programes.json";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 
 export function ProgrameFinder() {
@@ -15,6 +16,10 @@ export function ProgrameFinder() {
     items.id &&
     !isNaN(items.id) &&
     String(items.id).trim() !== "");
+
+   
+
+ 
 
     // Search Function
     const [searchResults, setSearchResults] = useState([]);
@@ -66,8 +71,15 @@ export function ProgrameFinder() {
 
       return () => clearInterval(interval);
     }, []);
+  
+    // Transfer data from one page to another
+    const navigate = useNavigate();
 
-
+    const handleClick = () => {
+      navigate(`/programs/${currentItems.id}`, {
+        state: { program: currentItems }
+      });
+    };
 
 
     return (
@@ -92,13 +104,16 @@ export function ProgrameFinder() {
                 </div>
               </div>
               <div className="programes">
-                
+              
 
                 {currentItems.map(result => (
-                  <div className="program-inset" key={result.id} >
-                    <h3>{result.PROGRAMES}</h3>
-                    <h4><span>${Math.round(result.CODE * 0.000050)}</span>  ${Math.round(result.CODE * 0.000020)}</h4>
-                  </div>
+
+                    <div className="program-inset" key={result.id} onClick={handleClick} >
+                      <h3>{result.PROGRAMES}</h3>
+                      <h4><span>${Math.round(result.CODE * 0.000050)}</span>  ${Math.round(result.CODE * 0.000020)}</h4>
+                    </div>
+                 
+    
 
                 ))}
 
