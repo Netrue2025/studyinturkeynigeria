@@ -8,6 +8,7 @@ import { ProgrameFinder } from "./Pages/ProgrameFinder"
 import { SetUpMeetingAgent } from "./Pages/SetUpAMeetingAgent"
 import { SetUpMeetingStudent } from "./Pages/SetUpaMeetingStudent"
 import { Universities } from "./Pages/Universities"
+import { Programes } from "./Pages/programes"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/SetUpMeetingAgent" element={<SetUpMeetingAgent />}></Route>
           <Route path="/SetUpMeetingStudent" element={<SetUpMeetingStudent />}></Route>
           <Route path="/Universities" element={<Universities />}></Route>
+          <Route path="/Programs/:id/" element={<Programes />}></Route>
         </Routes>
       </Router>
     </>
