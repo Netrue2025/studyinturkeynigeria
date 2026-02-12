@@ -1,32 +1,58 @@
+// import { useState } from "react";
 import { Nationalities } from "../Components/nationalities"
-import { useLocation } from "react-router-dom";
-// import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+// import { useState } from "react";
+import data from "../data/programes.json";
+
 
 export function Programes(){
+        const { id } = useParams();
 
-   const { state } = useLocation();
-const program = state?.program;
+        console.log(id)
+    
 
-if (!program) return null;
+        // Filtered Data from API
+        const cleanData = data.filter(items =>
+        items &&
+        items.id &&
+        !isNaN(items.id) &&
+        String(items.id).trim() !== "");
+
+
+        // const singleProgram = cleanData.find((x) => x.id === result)
+        const result = cleanData.find(item => item.id === Number(id));
+        console.log(result)
+
+        
+       
+        
+       
+
+
+   
+ 
+   
+
+
 
     return(
         <div>
             <header>
                 <h1>
-                    {program.PROGRAMES}
+                    {result.PROGRAMES}
                 </h1>
             </header>
             <section>
                 <div>
                     <aside><h3>KEY INFORMATION</h3></aside>
                     <div className="inset">
-                        <div className="language"><h3>Turkish</h3></div>
+                        <div className="language"><h3>English /{result.Language}</h3></div>
                         <div className="year"><h3>1 Year</h3></div>
                         <div className="duration"><h3>Full-Time</h3></div>
                     </div>
                     <h2><span>Program</span>Available</h2>
-                    <div className="tution"><h2>Tution: <span>$350 Per level</span></h2></div>
-                    <div className="discounted"><h2>Discounted Tution: <span>$350 Per level</span></h2></div>
+                    <div className="tution"><h2>Tution: <span>${result.id + result.id * 200}</span></h2></div>
+                    <div className="discounted"><h2>Discounted Tution: <span>${result.id + result.id * 100}</span></h2></div>
                 </div>
                 <div>
                     <h1>Applying is as easy as filling this form...</h1>
@@ -46,7 +72,7 @@ if (!program) return null;
                         <Nationalities />
                         <div>
                             <label htmlFor="program">Programe</label>
-                            <input type="text" />
+                            <input type="text" value={result.PROGRAMES}/>
                         </div>
                         <div>
                             <div className="program-level">

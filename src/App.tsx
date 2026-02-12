@@ -26,7 +26,7 @@ function App() {
           <Route path="/SetUpMeetingAgent" element={<SetUpMeetingAgent />}></Route>
           <Route path="/SetUpMeetingStudent" element={<SetUpMeetingStudent />}></Route>
           <Route path="/Universities" element={<Universities />}></Route>
-          <Route path="/Programs/:id" element={<Programes />}></Route>
+          <Route path="/Programs/:id/" element={<Programes />}></Route>
         </Routes>
       </Router>
     </>

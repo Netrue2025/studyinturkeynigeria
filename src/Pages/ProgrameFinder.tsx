@@ -5,7 +5,7 @@ import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import ReactPaginate from "react-paginate";
 import data from "../data/programes.json";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import { useEffect } from "react";
 
 
@@ -72,14 +72,8 @@ export function ProgrameFinder() {
       return () => clearInterval(interval);
     }, []);
   
-    // Transfer data from one page to another
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-      navigate(`/programs/${currentItems.id}`, {
-        state: { program: currentItems }
-      });
-    };
+    // Dynamic Navigation
+     const navigate = useNavigate();
 
 
     return (
@@ -106,11 +100,11 @@ export function ProgrameFinder() {
               <div className="programes">
               
 
-                {currentItems.map(result => (
+                {currentItems.map((result, index)=> (
 
-                    <div className="program-inset" key={result.id} onClick={handleClick} >
+                    <div className="program-inset" key={index} onClick={()=>navigate(`/Programs/${result.id}`, {replace: true, state:(result)})}>
                       <h3>{result.PROGRAMES}</h3>
-                      <h4><span>${Math.round(result.CODE * 0.000050)}</span>  ${Math.round(result.CODE * 0.000020)}</h4>
+                      <h4><span>$${result.id + result.id * 200}</span>  ${result.id + result.id * 100}</h4>
                     </div>
                  
     
