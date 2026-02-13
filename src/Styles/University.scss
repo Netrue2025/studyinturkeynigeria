@@ -1,0 +1,55 @@
+.one{
+    max-width: 100vw;
+    height: 300px;
+    background-color: rgba(2, 58, 155, 0.704);
+    background-image: linear-gradient(to right, rgba(2, 58, 155, 0.704), rgb(0, 0, 31));
+    display: flex;
+    justify-content: space-around;
+    
+    figure{
+        max-width: 45%;
+        max-height: 100%;
+        margin: auto;
+        // margin-right: 0;
+
+        img{
+            height: 90%;
+            width: auto;
+            margin: auto;
+        }
+    }
+    .text{
+        max-width: 55%;
+        min-width: 35%;
+        margin: auto;
+        margin-left: 0;
+        
+
+        h1{
+            margin: auto;
+            text-align: start;
+            color: rgba(10, 105, 239, 0.838);
+            font-size: 3rem;
+            font-family: montserrat-bold;
+        }
+
+    }
+}
+.others{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    max-width: 1200px;
+    margin: auto;
+
+    .two{
+        margin-top: 2.5%;
+
+        figure{
+            img{
+                border: 2px solid goldenrod;
+                border-radius: 5%;
+            }
+        }
+    }
+}

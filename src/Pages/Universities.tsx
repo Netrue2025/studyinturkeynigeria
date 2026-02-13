@@ -5,11 +5,12 @@ import { Footer } from "../Components/Footer";
 import "../Styles/universities.css";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function Universities() {
   const [searchTerm, setSearchTerm] = useState("");
   const [showResults, setShowResults] = useState(false);
-
+  const navigate = useNavigate()
   const privateUniversities = [
     {
       id: 1,
@@ -451,10 +452,10 @@ export function Universities() {
           <div className="card-container">
             <div className="card-wrapper">
               {privateUniversities.map((uni) => (
-                <Link to="/" className="card" key={uni.id}>
+                <div onClick={() => navigate(`/University/${uni.name}`)} className="card" key={uni.id}>
                   <img src={uni.logo} alt={uni.name} />
                   <h3>{uni.name}</h3>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -464,10 +465,10 @@ export function Universities() {
           <div className="card-container">
             <div className="card-wrapper">
               {publicUniversities.map((uni) => (
-                <Link to="/" className="card" key={uni.id}>
+                <div onClick={() => navigate(`/University/${uni.name}`)} className="card" key={uni.id}>
                   <img src={uni.logo} alt={uni.name} />
                   <h3>{uni.name}</h3>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
