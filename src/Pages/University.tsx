@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 // import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { FaArrowRight } from "react-icons/fa";
 
 
 import "swiper/css";
@@ -458,7 +459,39 @@ export function University() {
                         </SwiperSlide>
                     </Swiper>
                 </section>
-                <section className="three"></section>
+                <section className="three">
+                    <div className="price-container">
+                        <aside><p>UNIVERSITY SUMMAARY</p></aside>
+                        <div className="header">
+                            <div className="universty"><h3>Public University</h3></div>
+                            <div className="h-two"><h3>English-Turkish</h3></div>
+                        </div>
+                        <div className="price-range">
+                            <h2>Price Range</h2>
+                            <h2 id="price">Ask Admin</h2>
+                        </div>
+                        <div className="degree">
+                            <h3>Degrees Offered</h3>
+                        </div>
+                        <span>Bachelor's Degree</span>
+                        <div className="dicipline">
+                            <h3>Acedemic Disipline</h3>
+                        </div>
+
+                        <div className="other-details">
+                           <p>Architecture and Construction - Arts, Design, and Media - Business, Economics, and Finance - Computer and Information Technologies - Engineering and Technology - Language and Literature - Medicine and Health Sciences - Politics, Law, and Social Sciences - Sciences and Maths - Tourism, Hospitality, and Food</p> 
+                        </div>
+                    </div>
+                    <div className="uni-details">
+                        <p>
+                            Bolu Abant İzzet Baysal University is a forward-thinking institution rooted in academic excellence and regional heritage. Located in the picturesque surroundings of Bolu, it offers a comprehensive range of academic programs that promote both intellectual exploration and practical development. The university emphasizes innovation, interdisciplinary learning, and a strong research culture. Students are encouraged to think critically, collaborate across fields, and apply their skills in real-world contexts. With a focus on social responsibility and global readiness, Bolu Abant İzzet Baysal University prepares graduates to contribute meaningfully to their professions and communities.
+                        </p>
+                        <button>
+                            <h3>Apply Today</h3>
+                            <FaArrowRight className="btn-arrow"/>
+                        </button>
+                    </div>
+                </section>
                 <section className="four"></section>
                 <section className="five"></section>
             </div>

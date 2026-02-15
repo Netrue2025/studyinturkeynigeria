@@ -38,17 +38,194 @@
 .others{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: auto;
     max-width: 1200px;
     margin: auto;
-
+    
     .two{
         margin-top: 2.5%;
+        
 
         figure{
             img{
                 border: 2px solid goldenrod;
                 border-radius: 5%;
+            }
+        }
+    }
+    .three{
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        margin: 5% auto;
+        
+
+        .price-container{
+
+            border: 2px solid rgba(4, 4, 113, 0.87);
+            box-shadow: 2px 0 10px 2px rgba(126, 126, 126, 0.727);
+            min-width: 50%;
+            min-height: 550px;
+            padding: 2%;
+
+            aside{
+                position: absolute;
+                background-color: rgba(12, 42, 177, 0.874);
+                height: 25px;
+                width: 155px;
+                margin-left: -2%;
+                p{
+                    font-size: 0.7rem;
+                    color: white;
+                    text-align: center;
+                    margin: auto;
+                    margin-top: 3%;
+                    font-family: montserrat-medium;
+                    
+                    
+                }
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5.5%;
+
+                .universty, .h-two{
+                    height: 55px;
+                    width: auto;
+                    padding: 22px 10px;
+                    justify-content: center;
+                    border: 1px solid goldenrod;
+                    h3{
+                        margin-top: -5.5%;
+                        font-size: 1.8rem;
+                        font-family: clash-display-semibold;
+                        background: -webkit-linear-gradient(rgb(255, 217, 1), rgba(13, 11, 0, 0.919));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+                    }
+                }
+            }
+            .price-range{
+                box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.875);
+                width: 100%;
+                min-height: 75px;
+                margin-top: 4%;
+                padding: 22px 0;
+
+                h2{
+                    color: rgba(2, 2, 141, 0.651);
+                }
+                #price{
+                    color: rgba(169, 125, 15, 0.732);
+                    cursor: pointer; 
+                    border: 1px solid;
+                    max-width: 50%;
+                    margin: auto;
+                }
+                #price:hover{
+                    background-color: rgba(206, 206, 206, 0.36);
+                }
+                #price:active{
+                    color: rgb(153, 130, 3);
+                }
+            }
+            .degree, .dicipline{
+                width: 100%;
+                margin: 4% auto;
+                height: 55px;
+                border-bottom: 1px solid rgba(128, 128, 128, 0.263);
+
+                h3{
+                    font-size: 1.85rem;
+                    height: 100%;
+                    border-bottom: 2px solid rgba(2, 2, 171, 0.481);
+                    width: 50%;
+                    margin: 0 auto;
+                    color: rgba(169, 125, 15, 0.732);
+                    font-family: clash-display-semibold;
+                }
+            }
+            span{
+                color: rgb(13, 92, 228);
+                font-size: 0.9rem;
+                font-weight: 500;
+                margin-top: 4%;
+                
+
+            }
+            h3{
+                margin-top: 4%;
+            }
+            .dicipline{
+                h3{
+                width: 60%;
+                }
+            }
+            .other-details{
+                margin-top: 4%;
+                width: 100%;
+                text-align: center;
+                p{
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                     color: rgb(3, 73, 194);
+                    font-family: montserrat-medium;
+                }
+            }
+        } 
+        .uni-details{
+            margin: auto;
+            padding: 0 22px;
+            p{
+                text-align: justify;
+                color: rgba(7, 75, 193, 0.852);
+                 font-family: montserrat-medium;
+                 line-height: 1.8;
+            }
+
+        } 
+
+        button{
+            padding: 0 30px;
+            // margin: auto 0;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
+            transition: transform 0.3s ease;
+            width: 100%;
+            margin-top: 4%;
+
+            
+            .btn-arrow{
+                display: none;
+                margin: auto;
+                transform: display 0.3s ease-in-out;
+                
+            }
+            h3{
+                font-size: 1.2rem;
+                margin: auto;
+                color: rgb(3, 73, 194);
+                font-size: 1.6rem;
+                
+            }
+        }
+        button:hover{
+            box-shadow: none;
+            transform: translateX(-10px);
+            
+            .btn-arrow{
+                display: flex;
+                width: 30px;
+                transform: translateX(10px);
+                  color: rgb(3, 73, 194);
+               
+            }
+            h3{
+                margin-right: -35%;
             }
         }
     }

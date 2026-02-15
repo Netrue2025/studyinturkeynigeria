@@ -33,7 +33,7 @@
 .others {
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: auto;
   max-width: 1200px;
   margin: auto;
 }
@@ -43,4 +43,157 @@
 .others .two figure img {
   border: 2px solid goldenrod;
   border-radius: 5%;
+}
+.others .three {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto;
+}
+.others .three .price-container {
+  border: 2px solid rgba(4, 4, 113, 0.87);
+  box-shadow: 2px 0 10px 2px rgba(126, 126, 126, 0.727);
+  min-width: 50%;
+  min-height: 550px;
+  padding: 2%;
+}
+.others .three .price-container aside {
+  position: absolute;
+  background-color: rgba(12, 42, 177, 0.874);
+  height: 25px;
+  width: 155px;
+  margin-left: -2%;
+}
+.others .three .price-container aside p {
+  font-size: 0.7rem;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  font-family: montserrat-medium;
+}
+.others .three .price-container .header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.5%;
+}
+.others .three .price-container .header .universty, .others .three .price-container .header .h-two {
+  height: 55px;
+  width: auto;
+  padding: 22px 10px;
+  justify-content: center;
+  border: 1px solid goldenrod;
+}
+.others .three .price-container .header .universty h3, .others .three .price-container .header .h-two h3 {
+  margin-top: -5.5%;
+  font-size: 1.8rem;
+  font-family: clash-display-semibold;
+  background: -webkit-linear-gradient(rgb(255, 217, 1), rgba(13, 11, 0, 0.919));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.others .three .price-container .price-range {
+  box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.875);
+  width: 100%;
+  min-height: 75px;
+  margin-top: 4%;
+  padding: 22px 0;
+}
+.others .three .price-container .price-range h2 {
+  color: rgba(2, 2, 141, 0.651);
+}
+.others .three .price-container .price-range #price {
+  color: rgba(169, 125, 15, 0.732);
+  cursor: pointer;
+  border: 1px solid;
+  max-width: 50%;
+  margin: auto;
+}
+.others .three .price-container .price-range #price:hover {
+  background-color: rgba(206, 206, 206, 0.36);
+}
+.others .three .price-container .price-range #price:active {
+  color: rgb(153, 130, 3);
+}
+.others .three .price-container .degree, .others .three .price-container .dicipline {
+  width: 100%;
+  margin: 4% auto;
+  height: 55px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.263);
+}
+.others .three .price-container .degree h3, .others .three .price-container .dicipline h3 {
+  font-size: 1.85rem;
+  height: 100%;
+  border-bottom: 2px solid rgba(2, 2, 171, 0.481);
+  width: 50%;
+  margin: 0 auto;
+  color: rgba(169, 125, 15, 0.732);
+  font-family: clash-display-semibold;
+}
+.others .three .price-container span {
+  color: rgb(13, 92, 228);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 4%;
+}
+.others .three .price-container h3 {
+  margin-top: 4%;
+}
+.others .three .price-container .dicipline h3 {
+  width: 60%;
+}
+.others .three .price-container .other-details {
+  margin-top: 4%;
+  width: 100%;
+  text-align: center;
+}
+.others .three .price-container .other-details p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(3, 73, 194);
+  font-family: montserrat-medium;
+}
+.others .three .uni-details {
+  margin: auto;
+  padding: 0 22px;
+}
+.others .three .uni-details p {
+  text-align: justify;
+  color: rgba(7, 75, 193, 0.852);
+  font-family: montserrat-medium;
+  line-height: 1.8;
+}
+.others .three button {
+  padding: 0 30px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  box-shadow: 0px 2px 5px 1px rgba(207, 207, 207, 0.527);
+  transition: transform 0.3s ease;
+  width: 100%;
+  margin-top: 4%;
+}
+.others .three button .btn-arrow {
+  display: none;
+  margin: auto;
+  transform: display 0.3s ease-in-out;
+}
+.others .three button h3 {
+  font-size: 1.2rem;
+  margin: auto;
+  color: rgb(3, 73, 194);
+  font-size: 1.6rem;
+}
+.others .three button:hover {
+  box-shadow: none;
+  transform: translateX(-10px);
+}
+.others .three button:hover .btn-arrow {
+  display: flex;
+  width: 30px;
+  transform: translateX(10px);
+  color: rgb(3, 73, 194);
+}
+.others .three button:hover h3 {
+  margin-right: -35%;
 }/*# sourceMappingURL=University.css.map */
