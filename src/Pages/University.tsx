@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom"
 
 
 import "swiper/css";
@@ -486,10 +487,15 @@ export function University() {
                         <p>
                             Bolu Abant İzzet Baysal University is a forward-thinking institution rooted in academic excellence and regional heritage. Located in the picturesque surroundings of Bolu, it offers a comprehensive range of academic programs that promote both intellectual exploration and practical development. The university emphasizes innovation, interdisciplinary learning, and a strong research culture. Students are encouraged to think critically, collaborate across fields, and apply their skills in real-world contexts. With a focus on social responsibility and global readiness, Bolu Abant İzzet Baysal University prepares graduates to contribute meaningfully to their professions and communities.
                         </p>
-                        <button>
+                        <Link to={"/ProgrameFinder"}>
+                          <button>
+                          
                             <h3>Apply Today</h3>
                             <FaArrowRight className="btn-arrow"/>
-                        </button>
+                          
+                            
+                          </button>
+                        </Link>
                     </div>
                 </section>
                 <section className="four"></section>
