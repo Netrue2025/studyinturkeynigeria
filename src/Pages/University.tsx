@@ -482,7 +482,10 @@ export function University() {
                       </div>
                       <div className="price-range">
                           <h2>Price Range</h2>
-                          <h2 id="price">Ask Admin</h2>
+                          <a href="https://api.whatsapp.com/send?phone=447799049523">
+                            <h2 id="price">Ask Admin</h2>
+                          </a>
+                          
                       </div>
                       <div className="degree">
                           <h3>Degrees Offered</h3>

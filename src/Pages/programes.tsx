@@ -116,6 +116,7 @@ export function Programes() {
               </h2>
             </div>
           </div>
+          
           <div className="right-side">
             <h1>Applying is as easy as filling this form...</h1>
             <form  action="" onSubmit={onSubmit}>
