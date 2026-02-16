@@ -6,7 +6,7 @@ export function Nationalities() {
       <label htmlFor="nationalities">
         Nationalities<span>*</span>
       </label>
-      <select id="nationalities" required>
+      <select id="nationalities" required name="nationality">
         <option value="">-- select one --</option>
         <option value="afghan">Afghan</option>
         <option value="albanian">Albanian</option>

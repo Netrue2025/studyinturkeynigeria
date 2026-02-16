@@ -7,6 +7,9 @@ import "../Styles/programs.css";
 import { TopNavOne } from "../Components/TopNavOne";
 import { TopNavTwo } from "../Components/TopNavTwo";
 import { Footer } from "../Components/Footer";
+// import { useState } from "react";
+import Swal from "sweetalert2";
+
 
 export function Programes() {
   const { id } = useParams();
@@ -22,6 +25,38 @@ export function Programes() {
   // const singleProgram = cleanData.find((x) => x.id === result)
   const result = cleanData.find((item) => item.id === Number(id));
   console.log(result);
+
+  // Form submission
+  // const [success, setSuccess] = useState("");
+   
+
+
+  const onSubmit = async (event) => {
+    const form = event.target; // store reference
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "757e495b-89b1-4f06-8ce3-aab98d590b93");
+
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+       
+    });
+   
+  
+
+    // const data = await response.json();
+    // setSuccess(data.success ? "Success!" : "Error");
+    
+    Swal.fire({
+      title: "Thank you for showing intrest in this programe, our agent will get in touch with you shortly to complete the apllication process.",
+      icon: "success",
+      draggable: true
+    });
+
+    form.reset();
+    
+  };
 
   return (
     <div className="main-container">
@@ -68,7 +103,7 @@ export function Programes() {
           </div>
           <div className="right-side">
             <h1>Applying is as easy as filling this form...</h1>
-            <form action="">
+            <form  action="" onSubmit={onSubmit}>
               <div className="form-row">
                 <div className="form-row-item">
                   <label htmlFor="name">
@@ -79,6 +114,7 @@ export function Programes() {
                     name="firstname"
                     id="firstname"
                     placeholder="First Name"
+                    required
                   />
                 </div>
                 <div className="form-row-item">
@@ -90,6 +126,7 @@ export function Programes() {
                     name="lastname"
                     id="lastname"
                     placeholder="Last Name"
+                    required
                   />
                 </div>
               </div>
@@ -103,6 +140,7 @@ export function Programes() {
                     name="email"
                     id="email"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div className="form-row-item">
@@ -110,10 +148,11 @@ export function Programes() {
                     Phone Number <span>*</span>
                   </label>
                   <input
-                    type="text"
+                    type="phone"
                     name="phone"
                     id="phone"
                     placeholder="+XX"
+                    required
                   />
                 </div>
               </div>
@@ -122,7 +161,7 @@ export function Programes() {
                 <label htmlFor="program">
                   Programe <span>*</span>
                 </label>
-                <input type="text" value={result.PROGRAMES} />
+                <input type="text" value={result.PROGRAMES} name="course"/>
               </div>
               <div className="program-level-container">
                 <div className="program-level">
@@ -150,6 +189,9 @@ export function Programes() {
               <div className="btn">
                 <button type="submit">Submit</button>
               </div>
+              {/* <p>{success}</p> */}
+             
+
             </form>
           </div>
         </section>

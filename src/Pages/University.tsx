@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom"
+import { Footer } from "../Components/Footer"
 
 
 import "swiper/css";
@@ -24,26 +25,36 @@ export function University() {
       id: 1,
       name: "Acibadem University",
       logo: "/images/acibadem-university",
+      description: "Nestled in the dynamic cityscape of Istanbul, Acıbadem University (ACU) stands as a beacon of excellence and innovation in higher education. Established in 2007, ACU has swiftly earned a reputation as one of Turkey’s leading universities, offering a diverse array of programs designed to equip students with the knowledge and skills needed to excel in today’s fast-paced world. At ACU, students thrive in an engaging and inclusive academic environment, collaborating with accomplished faculty, engaging in pioneering research, and gaining practical experience through real-world applications. The university places a significant emphasis on global engagement, providing numerous opportunities for international exposure through exchange programs and partnerships with esteemed institutions worldwide. Whether your passion lies in health sciences, engineering, social sciences, or the arts, Acıbadem University offers the resources, support, and inspiration you need to achieve your aspirations",
+      category: "Private Univasity",
     },
     {
       id: 2,
       name: "Alanya University",
       logo: "/images/alanya-university",
+      description: "Alanya University is a dynamic institution dedicated to academic excellence and innovative learning. Located in the heart of Alanya, it offers a diverse range of programs designed to equip students with the knowledge and skills needed for success in their chosen fields. With a commitment to fostering intellectual curiosity and practical expertise, Alanya University provides a vibrant academic environment that blends research, technology, and hands-on experience. Its interdisciplinary approach encourages critical thinking and creativity, preparing students to thrive in a competitive global landscape.",
+      category: "Private University",
     },
     {
       id: 3,
       name: "Altinbas University",
       logo: "/images/altinbas-university",
+      description: "Altınbaş University is a prestigious institution in Türkiye, recognized for its commitment to academic excellence and innovation. It offers a wide range of programs across fields such as medicine, engineering, business, law, arts, and technology. With a strong emphasis on research and practical learning, the university provides students with the skills and knowledge needed to thrive in global industries. Through international collaborations, state-of-the-art facilities, and a dynamic learning environment, Altınbaş University fosters critical thinking, hands-on experience, and professional development. Its multidisciplinary approach ensures graduates are well-prepared for the challenges of an evolving world, equipping them with both theoretical expertise and real-world applications.",
+      category: "Private University",
     },
     {
       id: 4,
       name: "Ankara Medipol University",
       logo: "/images/ankara-medipol-university",
+      description: "Ankara Medipol University is a dynamic foundation university in Türkiye, dedicated to cultivating future leaders through a forward-thinking approach to education, research, and innovation. With a strong emphasis on interdisciplinary learning and global engagement, the university offers a wide array of programs tailored to meet the evolving needs of both national and international communities. Its academic philosophy centers on nurturing critical thinking, scientific inquiry, and social responsibility, while its vibrant campus life encourages collaboration, creativity, and personal growth. Supported by experienced faculty and modern facilities, Ankara Medipol University strives to empower students to become contributors to scientific advancement and positive societal change.",
+      category: "Private University",
     },
     {
       id: 5,
       name: "Antalya Bilim University",
       logo: "/images/antalya-bilim-university",
+      description: "Antalya Bilim University is a dynamic higher education institution located in the heart of Türkiye’s Mediterranean region. Known for its commitment to academic excellence, the university offers a wide range of undergraduate and graduate programs taught in both Turkish and English. With modern facilities, a strong emphasis on research and innovation, and an international perspective, Antalya Bilim University fosters a learning environment that combines rigorous scholarship with practical skills. Students benefit from a vibrant campus life and close connections to industry, preparing them for success in both local and global contexts.",
+      category: "Private University",
     },
     {
       id: 6,
@@ -288,6 +299,8 @@ export function University() {
         id: 1,
         name: "Alanya Alaaddin Keykubat University",
         logo: "/images/Alanya-Alaaddin",
+        description: "Alanya Alaaddin Keykubat University is a public university in Türkiye, known for its commitment to academic excellence and research. It offers diverse undergraduate and graduate programs, fostering innovation and interdisciplinary learning. With a strong emphasis on international collaboration, the university provides students with opportunities for academic and professional growth in a dynamic educational environment.",
+        category: "Public University",
         },
         {
         id: 2,
@@ -398,110 +411,111 @@ export function University() {
 
     return(
         <div >
-            <TopNavOne />
-            <TopNavTwo />
+          <TopNavOne />
+          <TopNavTwo />
 
-            <section className="one">
-                <figure>
-                    <img src={filteredResult.logo} alt={filteredResult.name + "logo"} />
-                </figure>
-                <div className="text">
-                    <h1>
-                        {text.split("").map((letter, index) => (
-                            <motion.span
-                            key={index}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                delay: index * 0.05,
-                                ease: "easeIn"
-                            }}
-                            >
-                            {letter}
-                            </motion.span>
-                        ))}
-                    </h1>
-                </div>
-               
+          <section className="one">
+              <figure>
+                  <img src={filteredResult.logo} alt={filteredResult.name + "logo"} />
+              </figure>
+              <div className="text">
+                  <h1>
+                      {text.split("").map((letter, index) => (
+                          <motion.span
+                          key={index}
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                              delay: index * 0.05,
+                              ease: "easeIn"
+                          }}
+                          >
+                          {letter}
+                          </motion.span>
+                      ))}
+                  </h1>
+              </div>
+              
 
-            </section>
-            <div className="others">
-                <section className="two">
-                     <Swiper
-                        modules={[Navigation, Pagination]}
-                        slidesPerView={3}   // 👈 3 images per page
-                        spaceBetween={5}
-                        navigation
-                        pagination={{ clickable: true }}
-                        loop={true}
-                        >
-                        <SwiperSlide className="swiperslider">
-                            <figure>
-                                <img src="/images/unione.webp" alt="" />
-                            </figure>
-                        </SwiperSlide>
-        
-                        <SwiperSlide className="swiperslider">
-                            <figure>
-                                <img src="/images/unitwo.webp" alt="" />
-                            </figure>
-                        </SwiperSlide>
-        
-                        <SwiperSlide>
-                            <figure>
-                               <img src="/images/unione.webp" alt="" />
-                            </figure>
-                        </SwiperSlide>
-        
-                        <SwiperSlide>
-                            <figure>
+          </section>
+          <div className="others">
+              <section className="two">
+                    <Swiper
+                      modules={[Navigation, Pagination]}
+                      slidesPerView={3}   // 👈 3 images per page
+                      spaceBetween={5}
+                      navigation
+                      pagination={{ clickable: true }}
+                      loop={true}
+                      >
+                      <SwiperSlide className="swiperslider">
+                          <figure>
+                              <img src="/images/unione.webp" alt="" />
+                          </figure>
+                      </SwiperSlide>
+      
+                      <SwiperSlide className="swiperslider">
+                          <figure>
                               <img src="/images/unitwo.webp" alt="" />
-                            </figure>
-                        </SwiperSlide>
-                    </Swiper>
-                </section>
-                <section className="three">
-                    <div className="price-container">
-                        <aside><p>UNIVERSITY SUMMAARY</p></aside>
-                        <div className="header">
-                            <div className="universty"><h3>Public University</h3></div>
-                            <div className="h-two"><h3>English-Turkish</h3></div>
-                        </div>
-                        <div className="price-range">
-                            <h2>Price Range</h2>
-                            <h2 id="price">Ask Admin</h2>
-                        </div>
-                        <div className="degree">
-                            <h3>Degrees Offered</h3>
-                        </div>
-                        <span>Bachelor's Degree</span>
-                        <div className="dicipline">
-                            <h3>Acedemic Disipline</h3>
-                        </div>
+                          </figure>
+                      </SwiperSlide>
+      
+                      <SwiperSlide>
+                          <figure>
+                              <img src="/images/unione.webp" alt="" />
+                          </figure>
+                      </SwiperSlide>
+      
+                      <SwiperSlide>
+                          <figure>
+                            <img src="/images/unitwo.webp" alt="" />
+                          </figure>
+                      </SwiperSlide>
+                  </Swiper>
+              </section>
+              <section className="three">
+                  <div className="price-container">
+                      <aside><p>UNIVERSITY SUMMAARY</p></aside>
+                      <div className="header">
+                          <div className="universty"><h3>{filteredResult.category}</h3></div>
+                          <div className="h-two"><h3>English-Turkish</h3></div>
+                      </div>
+                      <div className="price-range">
+                          <h2>Price Range</h2>
+                          <h2 id="price">Ask Admin</h2>
+                      </div>
+                      <div className="degree">
+                          <h3>Degrees Offered</h3>
+                      </div>
+                      <span>Bachelor's Degree</span>
+                      <div className="dicipline">
+                          <h3>Acedemic Disipline</h3>
+                      </div>
 
-                        <div className="other-details">
-                           <p>Architecture and Construction - Arts, Design, and Media - Business, Economics, and Finance - Computer and Information Technologies - Engineering and Technology - Language and Literature - Medicine and Health Sciences - Politics, Law, and Social Sciences - Sciences and Maths - Tourism, Hospitality, and Food</p> 
-                        </div>
-                    </div>
-                    <div className="uni-details">
-                        <p>
-                            Bolu Abant İzzet Baysal University is a forward-thinking institution rooted in academic excellence and regional heritage. Located in the picturesque surroundings of Bolu, it offers a comprehensive range of academic programs that promote both intellectual exploration and practical development. The university emphasizes innovation, interdisciplinary learning, and a strong research culture. Students are encouraged to think critically, collaborate across fields, and apply their skills in real-world contexts. With a focus on social responsibility and global readiness, Bolu Abant İzzet Baysal University prepares graduates to contribute meaningfully to their professions and communities.
-                        </p>
-                        <Link to={"/ProgrameFinder"}>
-                          <button>
+                      <div className="other-details">
+                          <p>Architecture and Construction - Arts, Design, and Media - Business, Economics, and Finance - Computer and Information Technologies - Engineering and Technology - Language and Literature - Medicine and Health Sciences - Politics, Law, and Social Sciences - Sciences and Maths - Tourism, Hospitality, and Food</p> 
+                      </div>
+                  </div>
+                  <div className="uni-details">
+                      <p>
+                          {filteredResult.description}
+                      </p>
+                      <Link to={"/ProgrameFinder"}>
+                        <button>
+                        
+                          <h3>Apply Today</h3>
+                          <FaArrowRight className="btn-arrow"/>
+                        
                           
-                            <h3>Apply Today</h3>
-                            <FaArrowRight className="btn-arrow"/>
-                          
-                            
-                          </button>
-                        </Link>
-                    </div>
-                </section>
-                <section className="four"></section>
-                <section className="five"></section>
-            </div>
-  
+                        </button>
+                      </Link>
+                  </div>
+              </section>
+              <section className="four"></section>
+              <section className="five"></section>
+          </div>
+          
+          <Footer />
         </div>
     )
 

@@ -12,7 +12,7 @@ export function HomeLastSection(){
                     <h1>Setup a <span>Meeting</span> </h1>
                     <p>Whether you're exploring study options or representing an agency/institution, we're here to help. Set up a meeting and start turning plans into progress.</p>
                     <button>
-                        <Link to={"/"}>Or Contact Us Instead</Link>
+                        <Link to={"/ContactUs"}>Or Contact Us Instead</Link>
                     </button>
                 </div>
                 <div className="part-two">

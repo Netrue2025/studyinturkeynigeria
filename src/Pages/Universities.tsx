@@ -428,12 +428,13 @@ export function Universities() {
                 {filteredUniversities.length > 0 ? (
                   filteredUniversities.map((uni) => (
                     <Link
-                      to="/"
+                      to={`/University/${uni.name}`}
                       key={uni.id}
                       className="search-result-item"
                       onClick={() => {
                         setSearchTerm(uni.name);
                         setShowResults(false);
+                        
                       }}
                     >
                       <img src={uni.logo} alt={uni.name} />

@@ -16,7 +16,7 @@ export function Hero(){
                     <h2>Succeed.</h2>
 
                     <button>
-                        <Link to={"/"} className="btn-link">Find Your Dream University <FaArrowRightLong className="arrow-right"/></Link>
+                        <Link to={"/Universities"} className="btn-link">Find Your Dream University <FaArrowRightLong className="arrow-right"/></Link>
                     </button>
 
                     {/* Mobile Button */}
