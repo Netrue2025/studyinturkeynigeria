@@ -9,6 +9,7 @@ import { TopNavTwo } from "../Components/TopNavTwo";
 import { Footer } from "../Components/Footer";
 // import { useState } from "react";
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 
 export function Programes() {
@@ -43,7 +44,20 @@ export function Programes() {
        
     });
    
-  
+      // Emailjs autoresponder
+    const sendConfirmEmail = (FormData) => {
+      emailjs.send(
+      "service_rc2llto",
+      "template_yt0dbh9",
+      {to_email: formData.get("email"),
+        to_name: formData.get("name"),
+        message: `Hi ${formData.get('name')}, <br><br> Thank you for your application. Our agent will contact you shortly on how to complete your application. <br><br> Best regard <br> SITN Team`
+      },
+      "z4q27QZ3eb3Ew--iz"
+      )
+      .then(() => console.log("Email Sent"))
+      .catch((err) => console.log(err))
+    } 
 
     // const data = await response.json();
     // setSuccess(data.success ? "Success!" : "Error");
@@ -53,10 +67,11 @@ export function Programes() {
       icon: "success",
       draggable: true
     });
-
+    sendConfirmEmail(Object.fromEntries(formData.entries()));
     form.reset();
     
   };
+
 
   return (
     <div className="main-container">
@@ -104,6 +119,14 @@ export function Programes() {
           <div className="right-side">
             <h1>Applying is as easy as filling this form...</h1>
             <form  action="" onSubmit={onSubmit}>
+              {/* Auto responder */}
+              {/* <div className="responder">
+                <input type="hidden" name="access_key" value="757e495b-89b1-4f06-8ce3-aab98d590b93"/>
+                <input type="hidden" name="subject" value="SITN Application Confirmation" />
+                <input type="hidden" name="From_name" value="SITN" />
+                <input type="hidden" name="replyto" value="%email%" />
+                <input type="hidden" name="autoresponse" value="Hello {{name}} 👋 <br><br> Thank you for showing intrest to study {{course}}. Please wait for our agent to contact you on what next to do. <br><br> Best Regards<br> SITN Team" />
+              </div> */}
               <div className="form-row">
                 <div className="form-row-item">
                   <label htmlFor="name">

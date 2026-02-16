@@ -122,7 +122,7 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.263);
 }
 .others .three .price-container .degree h3, .others .three .price-container .dicipline h3 {
-  font-size: 1.85rem;
+  font-size: 1.8em;
   height: 100%;
   border-bottom: 2px solid rgba(2, 2, 171, 0.481);
   width: 50%;
@@ -196,4 +196,51 @@
 }
 .others .three button:hover h3 {
   margin-right: -35%;
+}
+
+@media screen and (max-width: 560px) {
+  .one {
+    padding: 0 2%;
+  }
+  .one figure img {
+    height: 50%;
+  }
+  .one .text h1 {
+    font-size: 2.25rem;
+  }
+  .three {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+  .three .price-container {
+    height: auto;
+    margin-bottom: 10%;
+  }
+  .three .price-container .header .universty, .three .price-container .header .h-two {
+    margin-top: 5%;
+  }
+  .three .price-container .header .universty h3, .three .price-container .header .h-two h3 {
+    font-size: 1rem !important;
+    color: red;
+    width: 100%;
+  }
+  .three .price-container .price-range {
+    min-width: 90vw;
+    line-height: 2.5;
+  }
+  .three .price-container .price-range h2 {
+    font-size: 2rem;
+  }
+  .three .price-container .price-range #price {
+    width: 100%;
+    margin-top: 2%;
+    font-size: 1.2rem;
+  }
+  .three .price-container .degree h3, .three .price-container .dicipline h3 {
+    min-width: 90%;
+    font-size: 0.8em;
+  }
 }/*# sourceMappingURL=University.css.map */

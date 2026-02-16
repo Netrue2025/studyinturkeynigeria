@@ -138,7 +138,7 @@
                 border-bottom: 1px solid rgba(128, 128, 128, 0.263);
 
                 h3{
-                    font-size: 1.85rem;
+                    font-size: 1.8em;
                     height: 100%;
                     border-bottom: 2px solid rgba(2, 2, 171, 0.481);
                     width: 50%;
@@ -229,4 +229,71 @@
             }
         }
     }
+}
+@media screen and (max-width: 560px) {
+    .one{
+        padding: 0 2%;
+        figure{
+            img{
+                
+                height: 50%;
+            }
+        }
+        .text{
+            h1{
+                font-size: 2.25rem;
+            }
+        }
+    }
+    .three{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        margin-bottom: 5%;
+
+        .price-container{
+            height: auto;
+           
+            margin-bottom: 10%;
+            .header{
+                .universty, .h-two{
+                    margin-top: 5%;
+                    h3{
+                        font-size: 1rem !important;
+                        color: red;
+                        width: 100%;
+                    }
+                }
+            }
+            .price-range{
+                
+                min-width: 90vw;
+                line-height: 2.5;
+                h2{
+                    font-size: 2rem;
+                }
+                
+                #price{
+                    width: 100%;
+                    margin-top: 2%;
+                    font-size: 1.2rem;
+                    
+                }
+                
+            }
+            .degree, .dicipline{
+                
+               
+                h3{
+                    min-width: 90%;
+                    
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+    }
+
+    
 }
