@@ -1,264 +1,312 @@
-.mobile-menu-container{
-    display: none;
+.mobile-menu-container {
+  display: none;
+  cursor: pointer;
 }
 
-.TopNavOne{
+.TopNavOne {
+  display: flex;
+  flex-direction: row;
+  max-width: 100dvw;
+
+  height: 112px;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+
+  figure {
+    width: 25%;
+    max-height: 100%;
+    position: inherit;
+    img {
+      height: 90%;
+      width: auto;
+      margin: auto;
+    }
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .navMenu {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    max-width: 100dvw;
-   
-    height: 112px;
-    justify-content: space-between;
-    margin: 0;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.288);
-    
+    background-color: rgba(0, 0, 117, 0.781);
 
-    figure{
-        width: 25%;
-        max-height: 100%;
-        position: inherit;
-        img{
-            height: 90%;
-            width: auto;
-            margin: auto;
+    .info,
+    .contactUsNow,
+    .question {
+      width: 32%;
+      color: rgb(255, 255, 255);
+      margin: 0;
+      font-weight: 700 !important;
+      cursor: pointer;
+      display: flex;
+
+      .info-text,
+      .contact-text,
+      .chat-text {
+        text-align: left;
+        margin: auto 15px;
+
+        span {
+          font-size: 10px;
+          letter-spacing: 2.5px;
+          color: rgba(224, 224, 224, 0.671);
+
+          font-family: clash-display-medium;
         }
+        h3 {
+          // letter-spacing: 2px;
+          color: rgba(255, 255, 255, 0.877);
+        }
+      }
+      .contact-text {
+        transform: skew(-35deg);
+      }
+
+      .envelope,
+      .phone,
+      .chat {
+        margin: auto 5px;
+        margin-left: 10px;
+        font-size: 2.2rem;
+      }
+
+      .phone {
+        transform: skew(-35deg);
+      }
     }
-    .mobile-menu{
-        display: none;
+
+    .info:hover {
+      color: rgba(217, 185, 3, 0.733);
+
+      .info-text {
+        span {
+          color: rgba(217, 185, 3, 0.733);
+        }
+        h3 {
+          color: rgba(217, 185, 3, 0.733);
+        }
+      }
+
+      .envelope {
+        transform: rotate(15deg);
+        margin-left: 10px;
+        transition: transform 0.5s ease-in-out;
+      }
     }
-    .navMenu{
-        width: 100%;
-        display: flex;
-        background-color: rgba(0, 0, 117, 0.781);
-    
 
-        .info, .contactUsNow, .question{
-            width: 32%;
-            color: rgb(255, 255, 255);
-            margin: 0;
-            font-weight: 700 !important;
-            cursor: pointer;
-            display: flex;
-            
-            .info-text, .contact-text, .chat-text{
-                text-align: left;
-                margin: auto 15px;
-
-                span{
-                    font-size: 10px;
-                    letter-spacing: 2.5px;
-                    color: rgba(224, 224, 224, 0.671);
-                  
-                    font-family: clash-display-medium;
-                }
-                h3{
-                    // letter-spacing: 2px;
-                    color: rgba(255, 255, 255, 0.877);
-                }
-            }
-            .contact-text{
-                transform: skew(-35deg);
-            }
-
-            .envelope, .phone, .chat{
-                margin: auto 5px;   
-                margin-left: 10px;
-                font-size: 2.2rem;
-            }
-         
-            .phone{
-                transform: skew(-35deg);
-            }
-
-
-
-
-        }
-
-        .info:hover{
-            color: rgba(217, 185, 3, 0.733);
-  
-            .info-text{
-                span{
-                    color: rgba(217, 185, 3, 0.733);
-                }
-                h3{
-                     color: rgba(217, 185, 3, 0.733);
-                }
-               
-            }
-            
-            .envelope{
-                transform: rotate(15deg);
-                margin-left: 10px;
-                transition: transform 0.5s ease-in-out;
-            }
-    
-
-        }
-
-        .contactUsNow{
-            transform: skew(35deg);
-            background-color: rgba(150, 128, 8, 0.733);
-          
-         
-        }
-        .contactUsNow:hover{
-            color: rgba(2, 2, 167, 0.562);
-            
-            .contact-text{
-                span{
-                    color: rgba(2, 2, 167, 0.562);
-                }
-                h3{
-                     color: rgba(2, 2, 167, 0.562);
-                }
-               
-            }
-
-            .phone{
-                transform: rotate(55deg);
-                margin-left: 10px;
-                transition: transform 0.5s ease-in-out;
-            }
-           
-        }
-
-        .question:hover{
-            color: rgba(217, 185, 3, 0.733);
-            //   transform: skew(-30deg);  
-              
-            .chat-text{
-                span{
-                    color: rgba(217, 185, 3, 0.733);
-                }
-                h3{
-                     color: rgba(217, 185, 3, 0.733);
-                }
-               
-            }
-            .chat{
-                transform: rotate(15deg);
-                margin-left: 10px;
-                transition: transform 0.5s ease-in-out;
-            }
-  
-            
-        }
-     
+    .contactUsNow {
+      transform: skew(35deg);
+      background-color: rgba(150, 128, 8, 0.733);
     }
-    
-    
-       
-  
+    .contactUsNow:hover {
+      color: rgba(2, 2, 167, 0.562);
+
+      .contact-text {
+        span {
+          color: rgba(2, 2, 167, 0.562);
+        }
+        h3 {
+          color: rgba(2, 2, 167, 0.562);
+        }
+      }
+
+      .phone {
+        transform: rotate(55deg);
+        margin-left: 10px;
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+
+    .question:hover {
+      color: rgba(217, 185, 3, 0.733);
+      //   transform: skew(-30deg);
+
+      .chat-text {
+        span {
+          color: rgba(217, 185, 3, 0.733);
+        }
+        h3 {
+          color: rgba(217, 185, 3, 0.733);
+        }
+      }
+      .chat {
+        transform: rotate(15deg);
+        margin-left: 10px;
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
 }
 
 // Mobile View
 
 @media screen and (max-width: 991px) {
-    .mobile-menu-container{
+  .mobile-menu-container {
+    display: flex;
+    width: 100dvw;
+    height: 60px;
+    background-color: rgba(0, 0, 117, 0.781);
+    justify-content: space-around;
+    box-shadow:
+      0 2px 2px rgba(173, 173, 173, 0.466),
+      /* bottom edge */ 0 8px 16px rgba(141, 139, 139, 0.2);
+    border-radius: 2px;
+    .email,
+    .phone,
+    .message {
+      width: 32%;
+      padding: 0;
+    }
+    .email {
+      .envelope {
+        color: rgba(185, 158, 5, 0.664);
+        font-size: 2rem;
+
+        cursor: pointer;
+        margin: 15px auto;
+      }
+    }
+    .phone {
+      transform: skew(35deg);
+      background-color: rgba(245, 209, 4, 0.521);
+      .phone-icon {
+        transform: skew(-35deg);
+        color: rgba(7, 7, 150, 0.5);
+        font-size: 2rem;
+
+        cursor: pointer;
+
+        margin: 15px auto;
+      }
+    }
+    .message {
+      .chat {
+        color: rgba(185, 158, 5, 0.664);
+        font-size: 2rem;
+        margin: auto;
+        cursor: pointer;
+
+        margin: 15px auto;
+      }
+    }
+  }
+
+  .TopNavOne {
+    width: 100dvw;
+
+    figure {
+      width: 40%;
+      padding: 10px 0;
+
+      img {
+        height: 4.5rem;
+        margin: auto 10px;
+      }
+    }
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      min-height: 100%;
+
+      .menu-icon {
+        font-size: 1.5rem;
+        margin: auto 40px;
+        font-weight: 400;
+        align-self: self-end;
+        color: rgba(1, 8, 73, 0.493);
+      }
+    }
+    .navMenu {
+      display: none;
+    }
+  }
+
+  // MOBILE DROPDOWN MENU
+  .mobile-dropdown {
+    max-width: 100dvw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 0.5s ease forwards;
+
+    a {
+      width: 100%;
+      padding: 10px 20px;
+      color: #000;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: slideDown 0.5s ease forwards;
+    }
+
+    @keyframes slideDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .dropdown-section {
+      max-width: 100dvw;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      box-sizing: border-box;
+
+      .dropdown-title {
         display: flex;
-        width: 100dvw;
-       height: 60px;
-       background-color: rgba(0, 0, 117, 0.781);
-       justify-content: space-around;
-         box-shadow:
-        0 2px 2px rgba(173, 173, 173, 0.466),      /* bottom edge */
-        0 8px 16px rgba(141, 139, 139, 0.2);
-        border-radius: 2px;
-        .email, .phone, .message { 
-            width: 32%;
-           padding: 0;
-            
-            
-        }
-        .email{
-            .envelope{
-                color: rgba(185, 158, 5, 0.664);
-                font-size: 2rem;
-                
-                cursor: pointer;
-                margin: 15px auto;
-            }
-        }
-        .phone{
-            transform: skew(35deg);
-            background-color: rgba(245, 209, 4, 0.521);
-            .phone-icon{
-                transform: skew(-35deg);
-                color: rgba(7, 7, 150, 0.5);
-                font-size: 2rem;
-                
-                cursor: pointer;
-                
-                margin: 15px auto;
-            }
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.288);
+      }
 
-        }
-        .message{
-            .chat{
-                color: rgba(185, 158, 5, 0.664);
-                font-size: 2rem;
-                margin: auto;
-                cursor: pointer;
-                
-               margin: 15px auto;
-            }
+      .dropdown-links {
+        display: flex;
+        flex-direction: column;
 
+        a {
+          width: 100%;
+          padding: 10px 40px;
+          color: #000;
+          font-size: 14px;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.288);
         }
+      }
     }
-    
-    .TopNavOne{
-        width: 100dvw;
-
-
-       
-        figure{
-            width: 40%;
-            padding: 10px 0;
-
-            img{
-                height: 4.5rem;
-                margin: auto 10px;
-            }
-        }
-        .mobile-menu{
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            min-height: 100%;
-           
-            
-            .menu-icon{
-                font-size: 1.5rem;
-                margin: auto 40px;
-                font-weight: 400;
-                align-self: self-end;
-                color: rgba(1, 8, 73, 0.493);
-            }
-        }
-        .navMenu{
-            display: none;
-
-        }
+  }
+  
+  @keyframes slideDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-    
+  }
 }
-@media screen and (max-width: 512px){
-    .mobile-menu-container{
-        .email, .phone, .message{
-            .envelope{
-                font-size: 1.6rem;
-                margin: 18px auto;
-            }
-            .phone-icon{
-                font-size: 1.6rem;
-                margin: 18px auto;
-            }
-            .chat{
-                font-size: 1.6rem;
-                margin: 18px auto;
-            }
-        }
+@media screen and (max-width: 512px) {
+  .mobile-menu-container {
+    .email,
+    .phone,
+    .message {
+      .envelope {
+        font-size: 1.6rem;
+        margin: 18px auto;
+      }
+      .phone-icon {
+        font-size: 1.6rem;
+        margin: 18px auto;
+      }
+      .chat {
+        font-size: 1.6rem;
+        margin: 18px auto;
+      }
     }
+  }
 }
