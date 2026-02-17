@@ -36,8 +36,10 @@
 .main-container .partner-application-container .stepper {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  max-width: 80%;
+  width: 100%;
   margin: 40px 0;
+  box-sizing: border-box;
 }
 .main-container .partner-application-container .step {
   display: flex;
@@ -46,6 +48,11 @@
   gap: 6px;
   color: #9aa4c7;
   font-size: 14px;
+}
+@media (max-width: 600px) {
+  .main-container .partner-application-container .step {
+    font-size: 8px;
+  }
 }
 .main-container .partner-application-container .circle {
   width: 32px;
