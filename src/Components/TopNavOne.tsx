@@ -6,6 +6,7 @@ import { RiMenuLine } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function TopNavOne() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,20 +18,29 @@ export function TopNavOne() {
       {/* Mobile menu */}
       <div className="mobile-menu-container">
         <div className="email">
-          <BsEnvelope className="envelope" />
+          <a href="mailto:INFO@STUDYTURKEYNIGERIA.COM">
+            <BsEnvelope className="envelope" />
+          </a> 
         </div>
         <div className="phone">
-          <FiPhoneCall className="phone-icon" />
+          <a href="tel:+447799049523">
+            <FiPhoneCall className="phone-icon" />
+          </a> 
         </div>
         <div className="message">
-          <CiChat2 className="chat" />
+          <a href="https://api.whatsapp.com/send?phone=447799049523">
+            <CiChat2 className="chat" />
+          </a>
         </div>
       </div>
 
       {/* Destop */}
       <div className="TopNavOne">
         <figure>
-          <img src="/images/logo.jpeg" alt="logo image" />
+          <Link to={"/"}>
+            <img src="/images/logo.jpeg" alt="logo image" />
+          </Link>
+         
         </figure>
         <div className="mobile-menu" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
@@ -54,7 +64,7 @@ export function TopNavOne() {
             <div className="contact-text">
               <span>CALL US NOW</span>
               <h3>
-                <a href="tel:+905363233366">+90 536 323 3366</a>
+                <a href="tel:+447799049523">+447799049523</a>
               </h3>
             </div>
           </div>

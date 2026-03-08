@@ -4,14 +4,26 @@ import "../Styles/ProgramFinder.css"
 import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import ReactPaginate from "react-paginate";
-import data from "../data/programes.json";
+import rawData from "../data/programes.json";
 import { useNavigate } from "react-router-dom"
 import { useEffect } from "react";
+// import type { number } from "framer-motion";
 
-
+// const datas:any[] = data
 export function ProgrameFinder() {
     // Filtered Data from API
-    const cleanData = data.filter(items =>
+   
+    interface Program {
+      id: number;
+      CODE: number;
+      PROGRAM_TURKEY: string;
+      UNIVERSITIES_ID: string;
+      UNIVERSITIES: string;
+      PROGRAMES: string;
+
+    }
+    const data = rawData as Program[];
+    const cleanData= data.filter(items =>
     items &&
     items.id &&
     !isNaN(items.id) &&
@@ -22,23 +34,23 @@ export function ProgrameFinder() {
  
 
     // Search Function
-    const [searchResults, setSearchResults] = useState([]);
+    // const [searchResults, setSearchResults] = useState([]);
     const [query, setQuery] = useState("");
 
-    const handleSearch = () => {
-      if (!query.trim()) {
-        setSearchResults([]);
-        return;
-      }
-      const filtered = cleanData.filter(item =>
-        item.program?.toLowerCase().includes(query.toLowerCase())
-      );
-      setSearchResults(filtered);
-    };
+    // const handleSearch = () => {
+    //   if (!query.trim()) {
+    //     setSearchResults([]);
+    //     return;
+    //   }
+    //   const filtered = cleanData.filter(item =>
+    //     item.program?.toLowerCase().includes(query.toLowerCase())
+    //   );
+    //   setSearchResults(filtered);
+    // };
     // switch what to display
-    const dataToDisplay = searchResults.length > 0
-    ? searchResults
-    :cleanData ;
+    // const dataToDisplay = searchResults.length > 0
+    // ? searchResults
+    // :cleanData ;
 
   // Pagenation
   const ITEMS_PER_PAGE = 10;
@@ -47,8 +59,8 @@ export function ProgrameFinder() {
   // 🔹 Pagination logic
   const startIndex = currentPage * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-  const currentItems = dataToDisplay.slice(startIndex, endIndex); //Final usable data
-  const pageCount = Math.ceil(dataToDisplay.length / ITEMS_PER_PAGE);
+  const currentItems = cleanData.slice(startIndex, endIndex); //Final usable data
+  const pageCount = Math.ceil(cleanData.length / ITEMS_PER_PAGE);
 
 
 
@@ -90,7 +102,7 @@ export function ProgrameFinder() {
                 <h3>Search Programes</h3>
                 <div className="search-container">
                  
-                  <CiSearch className="icon" onClick={handleSearch}/>
+                  <CiSearch className="icon" />
                   <input className="input-box" type="text" placeholder="Enter Keywords"
                     value={query}
                     onChange={e => setQuery(e.target.value)}
@@ -100,11 +112,11 @@ export function ProgrameFinder() {
               <div className="programes">
               
 
-                {currentItems.map((result, index)=> (
+                {currentItems.map((result:any, index:number) => (
 
                     <div className="program-inset" key={index} onClick={()=>navigate(`/Programs/${result.id}`, {replace: true, state:(result)})}>
                       <h3>{result.PROGRAMES}</h3>
-                      <h4><span>$${result.id + result.id * 200}</span>  ${result.id + result.id * 100}</h4>
+                      <h4><span>$200</span>  $100</h4>
                     </div>
                  
     

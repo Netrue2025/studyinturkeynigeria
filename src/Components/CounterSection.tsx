@@ -3,12 +3,12 @@ import { useEffect } from "react";
 
 export function CounterSection(){
     // JS Animation for circular contuer
-    function animateCount(el) {
+    function animateCount(el:any) {
         const target = +el.dataset.target;
         const duration = 1500;
         const startTime = performance.now();
 
-        function update(now) {
+        function update(now:any) {
             const progress = Math.min((now - startTime) / duration, 1);
             const value = Math.floor(progress * target);
 
@@ -42,7 +42,7 @@ export function CounterSection(){
     // Progress Bar
     useEffect(() => {
         const section = document.querySelector(".progress-section");
-        const bars = document.querySelectorAll(".fill");
+        const bars = document.querySelectorAll<HTMLElement>(".fill");
 
         const observer = new IntersectionObserver(
             ([entry]) => {

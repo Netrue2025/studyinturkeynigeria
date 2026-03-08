@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
 import { Footer } from "../Components/Footer"
 
 
-import "swiper/css";
+import "swiper/swiper.css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -416,11 +416,11 @@ export function University() {
 
           <section className="one">
               <figure>
-                  <img src={filteredResult.logo} alt={filteredResult.name + "logo"} />
+                  <img src={filteredResult!.logo} alt={filteredResult!.name + "logo"} />
               </figure>
               <div className="text">
                   <h1>
-                      {text.split("").map((letter, index) => (
+                      {text!.split("").map((letter, index) => (
                           <motion.span
                           key={index}
                           initial={{ opacity: 0, y: 10 }}
@@ -477,7 +477,7 @@ export function University() {
                   <div className="price-container">
                       <aside><p>UNIVERSITY SUMMAARY</p></aside>
                       <div className="header">
-                          <div className="universty"><h3>{filteredResult.category}</h3></div>
+                          <div className="universty"><h3>{filteredResult!.category}</h3></div>
                           <div className="h-two"><h3>English-Turkish</h3></div>
                       </div>
                       <div className="price-range">
@@ -501,7 +501,7 @@ export function University() {
                   </div>
                   <div className="uni-details">
                       <p>
-                          {filteredResult.description}
+                          {filteredResult!.description}
                       </p>
                       <Link to={"/ProgrameFinder"}>
                         <button>

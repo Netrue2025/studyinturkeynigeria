@@ -7,14 +7,11 @@ import { useState } from "react";
 
 
 export function TopNavTwo(){
-     const [open, setOpen] = useState(false);
-     const [joinus, setJoinus] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [joinus, setJoinus] = useState(false);
 
     return(
-        <div className="tntwo"
-
-
-        >
+        <div className="tntwo">
             <section className="top-nav-two">
                 <div className="list-menu">
                     <ul

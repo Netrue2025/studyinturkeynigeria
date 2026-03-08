@@ -21,7 +21,7 @@ export function Hero(){
 
                     {/* Mobile Button */}
                     <button className="mobile-btn">
-                        <Link to={"/"} className="btn-link">Browse Universities</Link>
+                        <Link to={"/Universities"} className="btn-link">Browse Universities</Link>
                     </button>
                 </div>
             

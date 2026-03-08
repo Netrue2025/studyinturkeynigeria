@@ -1,0 +1,394 @@
+[
+ {
+   "id": 1,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Medicine",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "35000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 2,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Pharmacy",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "16000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 3,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Biomedical Engineering",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "15000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 4,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Computer Engineering",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "15000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 5,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Molecular Biology & Genetics",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "15000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 6,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Psychology",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 7,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Nursing",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 8,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Nutrition & Dietetics",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 9,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Physiotherapy & Rehabilitation",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8000 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 10,
+   "University": "Acıbadem Mehmet Ali Aydınlar University",
+   "Program": "Health Vocational Programs",
+   "Degree": "Diploma",
+   "Annual Tuition (USD)": "3500 USD",
+   "International Office Address": "Kerem Aydınlar Campus, Kayışdağı Cad. No:32, Ataşehir, Istanbul, Turkey",
+   "Email": "international.admissions@acibadem.edu.tr",
+   "Phone": "+90 216 500 44 44",
+   "Google Maps URL": "https://maps.google.com/?q=Acibadem+Mehmet+Ali+Aydinlar+University+Istanbul",
+   "About ": {
+      " Vision": "Private university focused on health sciences, medical education, research, and international collaboration."
+   }
+},
+ {
+   "id": 11,
+   "University": "Bahçeşehir University",
+   "Program": "Medicine",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "28000 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 12,
+   "University": "Bahçeşehir University",
+   "Program": "Dentistry",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "24000 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 13,
+   "University": "Bahçeşehir University",
+   "Program": "Pharmacy",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "15000 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 14,
+   "University": "Bahçeşehir University",
+   "Program": "Artificial Intelligence Engineering",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "12000 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 15,
+   "University": "Bahçeşehir University",
+   "Program": "Engineering & Natural Sciences",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "9000 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 16,
+   "University": "Bahçeşehir University",
+   "Program": "Law",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "10000 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 17,
+   "University": "Bahçeşehir University",
+   "Program": "Health Sciences",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8500 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 18,
+   "University": "Bahçeşehir University",
+   "Program": "Economics & Social Sciences",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8500 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 19,
+   "University": "Bahçeşehir University",
+   "Program": "Architecture & Design",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8500 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 20,
+   "University": "Bahçeşehir University",
+   "Program": "Communication",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "8500 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 21,
+   "University": "Bahçeşehir University",
+   "Program": "Vocational Health Sciences",
+   "Degree": "Diploma",
+   "Annual Tuition (USD)": "3500 USD",
+   "International Office Address": "Çırağan Street No:47, Beşiktaş, Istanbul, Turkey",
+   "Email": "international@bau.edu.tr",
+   "Phone": "+90 212 381 59 00",
+   "Google Maps URL": "https://maps.google.com/?q=Bahcesehir+University+Istanbul",
+   "About ": {
+      " Vision": "A world university in the heart of Istanbul committed to global education and academic excellence."
+   }
+},
+ {
+   "id": 22,
+   "University": "Biruni University",
+   "Program": "Medicine",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "21000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+},
+ {
+   "id": 23,
+   "University": "Biruni University",
+   "Program": "Dentistry",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "21000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+},
+ {
+   "id": 24,
+   "University": "Biruni University",
+   "Program": "Pharmacy",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "12000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+},
+ {
+   "id": 25,
+   "University": "Biruni University",
+   "Program": "Physiotherapy & Rehabilitation",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "5000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+},
+ {
+   "id": 26,
+   "University": "Biruni University",
+   "Program": "Nursing",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "5000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+},
+ {
+   "id": 27,
+   "University": "Biruni University",
+   "Program": "Biomedical Engineering",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "5000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+},
+ {
+   "id": 28,
+   "University": "Biruni University",
+   "Program": "Computer Engineering",
+   "Degree": "BSc",
+   "Annual Tuition (USD)": "5000 USD",
+   "International Office Address": "Merkezefendi Mah. 75. Sk. No:1-13, Zeytinburnu, Istanbul, Turkey",
+   "Email": "intoffice@biruni.edu.tr",
+   "Phone": "+90 444 8 276",
+   "Google Maps URL": "https://maps.google.com/?q=Biruni+University+Istanbul",
+   "About ": {
+      " Vision": "Private foundation university emphasizing research, science, and interdisciplinary health and engineering education."
+   }
+}
+]

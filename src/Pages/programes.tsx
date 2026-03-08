@@ -2,7 +2,7 @@
 import { Nationalities } from "../Components/nationalities";
 import { useParams } from "react-router-dom";
 // import { useState } from "react";
-import data from "../data/programes.json";
+import rawData from "../data/programes.json";
 import "../Styles/programs.css";
 import { TopNavOne } from "../Components/TopNavOne";
 import { TopNavTwo } from "../Components/TopNavTwo";
@@ -18,10 +18,22 @@ export function Programes() {
   console.log(id);
 
   // Filtered Data from API
-  const cleanData = data.filter(
-    (items) =>
-      items && items.id && !isNaN(items.id) && String(items.id).trim() !== "",
-  );
+    interface Program {
+        id: number;
+        CODE: number;
+        PROGRAM_TURKEY: string;
+        UNIVERSITIES_ID: string;
+        UNIVERSITIES: string;
+        PROGRAMES: string;
+        Language: string;
+  
+      }
+      const data = rawData as Program[];
+      const cleanData= data.filter(items =>
+      items &&
+      items.id &&
+      !isNaN(items.id) &&
+      String(items.id).trim() !== "");
 
   // const singleProgram = cleanData.find((x) => x.id === result)
   const result = cleanData.find((item) => item.id === Number(id));
@@ -32,7 +44,7 @@ export function Programes() {
    
 
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event:any) => {
     const form = event.target; // store reference
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -45,13 +57,13 @@ export function Programes() {
     });
    
       // Emailjs autoresponder
-    const sendConfirmEmail = (FormData) => {
+    const sendConfirmEmail = (FormData:any) => {
       emailjs.send(
       "service_rc2llto",
       "template_yt0dbh9",
-      {to_email: formData.get("email"),
-        to_name: formData.get("name"),
-        message: `Hi ${formData.get('name')}, <br><br> Thank you for your application. Our agent will contact you shortly on how to complete your application. <br><br> Best regard <br> SITN Team`
+      {to_email: FormData.get("email"),
+        to_name: FormData.get("name"),
+        message: `Hi ${FormData.get('name')}, <br><br> Thank you for your application. Our agent will contact you shortly on how to complete your application. <br><br> Best regard <br> SITN Team`
       },
       "z4q27QZ3eb3Ew--iz"
       )
@@ -79,7 +91,7 @@ export function Programes() {
       <TopNavTwo />
       <div className="content-container">
         <header>
-          <h1>{result.PROGRAMES}</h1>
+          <h1>{result!.PROGRAMES}</h1>
         </header>
         <section className="content">
           <div className="left-side">
@@ -88,7 +100,7 @@ export function Programes() {
             </aside>
             <div className="inset">
               <div className="badge language">
-                <h3>English /{result.Language}</h3>
+                <h3>English /{result!.Language}</h3>
               </div>
               <div className="badge year">
                 <h3>1 Year</h3>
@@ -104,14 +116,19 @@ export function Programes() {
             </div>
             <div className="tution">
               <h2>
-                Tution: <span>${result.id + result.id * 200}</span>
+                Tution: <span>${result!.id + result!.id * 200}</span>
               </h2>
             </div>
             <div className="discounted">
               <h2>
                 Discounted Tution:{" "}
                 <span className="underline-span">
-                  ${result.id + result.id * 100}
+                  {
+                  result!.id + result!.id * 100
+                  }
+                    
+                  
+                 
                 </span>
               </h2>
             </div>
@@ -185,7 +202,7 @@ export function Programes() {
                 <label htmlFor="program">
                   Programe <span>*</span>
                 </label>
-                <input type="text" value={result.PROGRAMES} name="course"/>
+                <input type="text" value={result!.PROGRAMES} name="course"/>
               </div>
               <div className="program-level-container">
                 <div className="program-level">

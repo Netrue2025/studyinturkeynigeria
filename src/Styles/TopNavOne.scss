@@ -29,7 +29,7 @@
   .navMenu {
     width: 100%;
     display: flex;
-    background-color: rgba(0, 0, 117, 0.781);
+    background-color: #A92123;
 
     .info,
     .contactUsNow,
@@ -77,14 +77,14 @@
     }
 
     .info:hover {
-      color: rgba(217, 185, 3, 0.733);
+      color: #d6d6d6;
 
       .info-text {
         span {
-          color: rgba(217, 185, 3, 0.733);
+          color: #cecece;
         }
         h3 {
-          color: rgba(217, 185, 3, 0.733);
+          color: #d1d1d1;
         }
       }
 
@@ -97,17 +97,19 @@
 
     .contactUsNow {
       transform: skew(35deg);
-      background-color: rgba(150, 128, 8, 0.733);
+      background-color:  #11406E;
+;
     }
     .contactUsNow:hover {
-      color: rgba(2, 2, 167, 0.562);
+      color: #ffffff;
 
       .contact-text {
+        
         span {
-          color: rgba(2, 2, 167, 0.562);
+          color: #ffffff;
         }
         h3 {
-          color: rgba(2, 2, 167, 0.562);
+          color: #dadada;
         }
       }
 
@@ -119,15 +121,15 @@
     }
 
     .question:hover {
-      color: rgba(217, 185, 3, 0.733);
+      color: #d1d1d1;
       //   transform: skew(-30deg);
 
       .chat-text {
         span {
-          color: rgba(217, 185, 3, 0.733);
+          color: #d1d1d1;
         }
         h3 {
-          color: rgba(217, 185, 3, 0.733);
+          color: #d1d1d1;
         }
       }
       .chat {
@@ -146,7 +148,7 @@
     display: flex;
     width: 100dvw;
     height: 60px;
-    background-color: rgba(0, 0, 117, 0.781);
+    background-color: #A92123;
     justify-content: space-around;
     box-shadow:
       0 2px 2px rgba(173, 173, 173, 0.466),
@@ -160,19 +162,22 @@
     }
     .email {
       .envelope {
-        color: rgba(185, 158, 5, 0.664);
+        color: rgba(253, 253, 253, 0.664);
         font-size: 2rem;
 
         cursor: pointer;
         margin: 15px auto;
       }
+    }
+    .email:active{
+      background-color: red;
     }
     .phone {
       transform: skew(35deg);
-      background-color: rgba(245, 209, 4, 0.521);
+      background-color: #11406E;
       .phone-icon {
         transform: skew(-35deg);
-        color: rgba(7, 7, 150, 0.5);
+        color: rgba(249, 249, 249, 0.5);
         font-size: 2rem;
 
         cursor: pointer;
@@ -180,15 +185,21 @@
         margin: 15px auto;
       }
     }
+    .phone:active{
+      background-color: blue;
+    }
     .message {
       .chat {
-        color: rgba(185, 158, 5, 0.664);
+        color: rgba(255, 255, 255, 0.906);
         font-size: 2rem;
         margin: auto;
         cursor: pointer;
 
         margin: 15px auto;
       }
+    }
+    .message:active{
+      background-color: red;
     }
   }
 
@@ -238,7 +249,7 @@
     a {
       width: 100%;
       padding: 10px 20px;
-      color: #000;
+      color: #474646;
       font-size: 14px;
       border-bottom: 1px solid rgba(128, 128, 128, 0.288);
       opacity: 0;

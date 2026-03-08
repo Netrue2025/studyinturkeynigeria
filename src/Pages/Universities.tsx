@@ -6,6 +6,7 @@ import "../Styles/universities.css";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { AllUniversities } from "../Components/alluniversities";
 
 export function Universities() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -379,7 +380,7 @@ export function Universities() {
   ];
 
   const allUniversities = [...privateUniversities, ...publicUniversities];
-  const normalize = (str) =>
+  const normalize = (str:any) =>
     str
       .normalize("NFD") // decompose accents
       .replace(/[\u0300-\u036f]/g, "") // remove accents
@@ -462,7 +463,7 @@ export function Universities() {
           </div>
 
           {/* Public Universities */}
-          <h1>Public Universities</h1>
+          <h1>Private Universities</h1>
           <div className="card-container">
             <div className="card-wrapper">
               {publicUniversities.map((uni) => (
@@ -473,6 +474,9 @@ export function Universities() {
               ))}
             </div>
           </div>
+
+          {/* All Universities */}
+          <AllUniversities />
         </div>
         <Footer />
       </div>

@@ -11,14 +11,14 @@ export function VideoSection(){
     const observer = new IntersectionObserver(
         ([entry]) => {
         if (entry.isIntersecting) {
-            iframe.src += "&autoplay=1";
+            iframe!.src += "&autoplay=1";
             observer.disconnect();
         }
         },
         { threshold: 0.5 }
     );
 
-    observer.observe(document.querySelector(".video-section"));
+    observer.observe(document.querySelector(".video-section")!);
     }, []);
 
 

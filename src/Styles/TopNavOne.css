@@ -28,7 +28,7 @@
 .TopNavOne .navMenu {
   width: 100%;
   display: flex;
-  background-color: rgba(0, 0, 117, 0.781);
+  background-color: #A92123;
 }
 .TopNavOne .navMenu .info,
 .TopNavOne .navMenu .contactUsNow,
@@ -101,13 +101,13 @@
   transform: skew(-35deg);
 }
 .TopNavOne .navMenu .info:hover {
-  color: rgba(217, 185, 3, 0.733);
+  color: #d6d6d6;
 }
 .TopNavOne .navMenu .info:hover .info-text span {
-  color: rgba(217, 185, 3, 0.733);
+  color: #cecece;
 }
 .TopNavOne .navMenu .info:hover .info-text h3 {
-  color: rgba(217, 185, 3, 0.733);
+  color: #d1d1d1;
 }
 .TopNavOne .navMenu .info:hover .envelope {
   transform: rotate(15deg);
@@ -116,16 +116,16 @@
 }
 .TopNavOne .navMenu .contactUsNow {
   transform: skew(35deg);
-  background-color: rgba(150, 128, 8, 0.733);
+  background-color: #11406E;
 }
 .TopNavOne .navMenu .contactUsNow:hover {
-  color: rgba(2, 2, 167, 0.562);
+  color: #ffffff;
 }
 .TopNavOne .navMenu .contactUsNow:hover .contact-text span {
-  color: rgba(2, 2, 167, 0.562);
+  color: #ffffff;
 }
 .TopNavOne .navMenu .contactUsNow:hover .contact-text h3 {
-  color: rgba(2, 2, 167, 0.562);
+  color: #dadada;
 }
 .TopNavOne .navMenu .contactUsNow:hover .phone {
   transform: rotate(55deg);
@@ -133,13 +133,13 @@
   transition: transform 0.5s ease-in-out;
 }
 .TopNavOne .navMenu .question:hover {
-  color: rgba(217, 185, 3, 0.733);
+  color: #d1d1d1;
 }
 .TopNavOne .navMenu .question:hover .chat-text span {
-  color: rgba(217, 185, 3, 0.733);
+  color: #d1d1d1;
 }
 .TopNavOne .navMenu .question:hover .chat-text h3 {
-  color: rgba(217, 185, 3, 0.733);
+  color: #d1d1d1;
 }
 .TopNavOne .navMenu .question:hover .chat {
   transform: rotate(15deg);
@@ -152,7 +152,7 @@
     display: flex;
     width: 100dvw;
     height: 60px;
-    background-color: rgba(0, 0, 117, 0.781);
+    background-color: #A92123;
     justify-content: space-around;
     box-shadow: 0 2px 2px rgba(173, 173, 173, 0.466), 0 8px 16px rgba(141, 139, 139, 0.2);
     border-radius: 2px;
@@ -164,28 +164,37 @@
     padding: 0;
   }
   .mobile-menu-container .email .envelope {
-    color: rgba(185, 158, 5, 0.664);
+    color: rgba(253, 253, 253, 0.664);
     font-size: 2rem;
     cursor: pointer;
     margin: 15px auto;
+  }
+  .mobile-menu-container .email:active {
+    background-color: red;
   }
   .mobile-menu-container .phone {
     transform: skew(35deg);
-    background-color: rgba(245, 209, 4, 0.521);
+    background-color: #11406E;
   }
   .mobile-menu-container .phone .phone-icon {
     transform: skew(-35deg);
-    color: rgba(7, 7, 150, 0.5);
+    color: rgba(249, 249, 249, 0.5);
     font-size: 2rem;
     cursor: pointer;
     margin: 15px auto;
   }
+  .mobile-menu-container .phone:active {
+    background-color: blue;
+  }
   .mobile-menu-container .message .chat {
-    color: rgba(185, 158, 5, 0.664);
+    color: rgba(255, 255, 255, 0.906);
     font-size: 2rem;
     margin: auto;
     cursor: pointer;
     margin: 15px auto;
+  }
+  .mobile-menu-container .message:active {
+    background-color: red;
   }
   .TopNavOne {
     width: 100dvw;
@@ -228,7 +237,7 @@
   .mobile-dropdown a {
     width: 100%;
     padding: 10px 20px;
-    color: #000;
+    color: #474646;
     font-size: 14px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.288);
     opacity: 0;
